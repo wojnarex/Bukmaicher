@@ -5,6 +5,40 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-11 — v1.2 (Dzień otwarcia MŚ 2026 — korekta pozycjonowania Under)
+
+**Kontekst.** MŚ 2026 startuje dziś. Pierwsze 4 mecze fazy grupowej (11–12.06) to "zimne" otwieracze — drużyny ostrożne, dużo stawek.
+
+**Kluczowa obserwacja kadrowa.**
+- Meksyk–RPA: Santiago Gimenez **wątpliwy**, brak Malagóna i Marcela Ruiza. Meksyk osłabiony ofensywnie.
+- Kanada–BIH: Alphonso Davies **OUT** — kluczowy gracz Kanady poza składem na otwieracz.
+  Rynek wycenia Kanadę na -125 (szac. 52.7% po de-vig), ale nasza korekta sprowadza wygraną do ~47%.
+- Korea–Czechy: Bae Jun-ho wątpliwy, Cho Yu-min out, ale Son fit.
+- USA–Paragwaj: pełne składy; Paragwaj defensywny (ostatnie 4 mecze <3 goli).
+
+**Under 2.5 jako leitmotiv dnia.**
+We wszystkich 4 meczach rynek wycenia Under 2.5 jako wariant z lekką premią:
+Meksyk–RPA Under -148 (~56% de-vig), Kanada–BIH Under -144 (~57%), USA–Paragwaj lean Under.
+Nasze modele Poissona przy korektach kadrowych sugerują Under ≈ 62–68%.
+→ Rekomendujemy Under 2.5 jako podstawowy rynek STS w dniach z nieobecnymi gwiazdami.
+
+**Punkt do nauki (Meksyk Under 2.5 @ 1.65).**
+STS @ 1.65 vs. rynek FanDuel @1.676 → szac. edge ok. +2% (poniżej progu 5%).
+Bet był marginalny lub niedomiar; następnym razem weryfikować STS-specyficzny kurs przed wejściem.
+*Na przyszłość: sprawdź kurs STS.pl ZANIM logujesz zakład, nie bierz kursu z US-market jako pewnik.*
+
+**Kicktipp: potwierdzone 1:0 we wszystkich 4 otwieraczach.**
+Model Poissona daje 1:0 jako typ z najwyższym E(pkt) (ok. 1.35–1.46) dla każdego meczu.
+Jedyna alternatywa to 1:1, ale dopiero przy P(draw) ≥ 40–45% (nie osiągamy tego progu).
+
+**Operacyjnie.**
+- Delivery: github_action (Action wysyła SMTP po pushu).
+- 2 nowe typy STS dla 12.06 (Kanada Under 2.5 szac. edge ~15%, USA Under 2.5 szac. ~11%).
+- Łącznie 3 typy STS dzisiaj (w tym Mexico sprzed) — na granicy dziennego limitu 3.
+- USA–Paragwaj o 03:00 PL — jeśli nie chcesz grać o tej porze, pomiń ten zakład.
+
+---
+
 ## 2026-06-11 — v1.1 (kalibracja punktacji ligi)
 
 **Co ustaliliśmy.** Liga *Mamalova MŚ 2026* gra regułą **„9-tka" w wariancie turniejowym**
