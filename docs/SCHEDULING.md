@@ -7,8 +7,10 @@ uruchamia komendę `/briefing` w tym repozytorium. Nie potrzebujesz własnego se
 
 1. Wejdź na **claude.ai/code** (Claude Code on the web) i otwórz to repo (`wojnarex/Bukmaicher`).
 2. Utwórz **zaplanowany trigger** (scheduled session) — w ustawieniach sesji/triggerów wybierz:
-   - **harmonogram:** codziennie o godzinie z `config.delivery.send_time` (domyślnie 08:00),
-     w strefie `config.delivery.timezone` (Europe/Warsaw),
+   - **harmonogram:** codziennie ok. **07:45** w strefie Europe/Warsaw.
+     (Sesja najpierw *generuje* briefing i pushuje — to trwa kilka minut — a dopiero potem
+     GitHub Action wysyła maila. Start o 07:45 sprawia, że wiadomość ląduje ~08:00.
+     Jeśli nie przeszkadza Ci kilka minut po ósmej, ustaw po prostu 08:00.)
    - **branch:** ten, na którym pracujemy,
    - **prompt sesji:** dokładnie:
      ```
