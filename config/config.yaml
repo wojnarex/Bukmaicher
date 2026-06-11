@@ -22,11 +22,15 @@ delivery:
 focus:
   competition: "Mistrzostwa Świata 2026"
   competition_tag: "WC2026"        # krótki tag używany w historii/stanie
+  # WAŻNE: „dzień meczowy" liczymy w strefie GOSPODARZY (oba Ameryki), NIE po polsku.
+  # Dzięki temu mecz grany późnym wieczorem ET (w Polsce już po północy) trafia do
+  # właściwego dnia briefingu, zamiast wypaść poza zakresem.
+  schedule_timezone: "America/New_York"   # ET — referencyjny „dzień turnieju"
   # Reprezentacje, którym poświęcamy dodatkową uwagę (np. ["Polska"]).
   # Pusta lista = bez faworyzowania, analizujemy wszystkie mecze dnia.
   favorite_teams: []
-  # Ile dni do przodu typujemy na kicktippa (zwykle mecze z dziś + jutro,
-  # bo deadliny bywają wieczorem dnia poprzedniego).
+  # Ile dni turniejowych (ET) do przodu obejmujemy: dziś + tyle dni naprzód.
+  # Pozwala wyprzedzająco przeanalizować jutrzejsze mecze i zdążyć z deadline'ami kicktippa.
   lookahead_days: 2
 
 # --- Liga typerów na kicktippie ---------------------------------------------

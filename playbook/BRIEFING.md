@@ -15,7 +15,7 @@ Zasady naczelne:
 
 ## Krok 0 — Przygotowanie i kontekst
 
-1. Ustal „dziś" w strefie `delivery.timezone` (data + dzień tygodnia).
+1. Ustal „dziś" **turniejowe w strefie gospodarzy** `focus.schedule_timezone` (domyślnie America/New_York = ET) — bo MŚ 2026 grają w obu Amerykach. Mecze grupuj wg daty ET, NIE polskiej. Godziny w mailu podawaj i w ET, i w CEST. (Strefa `delivery.timezone` służy tylko do godziny wysyłki briefingu.)
 2. Wczytaj konfigurację: `Read config/config.yaml`.
 3. Wczytaj pamięć:
    - `state/strategy.md` — aktualna strategia i wnioski.
@@ -44,12 +44,20 @@ Dla każdego otwartego typu z `state_tool.py pending`, którego mecz już się o
 
 ---
 
-## Krok 2 — Mecze w zakresie
+## Krok 2 — Mecze w zakresie (UWAGA: strefa gospodarzy!)
 
-1. Znajdź mecze `focus.competition` na dziś oraz najbliższe `focus.lookahead_days` dni
-   (web search: terminarz + godziny w strefie `delivery.timezone`).
-2. Wypisz dla każdego: data, godzina (czas lokalny PL), faza/grupa, stadion, znaczenie.
-3. Zaznacz, dla których jest **deadline kicktippa** w najbliższych ~24h (te są priorytetem do typowania dziś).
+„Dzień meczowy" definiuje strefa `focus.schedule_timezone` (ET), a NIE polski kalendarz.
+Mecz z kick-offem np. 22:00 ET to wciąż „ten" dzień ET, choć w Polsce jest już po północy —
+**MUSI** być uwzględniony. Nigdy nie odrzucaj meczu tylko dlatego, że po CEST wypada „jutro".
+
+1. Wyznacz zakres dat **ET**: od dziś-ET do dziś-ET + `focus.lookahead_days` włącznie.
+   Znajdź **wszystkie** mecze `focus.competition` w tym zakresie (web search po datach ET).
+   Sprawdź pełną rozpiskę (różne grupy i strefy gospodarzy: ET/CT/MT/PT), żeby nie pominąć
+   żadnego meczu — np. późnego spotkania w Toronto czy Los Angeles. Policz, ile meczów ma być,
+   i upewnij się, że masz komplet.
+2. Dla każdego meczu podaj: data ET, **godzina w ET oraz w CEST**, faza/grupa, stadion, znaczenie.
+3. Zaznacz **deadline kicktippa** (= moment kick-offu) i które typy trzeba postawić już dziś
+   (deadline w ~24–48h). Mecze z jutra (lookahead) zapowiadaj wyprzedzająco.
 4. Jeśli `focus.favorite_teams` niepuste — wyróżnij mecze tych drużyn.
 
 ---
