@@ -1,0 +1,82 @@
+# =============================================================================
+#  Bukmaicher — konfiguracja codziennego briefingu typerskiego
+# =============================================================================
+#  To jedyny plik, który zwykle edytujesz. Wszystko poniżej steruje tym, co bot
+#  bada, jak typuje i gdzie wysyła podsumowanie. Po zmianie zapisz i zacommituj.
+# =============================================================================
+
+# --- Gdzie i kiedy ma trafiać briefing -------------------------------------
+delivery:
+  recipient: "mwmw91@gmail.com"   # adres, na który leci briefing
+  mode: "draft"                    # "draft" = wersja robocza w Gmailu (działa od ręki)
+                                   # "smtp"  = realna wysyłka na inbox (wymaga hasła aplikacji, patrz docs/DELIVERY.md)
+  gmail_label: "Bukmaicher"        # etykieta nakładana na draft/wiadomość dla łatwego filtrowania
+  timezone: "Europe/Warsaw"        # strefa czasowa do godzin meczów i deadline'ów
+  send_time: "08:00"               # o której rano ma się odpalać sesja (ustawiasz w triggerze, patrz docs/SCHEDULING.md)
+  language: "pl"                   # język briefingu
+
+# --- Na czym się skupiamy ----------------------------------------------------
+focus:
+  competition: "Mistrzostwa Świata 2026"
+  competition_tag: "WC2026"        # krótki tag używany w historii/stanie
+  # Reprezentacje, którym poświęcamy dodatkową uwagę (np. ["Polska"]).
+  # Pusta lista = bez faworyzowania, analizujemy wszystkie mecze dnia.
+  favorite_teams: []
+  # Ile dni do przodu typujemy na kicktippa (zwykle mecze z dziś + jutro,
+  # bo deadliny bywają wieczorem dnia poprzedniego).
+  lookahead_days: 2
+
+# --- Liga typerów na kicktippie ---------------------------------------------
+kicktipp:
+  league_name: "TODO — wpisz nazwę naszej ligi"
+  league_url: "TODO — wklej link do ligi na kicktipp.de (np. https://www.kicktipp.de/nazwa-ligi/)"
+  # Zasady punktacji Twojej ligi. To KLUCZOWE — bot dobiera dokładne wyniki tak,
+  # by maksymalizować oczekiwaną liczbę punktów wg poniższych wag.
+  # Domyślne wartości to częsty układ kicktippa; podmień na realne z waszej ligi.
+  scoring:
+    exact: 4        # punkty za trafiony dokładny wynik (np. typ 2:1, wynik 2:1)
+    goal_diff: 3    # punkty za trafioną różnicę bramek przy nierozstrzygniętej (np. typ 2:1, wynik 3:2)
+    tendency: 2     # punkty za trafioną tendencję 1/X/2 (zwycięzca/remis)
+    # Niektóre ligi dają bonusy (np. za remis, mnożniki w fazie pucharowej).
+    # Dopisz je tutaj słownie, a bot je uwzględni:
+    notes: ""
+  # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
+  include_standings: true
+
+# --- Zakłady na STS (tylko rekomendacje, Ty wpisujesz ręcznie) ---------------
+sts:
+  enabled: true
+  bankroll_currency: "PLN"
+  bankroll_start: 1000             # wirtualny bankroll na potrzeby sizowania stawek
+  unit_pct: 0.02                   # 1 jednostka = 2% bankrolla (czyli 20 zł przy 1000)
+  # Bot rekomenduje zakład tylko, gdy szacowana przewaga (edge) >= value_threshold.
+  value_threshold: 0.05            # 5% przewagi nad kursem (po usunięciu marży bukmachera)
+  max_bets_per_day: 3              # twardy limit liczby typów dziennie
+  max_stake_units: 2.0             # maks. stawka na pojedynczy typ (w jednostkach)
+  min_odds: 1.50
+  max_odds: 6.00
+  # Rynki, które bierzemy pod uwagę (bot szuka value tylko w tych):
+  markets: ["1x2", "double_chance", "dnb", "ou25", "btts", "ah"]
+  risk_profile: "medium"           # low | medium | high — wpływa na ostrożność sizowania
+  # Czy dopuszczamy kupony łączone (akumulatory). Zwykle NIE (zabijają EV).
+  allow_accumulators: false
+
+# --- Jak prowadzimy research (web search) ------------------------------------
+research:
+  # Domeny preferowane przy szukaniu kursów / statystyk / newsów kadrowych.
+  preferred_odds_sources: ["oddschecker.com", "espn.com", "sts.pl"]
+  preferred_stats_sources: ["theanalyst.com", "fbref.com", "espn.com", "whoscored.com"]
+  preferred_news_sources: ["bbc.com", "skysports.com", "aljazeera.com", "espn.com"]
+  # xG i głębokie staty bywają za paywallem — bot ma korzystać z przybliżeń
+  # i ZAWSZE oznaczać, co jest twardą daną, a co estymacją.
+  mark_estimates: true
+
+# --- Bezpieczeństwo / odpowiedzialna gra ------------------------------------
+responsible_gambling:
+  enabled: true
+  # Stała stopka w mailu + twarde limity. Gra tylko 18+, STS to licencjonowany
+  # bukmacher w PL. Bot nigdy nie namawia do gry ponad ustalony bankroll.
+  monthly_loss_limit_pct: 0.30     # jeśli miesięczna strata przekroczy 30% bankrolla — bot odpuszcza STS i o tym pisze
+  footer: >
+    Gra hazardowa wiąże się z ryzykiem. Tylko 18+. Typuj wyłącznie w ramach
+    ustalonego budżetu. To rekomendacje analityczne, nie gwarancja wyniku.

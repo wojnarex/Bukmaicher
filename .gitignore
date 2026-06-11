@@ -1,0 +1,21 @@
+# Sekrety — NIGDY nie commitujemy
+.env
+.env.*
+*secret*
+*credentials*
+*app_password*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Tymczasowe pliki briefingu
+/tmp/
+*.tmp
+briefing_*.html
+
+# System
+.DS_Store
+Thumbs.db
