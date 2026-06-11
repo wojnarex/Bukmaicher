@@ -8,10 +8,11 @@
 # --- Gdzie i kiedy ma trafiać briefing -------------------------------------
 delivery:
   recipient: "mwmw91@gmail.com"   # adres, na który leci briefing
-  mode: "smtp"                     # "smtp" = realna wysyłka na inbox (wymaga hasła aplikacji, patrz docs/DELIVERY.md)
-                                   # "draft" = wersja robocza w Gmailu (fallback; działa bez konfiguracji)
-                                   # UWAGA: dopóki nie ustawisz sekretów GMAIL_ADDRESS/GMAIL_APP_PASSWORD,
-                                   # bot automatycznie zrobi fallback na draft, więc briefing i tak przyjdzie.
+  mode: "github_action"            # "github_action" = realny inbox: Claude zapisuje maila do outbox/ i pushuje,
+                                   #                    a GitHub Action wysyła go SMTP-em (bezpośredni SMTP z sandboxa jest zablokowany).
+                                   # "draft" = wersja robocza w Gmailu (zero setupu, ale bez powiadomienia na telefon).
+                                   # Sekrety do realnej wysyłki ustawiasz w GitHub: Settings > Secrets and variables > Actions
+                                   # (GMAIL_ADDRESS, GMAIL_APP_PASSWORD). Instrukcja: docs/DELIVERY.md.
   gmail_label: "Bukmaicher"        # etykieta nakładana na draft/wiadomość dla łatwego filtrowania
   timezone: "Europe/Warsaw"        # strefa czasowa do godzin meczów i deadline'ów
   send_time: "08:00"               # o której rano ma się odpalać sesja (ustawiasz w triggerze, patrz docs/SCHEDULING.md)

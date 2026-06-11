@@ -32,7 +32,7 @@ trigger (co rano) ──▶ /briefing ──▶ playbook
                                      ├─ web search: newsy, kursy, staty
                                      ├─ state_tool.py: rozlicz + zapisz typy + bankroll
                                      ├─ strategy.md: aktualizacja strategii
-                                     └─ Gmail: briefing (draft/SMTP) + git push
+                                     └─ outbox/ + git push ─▶ GitHub Action ─▶ Gmail (inbox)
 ```
 
 ## Szybki start
@@ -57,7 +57,7 @@ bankroll, profil ryzyka, limity odpowiedzialnej gry). Strategię bot rozwija sam
 
 - **Dane z web searcha** — świetne na newsy/kursy/formę; głębokie xG bywa za paywallem,
   więc część statystyk to oznaczone estymacje („szac.").
-- **Gmail = draft** domyślnie (konektor nie ma „wyślij"); realny inbox przez opcjonalny SMTP.
+- **Realny inbox** = GitHub Action wysyła maila (bezpośredni SMTP z sandboxa jest zablokowany); albo tryb `draft` bez setupu.
 - **Pamięć w gicie, nie w Arkuszach** (konektor Drive nie dopisuje wierszy) — eksport CSV do Arkuszy
   jest opisany w [`docs/SHEETS.md`](docs/SHEETS.md).
 

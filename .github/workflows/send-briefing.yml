@@ -1,0 +1,38 @@
+name: Wyślij briefing (Bukmaicher)
+
+# Realna wysyłka briefingu na Gmaila. Uruchamia się, gdy poranna sesja Claude
+# zapisze nowego maila do outbox/briefing-latest.html i zrobi push. Można też
+# odpalić ręcznie (zakładka Actions -> Run workflow).
+#
+# Dlaczego GitHub Action, a nie bezpośredni SMTP z sesji Claude?
+# Środowisko Claude Code on the web blokuje wychodzący ruch SMTP. Runner GitHuba nie,
+# więc to on wysyła e-mail. Sekrety (hasło aplikacji Gmaila) trzymamy w GitHub Secrets.
+#
+# Wymagane sekrety repo (Settings > Secrets and variables > Actions):
+#   GMAIL_ADDRESS       np. mwmw91@gmail.com
+#   GMAIL_APP_PASSWORD  16-znakowe hasło aplikacji Google (bez spacji)
+
+on:
+  push:
+    paths:
+      - 'outbox/briefing-latest.html'
+  workflow_dispatch:
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Wyślij e-mail z briefingiem
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: |
+          if [ -z "$GMAIL_ADDRESS" ] || [ -z "$GMAIL_APP_PASSWORD" ]; then
+            echo "::error::Brak sekretów GMAIL_ADDRESS / GMAIL_APP_PASSWORD. Dodaj je w Settings > Secrets and variables > Actions."
+            exit 1
+          fi
+          test -f outbox/briefing-latest.html || { echo "::error::Brak outbox/briefing-latest.html"; exit 1; }
+          SUBJECT="$(head -n1 outbox/briefing-latest.subject 2>/dev/null || echo 'Bukmaicher — briefing')"
+          echo "Wysyłam: $SUBJECT  ->  $GMAIL_ADDRESS"
+          python3 scripts/send_email.py --to "$GMAIL_ADDRESS" --subject "$SUBJECT" --html-file outbox/briefing-latest.html

@@ -157,10 +157,13 @@ Zapisz każdy rekomendowany zakład przez `state_tool.py add-pick` (type=sts, z 
 Trzymaj ton rzeczowy i zwięzły — to ma się czytać przy porannej kawie.
 
 ### 9b. Dostarcz wg `delivery.mode`:
-- `draft` (domyślnie): `mcp__Gmail__create_draft` na `delivery.recipient` (temat+htmlBody),
+- `github_action` (domyślnie — realny inbox): zapisz HTML maila do `outbox/briefing-latest.html`
+  oraz temat (jedna linia) do `outbox/briefing-latest.subject`. Faktyczną wysyłką zajmie się
+  GitHub Action (`.github/workflows/send-briefing.yml`) zaraz po pushu w kroku 9c.
+  ⚠️ Bezpośredni SMTP z tego środowiska jest zablokowany — dlatego wysyła Action (patrz `docs/DELIVERY.md`).
+  Opcjonalnie utwórz też draft w Gmailu (`mcp__Gmail__create_draft`) jako podgląd od ręki.
+- `draft`: `mcp__Gmail__create_draft` na `delivery.recipient` (temat+htmlBody),
   potem nałóż etykietę `delivery.gmail_label` (utwórz etykietę, jeśli nie istnieje).
-- `smtp`: uruchom `python3 scripts/send_email.py` (patrz `docs/DELIVERY.md`); jeśli brak
-  sekretów/sieci — zrób fallback na `draft` i zaznacz to w logu.
 
 ### 9c. Zapisz stan i zacommituj:
 1. Upewnij się, że wszystkie dzisiejsze typy są w historii (`state_tool.py add-pick`).
