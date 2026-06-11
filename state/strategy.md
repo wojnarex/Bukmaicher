@@ -5,6 +5,14 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
+
+Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
+mówiące o „STS" odnoszą się teraz do Fortuny — to samo podejście i limity, inny dostawca
+kursów. W `state/history.jsonl` zakłady realne mają teraz `type: "fortuna"`.
+
+---
+
 ## 2026-06-11 — v1.1 (kalibracja punktacji ligi)
 
 **Co ustaliliśmy.** Liga *Mamalova MŚ 2026* gra regułą **„9-tka" w wariancie turniejowym**
@@ -42,7 +50,7 @@ motywacja, warunki). Bez powodu = idziemy z konsensusem.
   mecz wyrównany / niski O/U → 1:1 lub 1:0; wysoki O/U + faworyt → 2:1 / 2:0.
 - Faza grupowa MŚ bywa zachowawcza (drużyny nie chcą stracić) → uważać na przeszacowanie bramek.
 
-**STS (realne value, tylko rekomendacje).**
+**Fortuna (realne value, tylko rekomendacje).**
 - Zakład tylko przy edge ≥ 5% i kursie w rozsądnym przedziale (1.50–6.00).
 - Sizing ostrożny (ułamkowy Kelly), maks. 2 jednostki na typ, maks. 3 typy dziennie.
 - Preferujemy rynki, które łatwiej modelować z newsów: 1X2, double chance, O/U 2.5, DNB.
@@ -51,10 +59,10 @@ motywacja, warunki). Bez powodu = idziemy z konsensusem.
 
 **Bankroll & dyscyplina.**
 - Start: 1000 PLN wirtualnie, 1u = 2% (20 PLN).
-- Twardy stop: jeśli miesięczna strata > 30% bankrolla — pauza na STS, tylko kicktipp.
+- Twardy stop: jeśli miesięczna strata > 30% bankrolla — pauza na zakłady, tylko kicktipp.
 - Nigdy nie podnosimy stawek, żeby „odrobić" stratę (anty-tilt).
 
 **Czego się uczymy (do weryfikacji w kolejnych dniach).**
 - Czy nasze prawdopodobieństwa są skalibrowane (czy typy ~60% wchodzą ~60% razy?).
 - Czy w kicktippie nie przepalamy punktów na zbyt odważne wyniki.
-- Które rynki STS realnie dają nam value, a które tylko wariancję.
+- Które rynki u Fortuny realnie dają nam value, a które tylko wariancję.

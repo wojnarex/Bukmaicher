@@ -51,8 +51,8 @@ kicktipp:
   # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
   include_standings: true
 
-# --- Zakłady na STS (tylko rekomendacje, Ty wpisujesz ręcznie) ---------------
-sts:
+# --- Zakłady u Fortuny (tylko rekomendacje, Ty wpisujesz ręcznie) ------------
+fortuna:
   enabled: true
   bankroll_currency: "PLN"
   bankroll_start: 1000             # wirtualny bankroll na potrzeby sizowania stawek
@@ -72,7 +72,7 @@ sts:
 # --- Jak prowadzimy research (web search) ------------------------------------
 research:
   # Domeny preferowane przy szukaniu kursów / statystyk / newsów kadrowych.
-  preferred_odds_sources: ["oddschecker.com", "espn.com", "sts.pl"]
+  preferred_odds_sources: ["oddschecker.com", "espn.com", "efortuna.pl"]
   preferred_stats_sources: ["theanalyst.com", "fbref.com", "espn.com", "whoscored.com"]
   preferred_news_sources: ["bbc.com", "skysports.com", "aljazeera.com", "espn.com"]
   # xG i głębokie staty bywają za paywallem — bot ma korzystać z przybliżeń
@@ -82,9 +82,9 @@ research:
 # --- Bezpieczeństwo / odpowiedzialna gra ------------------------------------
 responsible_gambling:
   enabled: true
-  # Stała stopka w mailu + twarde limity. Gra tylko 18+, STS to licencjonowany
+  # Stała stopka w mailu + twarde limity. Gra tylko 18+, Fortuna to licencjonowany
   # bukmacher w PL. Bot nigdy nie namawia do gry ponad ustalony bankroll.
-  monthly_loss_limit_pct: 0.30     # jeśli miesięczna strata przekroczy 30% bankrolla — bot odpuszcza STS i o tym pisze
+  monthly_loss_limit_pct: 0.30     # jeśli miesięczna strata przekroczy 30% bankrolla — bot odpuszcza zakłady i o tym pisze
   footer: >
     Gra hazardowa wiąże się z ryzykiem. Tylko 18+. Typuj wyłącznie w ramach
     ustalonego budżetu. To rekomendacje analityczne, nie gwarancja wyniku.

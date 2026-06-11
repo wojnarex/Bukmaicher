@@ -136,7 +136,7 @@ def cmd_add_pick(args) -> None:
             data[key] = val
 
     if not data.get("match") or not data.get("type"):
-        sys.exit("BŁĄD: 'match' i 'type' są wymagane (kicktipp|sts).")
+        sys.exit("BŁĄD: 'match' i 'type' są wymagane (kicktipp|fortuna).")
 
     today = _today()
     rec = {k: None for k in FIELDS}
@@ -184,7 +184,7 @@ def cmd_settle(args) -> None:
 
     # Aktualizacja bankrolla / punktów.
     bk = load_bankroll()
-    if args.pnl is not None and rec.get("type") == "sts":
+    if args.pnl is not None and rec.get("type") == "fortuna":
         bk["current_bankroll"] = round(float(bk.get("current_bankroll", 0)) + float(args.pnl), 2)
         bk["bets_settled"] = int(bk.get("bets_settled", 0)) + 1
     if args.points is not None and rec.get("type") == "kicktipp":
@@ -228,7 +228,7 @@ def cmd_bankroll(args) -> None:
     print(f"Bankroll: {now:.2f} {cur} (start {start:.2f}, zmiana {now-start:+.2f}, ROI {roi:+.1f}%)")
     print(f"Jednostka (1u): {now*float(bk.get('unit_pct',0.02)):.2f} {cur}  [{float(bk.get('unit_pct',0.02))*100:.1f}% bankrolla]")
     print(f"Punkty kicktipp łącznie: {bk.get('kicktipp_points_total', 0)}")
-    print(f"Rozliczone zakłady STS: {bk.get('bets_settled', 0)} | aktualizacja: {bk.get('updated_at')}")
+    print(f"Rozliczone zakłady Fortuna: {bk.get('bets_settled', 0)} | aktualizacja: {bk.get('updated_at')}")
 
 
 def cmd_show(args) -> None:
@@ -270,7 +270,7 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--status", required=True, choices=["won", "lost", "void", "partial"])
     sp.add_argument("--result", help="faktyczny wynik meczu, np. '2:1'")
     sp.add_argument("--points", type=int, help="punkty kicktipp")
-    sp.add_argument("--pnl", type=float, help="zysk/strata STS w walucie bankrolla")
+    sp.add_argument("--pnl", type=float, help="zysk/strata u Fortuny w walucie bankrolla")
     sp.set_defaults(func=cmd_settle)
 
     pp = sub.add_parser("pending", help="pokaż otwarte typy")

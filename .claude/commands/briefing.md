@@ -12,7 +12,7 @@ Zanim zaczniesz:
 Następnie przejdź kroki 0–9 z playbooka:
 - najpierw **rozlicz** otwarte typy z poprzednich dni (krok 1),
 - zbadaj mecze, newsy, staty, kursy (kroki 2–5),
-- zaproponuj **typy na kicktippa** i **value bety STS** wg zasad z configa (kroki 6–7),
+- zaproponuj **typy na kicktippa** i **value bety Fortuna** wg zasad z configa (kroki 6–7),
 - zaktualizuj **strategię** (krok 8),
 - złóż i dostarcz **briefing e-mail** wg `delivery.mode`, zapisz stan przez `state_tool.py`,
   odśwież CSV i **zacommituj + wypchnij** zmiany (krok 9).

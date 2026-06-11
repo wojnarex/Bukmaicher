@@ -30,7 +30,7 @@ Zasady naczelne:
 Dla każdego otwartego typu z `state_tool.py pending`, którego mecz już się odbył:
 1. Web search o wynik końcowy meczu (twarda dana — podaj źródło).
 2. Dla typów **kicktipp**: policz zdobyte punkty wg `kicktipp.scoring` (exact/goal_diff/tendency).
-3. Dla typów **STS**: ustal czy wygrany/przegrany/zwrot i policz P/L:
+3. Dla zakładów **Fortuna**: ustal czy wygrany/przegrany/zwrot i policz P/L:
    - wygrana: `stake*(odds-1)`; przegrana: `-stake`; zwrot (void): `0`.
 4. Zapisz rozliczenie:
    ```
@@ -86,7 +86,7 @@ Skondensuj do tego, co zmienia ocenę (a nie ściana liczb).
 
 ## Krok 5 — Kursy rynkowe
 
-Dla każdego meczu zbierz aktualne kursy (preferuj `research.preferred_odds_sources`, w tym `sts.pl`):
+Dla każdego meczu zbierz aktualne kursy (preferuj `research.preferred_odds_sources`, w tym `efortuna.pl`):
 - 1X2 (1/X/2), Over/Under 2.5, BTTS; w razie potrzeby double chance / DNB / handicap.
 - Zapisz źródło i przelicz kursy na **prawdopodobieństwa po usunięciu marży** (de-vig):
   - implied = 1/kurs; suma implied = overround; prob = implied / overround.
@@ -116,13 +116,13 @@ Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_sc
 
 ---
 
-## Krok 7 — Value bety na STS (jeśli `sts.enabled`)
+## Krok 7 — Value bety u Fortuny (jeśli `fortuna.enabled`)
 
-Dla każdego rynku z `sts.markets` w meczach dnia:
-1. Porównaj TWOJE prawdopodobieństwo (z modelu/newsów) z kursem STS po de-vig.
+Dla każdego rynku z `fortuna.markets` w meczach dnia:
+1. Porównaj TWOJE prawdopodobieństwo (z modelu/newsów) z kursem Fortuny po de-vig.
 2. Policz **edge** = prob_twoje × kurs − 1 (czyli oczekiwany zwrot na 1 zł).
 3. Rekomenduj zakład TYLKO gdy:
-   - edge ≥ `sts.value_threshold`, oraz
+   - edge ≥ `fortuna.value_threshold`, oraz
    - kurs w `[min_odds, max_odds]`, oraz
    - nie przekraczasz `max_bets_per_day`.
 4. Sizing stawki (ostrożny, ułamkowy Kelly dopasowany do `risk_profile`):
@@ -132,7 +132,7 @@ Dla każdego rynku z `sts.markets` w meczach dnia:
 5. Respektuj `responsible_gambling`: jeśli miesięczna strata > `monthly_loss_limit_pct`
    bankrolla — **nie rekomenduj** nowych zakładów, napisz o tym w mailu.
 6. Brak value? To jest OK i częste — napisz „dziś brak zakładów spełniających próg".
-Zapisz każdy rekomendowany zakład przez `state_tool.py add-pick` (type=sts, z odds/stake/edge).
+Zapisz każdy rekomendowany zakład przez `state_tool.py add-pick` (type=fortuna, z odds/stake/edge).
 
 ---
 
@@ -154,10 +154,10 @@ Zapisz każdy rekomendowany zakład przez `state_tool.py add-pick` (type=sts, z 
 - **Temat:** `⚽ Bukmaicher — briefing {DATA} ({liczba meczów} mecze, {liczba typów} typy)`
 - **Nagłówek:** data, skrót dnia.
 - **📊 Rozliczenie wczoraj:** typy + wynik + punkty/PL + krótki wniosek (lub „brak").
-- **💰 Bankroll & forma:** stan bankrolla, suma punktów kicktipp, bilans STS (np. ostatnie 7 dni).
+- **💰 Bankroll & forma:** stan bankrolla, suma punktów kicktipp, bilans Fortuna (np. ostatnie 7 dni).
 - **🗓️ Mecze dnia:** lista z godzinami PL i kontekstem (1–2 zdania/mecz).
 - **🎯 Typy na kicktippa:** tabela `Mecz | Typ | Uzasadnienie (1 zdanie) | szac. oczek. pkt`.
-- **🔎 Value bety STS:** tabela `Mecz | Rynek | Typ | Kurs | Stawka | Edge | Uzasadnienie` (lub „brak value dziś").
+- **🔎 Value bety Fortuna:** tabela `Mecz | Rynek | Typ | Kurs | Stawka | Edge | Uzasadnienie` (lub „brak value dziś").
 - **🧠 Strategia:** 2–3 zdania co kontynuujemy/zmieniamy i dlaczego.
 - **⚙️ Konfiguracja do dograna:** tylko jeśli w configu są pola „TODO".
 - **Stopka:** `responsible_gambling.footer`.
