@@ -8,8 +8,10 @@
 # --- Gdzie i kiedy ma trafiać briefing -------------------------------------
 delivery:
   recipient: "mwmw91@gmail.com"   # adres, na który leci briefing
-  mode: "draft"                    # "draft" = wersja robocza w Gmailu (działa od ręki)
-                                   # "smtp"  = realna wysyłka na inbox (wymaga hasła aplikacji, patrz docs/DELIVERY.md)
+  mode: "smtp"                     # "smtp" = realna wysyłka na inbox (wymaga hasła aplikacji, patrz docs/DELIVERY.md)
+                                   # "draft" = wersja robocza w Gmailu (fallback; działa bez konfiguracji)
+                                   # UWAGA: dopóki nie ustawisz sekretów GMAIL_ADDRESS/GMAIL_APP_PASSWORD,
+                                   # bot automatycznie zrobi fallback na draft, więc briefing i tak przyjdzie.
   gmail_label: "Bukmaicher"        # etykieta nakładana na draft/wiadomość dla łatwego filtrowania
   timezone: "Europe/Warsaw"        # strefa czasowa do godzin meczów i deadline'ów
   send_time: "08:00"               # o której rano ma się odpalać sesja (ustawiasz w triggerze, patrz docs/SCHEDULING.md)
@@ -28,18 +30,19 @@ focus:
 
 # --- Liga typerów na kicktippie ---------------------------------------------
 kicktipp:
-  league_name: "TODO — wpisz nazwę naszej ligi"
-  league_url: "TODO — wklej link do ligi na kicktipp.de (np. https://www.kicktipp.de/nazwa-ligi/)"
-  # Zasady punktacji Twojej ligi. To KLUCZOWE — bot dobiera dokładne wyniki tak,
-  # by maksymalizować oczekiwaną liczbę punktów wg poniższych wag.
-  # Domyślne wartości to częsty układ kicktippa; podmień na realne z waszej ligi.
+  league_name: "Mamalova MŚ 2026"
+  league_url: "https://www.kicktipp.pl/mamalova-ms-2026/"
+  # Reguła "9-tka", ZNEUTRALIZOWANA dla turnieju (MŚ — boiska neutralne, brak podziału
+  # home/away, więc punkty za wygraną gospodarza i gościa są identyczne).
+  # KLUCZOWE: punkty zależą od TYPU WYNIKU (wygrana vs remis). Bot dobiera dokładny
+  # wynik tak, by maksymalizować oczekiwaną liczbę punktów wg poniższych wag.
   scoring:
-    exact: 4        # punkty za trafiony dokładny wynik (np. typ 2:1, wynik 2:1)
-    goal_diff: 3    # punkty za trafioną różnicę bramek przy nierozstrzygniętej (np. typ 2:1, wynik 3:2)
-    tendency: 2     # punkty za trafioną tendencję 1/X/2 (zwycięzca/remis)
-    # Niektóre ligi dają bonusy (np. za remis, mnożniki w fazie pucharowej).
-    # Dopisz je tutaj słownie, a bot je uwzględni:
-    notes: ""
+    rule: "9-tka (turniej / boiska neutralne)"
+    win:  { tendency: 2, goal_diff: 3, exact: 4 }   # dowolna wygrana (1 lub 2)
+    draw: { tendency: 3,               exact: 4 }   # remis — BRAK tieru różnicy bramek (różnica zawsze 0)
+    # Uwaga strategiczna: remis na tendencji = 3 pkt (więcej niż 2 za wygraną),
+    # więc w meczach ~50/50 typowanie remisu jest relatywnie bardziej opłacalne.
+    notes: "Źródło: https://www.kicktipp.pl/mamalova-ms-2026/punkteregelerklaerung/"
   # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
   include_standings: true
 

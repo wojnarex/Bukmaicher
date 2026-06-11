@@ -96,9 +96,13 @@ Metoda (dla każdego meczu z deadlinem):
    (λ_dom, λ_goście). Skoryguj o newsy/staty z kroków 3–4.
 2. Zbuduj siatkę prawdopodobieństw wyników (model Poissona po λ, wyniki 0:0…5:5).
 3. Dla każdego kandydata na typ policz **oczekiwane punkty** =
-   Σ P(wynik) × punkty(typ, wynik) wg wag exact/goal_diff/tendency.
-4. Wybierz typ o **najwyższych oczekiwanych punktach** (zwykle wynik bliski medianie,
-   np. 1:0 / 2:1 dla lekkich faworytów, 1:1 dla wyrównanych — ale liczą się wagi z configa!).
+   Σ P(wynik) × punkty(typ, wynik), używając wag **per typ wyniku** z `kicktipp.scoring`:
+   - osobne wagi dla **wygranej** (`win.tendency/goal_diff/exact`) i **remisu** (`draw.tendency/exact`);
+   - remis **nie ma** tieru różnicy bramek (różnica zawsze 0);
+   - jeśli liga ma asymetrię home/away — przy turnieju na boiskach neutralnych traktuj ją symetrycznie.
+4. Wybierz typ o **najwyższych oczekiwanych punktach**. Wskazówka dla reguły „9-tka":
+   remis na tendencji bywa wyżej punktowany niż wygrana (3 vs 2), więc w meczach ~50/50
+   **częściej opłaca się typować remis** niż przy symetrycznej punktacji.
 5. Sanity-check zdrowym rozsądkiem i newsami; jeśli coś zgrzyta — opisz dlaczego.
 Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_score).
 
@@ -176,5 +180,5 @@ Trzymaj ton rzeczowy i zwięzły — to ma się czytać przy porannej kawie.
 - **fair odds:** 1 / prob.
 - **edge (value):** prob_twoje × kurs − 1.
 - **Poisson:** P(k goli) = e^(−λ) · λ^k / k!  → siatkę P(i:j)=P_dom(i)·P_gosc(j).
-- **oczek. punkty kicktipp(typ):** Σ_{i,j} P(i:j) × punkty(typ vs i:j).
+- **oczek. punkty kicktipp(typ):** Σ_{i,j} P(i:j) × punkty(typ vs i:j), wagi **per typ wyniku** (wygrana/remis) z `kicktipp.scoring`.
 - **Kelly (ułamkowy):** f* = edge / (kurs − 1); stawka = bankroll × f* × frakcja_ryzyka (np. 0.25–0.5).

@@ -5,6 +5,29 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-11 — v1.1 (kalibracja punktacji ligi)
+
+**Co ustaliliśmy.** Liga *Mamalova MŚ 2026* gra regułą **„9-tka" w wariancie turniejowym**
+(boiska neutralne → brak home/away). Realne wagi:
+- **wygrana:** tendencja 2 / różnica bramek 3 / dokładny wynik 4,
+- **remis:** tendencja 3 / dokładny wynik 4 (bez tieru różnicy bramek).
+
+**Wniosek strategiczny (ważny).** Remis na samej tendencji daje **3 pkt**, czyli więcej niż
+**2 pkt** za trafioną tendencję wygranej. Dokładny wynik jest tak samo wart (4) dla obu.
+Efekt: w meczach blisko 50/50 (a w fazie grupowej MŚ jest ich sporo) **typ na remis jest
+relatywnie bardziej opłacalny** niż przy symetrycznej skali — częściej wybieraj 1:1 / 0:0,
+gdy rynek nie wskazuje wyraźnego faworyta. Przy wyraźnym faworycie nadal rządzi wąska wygrana
+(1:0 / 2:1), bo to największy kubełek tendencji + szansa na różnicę bramek.
+
+**Sprawdzenie na dziś (11.06).** Po przeliczeniu pod 9-tkę typy bez zmian: Meksyk–RPA **1:0**
+i Korea–Czechy **1:0** wciąż maksymalizują oczekiwane punkty (faworyci na tyle wyraźni, że
+wygrana > remis). Korea–Czechy było najbliżej progu remisu.
+
+**Operacyjnie.** Dostarczanie przełączone na **SMTP** (realny inbox) — do czasu ustawienia
+sekretów Gmaila bot robi fallback na draft.
+
+---
+
 ## 2026-06-11 — v1 (założenia startowe)
 
 **Filozofia.** Rynek (kursy bukmacherów po usunięciu marży) jest naszym punktem
