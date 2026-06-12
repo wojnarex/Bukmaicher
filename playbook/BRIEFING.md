@@ -100,18 +100,19 @@ Dla każdego meczu zbierz aktualne kursy (preferuj `research.preferred_odds_sour
 Cel: **maksymalizować oczekiwane punkty** wg `kicktipp.scoring`, a nie zgadywać „ładny wynik".
 
 Metoda (dla każdego meczu z deadlinem):
-1. Z kursów 1X2 + O/U 2.5 oszacuj **oczekiwane bramki** każdej drużyny
-   (λ_dom, λ_goście). Skoryguj o newsy/staty z kroków 3–4.
-2. Zbuduj siatkę prawdopodobieństw wyników (model Poissona po λ, wyniki 0:0…5:5).
-3. Dla każdego kandydata na typ policz **oczekiwane punkty** =
-   Σ P(wynik) × punkty(typ, wynik), używając wag **per typ wyniku** z `kicktipp.scoring`:
-   - osobne wagi dla **wygranej** (`win.tendency/goal_diff/exact`) i **remisu** (`draw.tendency/exact`);
-   - remis **nie ma** tieru różnicy bramek (różnica zawsze 0);
-   - jeśli liga ma asymetrię home/away — przy turnieju na boiskach neutralnych traktuj ją symetrycznie.
-4. Wybierz typ o **najwyższych oczekiwanych punktach**. Wskazówka dla reguły „9-tka":
-   remis na tendencji bywa wyżej punktowany niż wygrana (3 vs 2), więc w meczach ~50/50
-   **częściej opłaca się typować remis** niż przy symetrycznej punktacji.
-5. Sanity-check zdrowym rozsądkiem i newsami; jeśli coś zgrzyta — opisz dlaczego.
+1. Z kursów oszacuj **oczekiwane bramki** drużyn (λ_dom, λ_goście). **KALIBRACJA (ważne!):**
+   suma λ ≈ rynkowy total z linii O/U (po de-vig), a podział wg przewagi z 1X2 (faworyt = większa λ).
+   Dopiero potem koryguj o newsy/staty (kroki 3–4). Bez tego model systematycznie zaniża bramki i typuje 1:0.
+2. Zbuduj siatkę prawdopodobieństw wyników (Poisson po λ, 0:0…5:5).
+3. Dla każdego kandydata policz **oczekiwane punkty** = Σ P(wynik) × punkty(typ, wynik),
+   wagi **per typ wyniku** z `kicktipp.scoring`: osobno **wygrana** (tendency/goal_diff/exact)
+   i **remis** (tendency/exact; remis bez tieru różnicy bramek). Turniej = symetria home/away.
+4. Wybierz typ o **najwyższych oczekiwanych punktach** — niech zdecyduje policzone EV, NIE nawyk.
+   Profil meczu rządzi typem (unikaj monotonnego 1:0):
+   - mecz wyrównany → zwykle **1:1** (a „9-tka" premiuje remis: tendency 3 > 2, więc tym częściej);
+   - umiarkowany faworyt + niski O/U → **1:0**;
+   - mocny faworyt lub wysoki O/U → **2:1 / 2:0**; duża przewaga + dużo bramek → nawet 3:1.
+5. Raportuj **top-2 typy + ich oczekiwane punkty** (widać margines decyzji) i zrób sanity-check newsami.
 Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_score).
 
 ---
