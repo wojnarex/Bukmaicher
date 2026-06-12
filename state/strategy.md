@@ -5,6 +5,25 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-12 — v1.3 (wnioski z dnia 1 turnieju)
+
+**Wyniki 11.06:** Meksyk 2:0 RPA, Korea 2:1 Czechy.
+Kicktipp: +2 pkt (Meksyk — tendencja) + 3 pkt (Korea — różnica bramek) = **5 pkt łącznie**.
+Fortuna: Under 2.5 Meksyk–RPA (wygrana +6.50 PLN, bankroll → 1006.50 PLN).
+
+**Wnioski.**
+- Meksyk strzelił 2, nie 1 gola (wynik 2:0 vs typ 1:0) — niedoszacowaliśmy λ_MEX, ale tendencja i O/U trafione.
+- Korea odwróciła wynik (comeback z 0:1 na 2:1) — typ goal_diff trafiony; warto zakładać „elastyczność" w scoreline.
+- Under 2.5 sprawdza się przy meczach z ostrożnym outsiderem (RPA, Czechy broniły głęboko).
+
+**Korekty na dziś i jutro.**
+- Kanada gra bez Daviesa → λ_CAN obniżamy do 1.20; mimo to faworytem (home advantage MŚ).
+- BTTS No Kanada–Bośnia: model daje 58.5% vs rynek 51.7% → edge ~9.4%, rekomendowane 1u=20 PLN.
+- Nie zwiększamy jednostki po wygranej; trzymamy 2% bankrolla (teraz ~20.13 PLN, zaokrąglamy do 20).
+- Kontynuujemy strategię „najniższy wynik z poprawną tendencją" na kicktippa (1:0 / 0:1 dominuje).
+
+---
+
 ## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
 
 Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
