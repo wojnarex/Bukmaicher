@@ -5,6 +5,27 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-13 — v1.3 (korekta: mocni faworyci → 2:0 zamiast 1:0)
+
+**Co zaobserwowaliśmy po dniu 1 (11.06).**
+- Meksyk vs RPA: wytypowaliśmy 1:0, padło 2:0. Dostaliśmy 2 pkt (tendencja), a mogliśmy mieć 3 (różnica bramek). Przy silnym faworycie z mocnym atakiem (λ>1.8) wynik 2:0 ma porównywalną lub wyższą szansę niż 1:0 i daje dostęp do wyższego tieru punktów.
+- Korea Pld vs Czechy: wytypowaliśmy 1:0, padło 2:1. Dostaliśmy 3 pkt (tendencja + różnica bramek = 1). Tutaj model zadziałał dobrze.
+- Fortuna Under 2.5 Meksyk: wygrana (+6.50 PLN). Podejście Under w meczach z niskim oczekiwanym total sprawdza się.
+
+**Korekta operacyjna na dziś.**
+- Dla meczu Katar vs Szwajcaria (λ_SUI≈2.0, λ_QAT≈0.5) rekomendujemy **0:2** zamiast domyślnego 0:1. EP różni się minimalnie (~0.03), ale fakt, że poprzednio przeszacowaliśmy „skromność" Meksyku, przesuwa nas lekko w stronę wyższego totalu dla dominujących drużyn.
+- Zasada: jeśli λ_faworytu > 1.8 i jest duża asymetria (przeciwnik λ < 0.7), preferuj X:0 lub X:1 z wynikiem +2 zamiast +1, gdy EP jest zbliżone.
+
+**Fortuna (value bety).**
+- Dziś rekomendujemy Brazylia vs Maroko Under 2.5 (szac. edge ~6-7%), WARUNKOWO na kurs ≥ 1.80 na efortuna.pl.
+- Nadal bez akumulatorów, max 3 typy dziennie, max 2u na typ.
+
+**Czego się uczymy.**
+- Model Poissona poprawnie wskazuje tendencje, ale może niedoszacowywać goli dla silnych atakujących drużyn (SUI, BRA) → korekta λ w górę przy wyraźnej dysproporcji klas.
+- Weryfikacja: sprawdzić po tygodniu, czy kicktipp przynosi ~1.8+ pkt/typ średnio.
+
+---
+
 ## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
 
 Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
