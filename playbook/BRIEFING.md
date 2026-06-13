@@ -65,7 +65,11 @@ Mecz z kick-offem np. 22:00 ET to wciąż „ten" dzień ET, choć w Polsce jest
 ## Krok 3 — Newsy kadrowe i kontekst (per mecz)
 
 Dla każdego meczu do typowania, web search (preferuj `research.preferred_news_sources`):
-- Kontuzje, zawieszenia, wątpliwości w składach; przewidywane XI.
+- Składy: **rozróżniaj POTWIERDZONY skład (oficjalny, ~1h przed KO) od PRZEWIDYWANEGO/„expected"**.
+  Nigdy nie deklaruj, że ktoś „nie gra", wyłącznie na podstawie zapowiedzi/preview — to często projekcja, nie fakt.
+  Status zawodnika oznaczaj: „potwierdzony / wątpliwy (szac.) / nieznany" + źródło i godzina.
+  UWAGA: briefing leci rano, więc składy są jeszcze NIEpotwierdzone — pisz o nich jako prowizorycznych
+  i wyraźnie przypomnij, by zweryfikować oficjalny XI przed deadline'em (zwłaszcza mecze wieczorne).
 - Kluczowi zawodnicy (strzelcy, wykonawcy rzutów karnych/stałych fragmentów).
 - Kontekst: motywacja (czy gra „o coś"), zmęczenie/rotacja, podróże, pogoda, wysokość n.p.m., nawierzchnia.
 - Kara/bonus sytuacyjny (np. trener pod presją, debiut, powrót gwiazdy).
