@@ -5,6 +5,28 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-14 — v1.3 (nauka z 11.06 + nowy sygnał U2.5 JPN)
+
+**Rozliczenie 11.06:** Meksyk 2:0 RPA (typ 1:0 → tendencja, 2 pkt), Korea 2:1 Czechy
+(typ 1:0 → różnica bramek, 3 pkt), Fortuna U2.5 Meksyk-RPA WYGRANA +6.50 PLN.
+Wnioski: modele dobrze uchwycily faworytów. Przeszacowaliśmy dokładne wyniki nieco
+(Meksyk wygrał wyżej niż 1:0, Korea też wygrała 2:1 zamiast 1:0). Ogólnie kierunek OK.
+
+**Nowy sygnał (kontynuuj):** Japonia bez Mitomy, Minamino (kontuzje) i Endo (emerytura).
+To istotny ubytek ataku → lambda_JPN obniżona. Rynek może nie w pełni to dyskontować.
+Szukamy U2.5 w meczach z udziałem Japonii. Dziś rekomendacja NED-JPN U2.5 (szac. edge
+~12% przy kursie 1.70; WERYFIKUJ kurs na efortuna.pl przed 22:00 CEST).
+
+**Kicktipp — korekta profilowania:** Przy mocnych faworytach (GER-CUR) typujemy
+wyższe wyniki (3:1) zamiast rutynowego 1:0. EV-model jasno wskazuje wyższe λ w takich
+meczach. Monitorujemy, czy nie przeszacowujemy bramek dla średnich faworytów.
+
+**Dyscyplina Fortuna:** Maks. 3 bety/dzień, dziś 1 rekomendacja. Brak value w
+meczach dominowanych przez rynek (GER-CUR, SWE-TUN w 1X2). Skupiamy się na O/U
+i rynkach, gdzie mamy informacyjną przewagę (składy, styl gry).
+
+---
+
 ## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
 
 Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
