@@ -5,6 +5,21 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-15 — v1.3 (pierwsze rozliczenie + wnioski z dnia 1)
+
+**Rozliczenie 11.06 (2 mecze, 3 typy):**
+- Meksyk 2:0 RPA → kicktipp 1:0: trafiona tendencja (2 pkt), różnica 2≠1 → poniżej potencjału goal_diff.
+- Korea Płd 2:1 Czechy → kicktipp 1:0: tendencja + różnica bramek (3 pkt).
+- Fortuna O/U <2.5 @ 1.65 (Meksyk–RPA): 2 gole → WYGRANA, +6.50 PLN (+0.7% bankroll).
+
+**Wniosek z dnia 1.** Model Poissona zadziałał — oba typy tendencji trafione. Jednak Meksyk strzelił 2:0 zamiast 1:0; gdybyśmy typowali 2:0 (zamiast 1:0) dostalibyśmy 4 pkt zamiast 2. Przy silnych faworytach z niskim O/U warto rozważyć typ X:0 z x=2 zamiast zawsze x=1. Korekta: przy O/U 2.0–2.5 i dominującym faworycie (>75% szans na wygraną) testować 2:0 zamiast 1:0.
+
+**15.06 — 4 mecze, strategia:**
+- Dzień z dużym rozstrzałem „sił" (Hiszpania vs debiutant, Iran vs NZ balansowo). Dla Hiszpanii ruch na 3:0 (O/U 3.5). Dla Belgii/Urugwaju/Iranu — wąskie wygrane 1:0 lub 0:1.
+- Fortuna: brak value betów dziś (kursy na favorytów zbyt krótkie lub edge poniżej progu 5%).
+
+---
+
 ## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
 
 Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
