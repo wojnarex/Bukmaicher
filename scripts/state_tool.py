@@ -170,8 +170,22 @@ def cmd_settle(args) -> None:
     if not match:
         sys.exit(f"BŁĄD: nie znaleziono typu o id '{args.id}'. Sprawdź `pending`.")
     rec = match[0]
-    if rec.get("status") not in (None, "pending"):
-        print(f"OSTRZEŻENIE: typ {args.id} był już rozliczony ({rec.get('status')}). Nadpisuję.", file=sys.stderr)
+    was_pending = rec.get("status") in (None, "pending")
+
+    # Idempotencja: nie rozliczaj drugi raz — to powodowało pętlę „ciągle 1. kolejka"
+    # i podwójne liczenie bankrolla. --force pozwala świadomie nadpisać.
+    if not was_pending and not args.force:
+        print(f"POMINIĘTO: {args.id} jest już rozliczony "
+              f"({rec.get('status')}, wynik {rec.get('result')}). Użyj --force, by nadpisać.")
+        return
+
+    # Sprawdzanie daty: nie rozliczaj meczu, który się jeszcze nie odbył
+    # (match_date dziś lub w przyszłości). --force pomija tę kontrolę.
+    md = rec.get("match_date")
+    if md and md >= _today() and not args.force:
+        print(f"POMINIĘTO: mecz {args.id} jeszcze się nie odbył (match_date {md} >= dziś {_today()}). "
+              f"Rozlicz po meczu lub użyj --force.")
+        return
 
     rec["status"] = args.status
     if args.result is not None:
@@ -182,12 +196,13 @@ def cmd_settle(args) -> None:
         rec["pnl"] = args.pnl
     rec["settled_at"] = _now()
 
-    # Aktualizacja bankrolla / punktów.
+    # Aktualizacja bankrolla / punktów — TYLKO przy pierwszym rozliczeniu
+    # (was_pending), żeby --force nie naliczał drugi raz.
     bk = load_bankroll()
-    if args.pnl is not None and rec.get("type") == "fortuna":
+    if was_pending and args.pnl is not None and rec.get("type") == "fortuna":
         bk["current_bankroll"] = round(float(bk.get("current_bankroll", 0)) + float(args.pnl), 2)
         bk["bets_settled"] = int(bk.get("bets_settled", 0)) + 1
-    if args.points is not None and rec.get("type") == "kicktipp":
+    if was_pending and args.points is not None and rec.get("type") == "kicktipp":
         bk["kicktipp_points_total"] = int(bk.get("kicktipp_points_total", 0)) + int(args.points)
 
     write_history(rows)
@@ -204,13 +219,21 @@ def cmd_settle(args) -> None:
 
 def cmd_pending(args) -> None:
     rows = [r for r in load_history() if r.get("status") in (None, "pending")]
+    today = _today()
+    only_due = getattr(args, "due", False)
+    if only_due:
+        # tylko mecze, które na pewno się odbyły (match_date < dziś) -> gotowe do rozliczenia
+        rows = [r for r in rows if (r.get("match_date") or "9999-99-99") < today]
     if not rows:
-        print("Brak otwartych (nierozliczonych) typów.")
+        print("Brak otwartych typów gotowych do rozliczenia." if only_due
+              else "Brak otwartych (nierozliczonych) typów.")
         return
     rows.sort(key=lambda r: (r.get("match_date") or "", r.get("type") or ""))
-    print(f"Otwarte typy ({len(rows)}):")
+    print(f"Otwarte typy ({len(rows)}{' — gotowe do rozliczenia' if only_due else ''}):")
     for r in rows:
-        line = f'  [{r.get("match_date")}] {r.get("id")}'
+        due = (r.get("match_date") or "9999-99-99") < today
+        marker = "✓ do rozliczenia" if due else "⏳ przed meczem"
+        line = f'  [{r.get("match_date")}] {marker} | {r.get("id")}'
         line += f' | {r.get("type")}/{r.get("market")}: {r.get("selection")}'
         if r.get("odds"):
             line += f' @ {r.get("odds")}'
@@ -271,9 +294,13 @@ def build_parser() -> argparse.ArgumentParser:
     sp.add_argument("--result", help="faktyczny wynik meczu, np. '2:1'")
     sp.add_argument("--points", type=int, help="punkty kicktipp")
     sp.add_argument("--pnl", type=float, help="zysk/strata u Fortuny w walucie bankrolla")
+    sp.add_argument("--force", action="store_true",
+                    help="nadpisz już rozliczony typ lub rozlicz mecz z dziś/przyszłości (bez podwójnego liczenia bankrolla)")
     sp.set_defaults(func=cmd_settle)
 
     pp = sub.add_parser("pending", help="pokaż otwarte typy")
+    pp.add_argument("--due", action="store_true",
+                    help="tylko typy gotowe do rozliczenia (mecz już się odbył: match_date < dziś)")
     pp.set_defaults(func=cmd_pending)
 
     bp = sub.add_parser("bankroll", help="pokaż stan bankrolla")

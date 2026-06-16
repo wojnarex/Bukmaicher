@@ -19,15 +19,20 @@ Zasady naczelne:
 2. Wczytaj konfigurację: `Read config/config.yaml`.
 3. Wczytaj pamięć:
    - `state/strategy.md` — aktualna strategia i wnioski.
-   - `python3 scripts/state_tool.py pending` — otwarte (nierozliczone) typy z poprzednich dni.
+   - `python3 scripts/state_tool.py pending --due` — otwarte typy, których mecz JUŻ się odbył (gotowe do rozliczenia).
    - `python3 scripts/state_tool.py bankroll` — stan bankrolla i punktów.
 4. Jeśli `kicktipp.league_url` lub `league_name` zawiera „TODO" — działaj dalej, ale w mailu dopisz wyraźną prośbę o uzupełnienie (sekcja „Konfiguracja do dograna").
+5. **CIĄGŁOŚĆ STANU (krytyczne):** na starcie zrób `git pull` najnowszego, STAŁEGO brancha pamięci,
+   a na końcu (krok 9) commit+push na **TEN SAM** branch. Nie zostawiaj zmian na nowym, jednorazowym
+   branchu per uruchomienie — inaczej pamięć się rozjeżdża i każdy run rozlicza wciąż 1. kolejkę.
 
 ---
 
 ## Krok 1 — Rozliczenie wczorajszych typów (najpierw patrzymy wstecz)
 
-Dla każdego otwartego typu z `state_tool.py pending`, którego mecz już się odbył:
+Pobierz listę gotowych: `python3 scripts/state_tool.py pending --due` (pokazuje TYLKO mecze już rozegrane,
+match_date < dziś). Rozliczaj wyłącznie te. `settle` jest **idempotentne** — pominie typ już rozliczony
+i nie ruszy meczu sprzed gwizdka, więc nie da się wpaść w pętlę „ciągle 1. kolejka". Dla każdego typu:
 1. Web search o wynik końcowy meczu (twarda dana — podaj źródło).
 2. Dla typów **kicktipp**: policz zdobyte punkty wg `kicktipp.scoring` (exact/goal_diff/tendency).
 3. Dla zakładów **Fortuna**: ustal czy wygrany/przegrany/zwrot i policz P/L:
@@ -182,9 +187,10 @@ Trzymaj ton rzeczowy i zwięzły — to ma się czytać przy porannej kawie.
 1. Upewnij się, że wszystkie dzisiejsze typy są w historii (`state_tool.py add-pick`).
 2. `python3 scripts/state_tool.py rebuild-csv` (odśwież `state/history.csv` dla ew. importu do Arkuszy).
 3. Dopisz krótki wpis do logu dnia (jedno-linijkowy) — patrz `state/strategy.md` sekcja „Dziennik" lub po prostu commit message.
-4. Commit + push na bieżący branch:
+4. Commit + push na **STAŁY branch pamięci** (ten sam, z którego czytałeś stan w kroku 0 —
+   NIE twórz nowego brancha per run, bo pamięć się rozjedzie):
    ```
-   git add -A && git commit -m "briefing {DATA}: rozliczenie + typy + strategia" && git push -u origin <branch>
+   git add -A && git commit -m "briefing {DATA}: rozliczenie + typy + strategia" && git push origin <stały-branch>
    ```
 
 ---
