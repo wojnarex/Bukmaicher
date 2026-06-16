@@ -5,6 +5,30 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-16 — v1.3 (kalibracja lambda przez rynek O/U + AH jako nowy rynek)
+
+**Wnioski z 11.06:**
+- Fortuna OU25 Meksyk-RPA (poniżej 2.5 @ 1.65): **WYGRANA** +6,50 PLN. Model się sprawdził.
+- Kicktipp Meksyk-RPA (typ 1:0, wynik 2:0): **2 pkt** (tendencja). Typowaliśmy 1:0, padło 2:0.
+  Straciliśmy 1 pkt bo lambda Meksyku była niedoszacowana — rynek O/U był bliżej 2.0 niż 1.5 gola.
+- Kicktipp Korea-Czechy (typ 1:0, wynik 2:1): **3 pkt** (różnica bramek = 1). Dobry wynik.
+
+**Korekta metodyczna.** Zaczynamy kalibrować sumę lambda od linii O/U rynkowej (de-vig),
+a dopiero potem korygujemy o newsy. To zapobiega systematycznemu zaniżaniu sumy bramek
+i typowaniu zbyt niskich wyników (pułapka „1:0 do wszystkiego").
+
+**Nowy rynek: Asian Handicap (AH).** Dla meczów z wyraźną asymetrią (np. silny faworyt vs
+debiutant) AH -1 może mieć dobre EV gdy faworyt dominuje ofensywnie. Dziś rekomendacja:
+Norwegia AH -1 vs Irak (szac. edge ~20% przy kursie ~1.75, model oparty na kalibracji O/U).
+
+**Kicktipp — wzorzec dnia:** Przy O/U ~2.5 i faworycie ≥65% → typ 1:0 nadal lideruje EV
+(~1.66-1.80 pkt). Przy mocniejszym faworycie + wyższym O/U (Norwegia) → 2:0 wygrywa (~1.96 pkt).
+
+**Co monitorujemy.** Czy typy ~65-70% wchodzą ~65-70% razy (kalibracja prawdopodobieństw).
+Czy AH -1 sprawdza się lepiej niż 1X2 dla meczów mocny-słaby.
+
+---
+
 ## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
 
 Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
