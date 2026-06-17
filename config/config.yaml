@@ -48,6 +48,15 @@ kicktipp:
     # Uwaga strategiczna: remis na tendencji = 3 pkt (więcej niż 2 za wygraną),
     # więc w meczach ~50/50 typowanie remisu jest relatywnie bardziej opłacalne.
     notes: "Źródło: https://www.kicktipp.pl/mamalova-ms-2026/punkteregelerklaerung/"
+  # KALIBRACJA REMISÓW: mnożnik prawdopodobieństwa remisu w modelu PRZED liczeniem
+  # oczekiwanych punktów (krok 6 playbooka). >1 = częściej typujemy remis.
+  # Uzasadnienie: (a) „9-tka" premiuje remis (tendencja 3 > 2 za wygraną),
+  # (b) faza grupowa MŚ 2026 obfituje w remisy faworytów (Kanada 1:1, Brazylia 1:1,
+  # Katar–Szwajcaria 1:1, Portugalia 1:1, Ameryka Płd. 0/4).
+  # 1.0 = neutralnie. Dobrane empirycznie: 1.7 flipuje UMIARKOWANYCH faworytów w otwarciach na 1:1,
+  # a wyraźnych faworytów i mismatche (typ Norwegia/Haaland) zostawia na wygranej.
+  # Wyżej (≥2.0) = remis nawet u wyraźnych faworytów; 1.0 = wyłączone. Dostrajaj wg wyników.
+  draw_bias: 1.7
   # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
   include_standings: true
 

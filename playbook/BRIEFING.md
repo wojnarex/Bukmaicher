@@ -113,14 +113,17 @@ Metoda (dla każdego meczu z deadlinem):
    suma λ ≈ rynkowy total z linii O/U (po de-vig), a podział wg przewagi z 1X2 (faworyt = większa λ).
    Dopiero potem koryguj o newsy/staty (kroki 3–4). Bez tego model systematycznie zaniża bramki i typuje 1:0.
 2. Zbuduj siatkę prawdopodobieństw wyników (Poisson po λ, 0:0…5:5).
+2b. **KALIBRACJA REMISÓW (ważne!):** przemnóż komórki remisowe (i==j: 0:0, 1:1, 2:2…) przez
+   `kicktipp.draw_bias` i renormalizuj całą siatkę do sumy 1. Powód: „9-tka" premiuje remis
+   ORAZ faza grupowa MŚ 2026 jest mocno proremisowa (faworyci się potykają). To NIE psuje typów
+   na wyraźne mismatche — tam remis ma małą masę i wygrana i tak wygrywa EV.
 3. Dla każdego kandydata policz **oczekiwane punkty** = Σ P(wynik) × punkty(typ, wynik),
-   wagi **per typ wyniku** z `kicktipp.scoring`: osobno **wygrana** (tendency/goal_diff/exact)
-   i **remis** (tendency/exact; remis bez tieru różnicy bramek). Turniej = symetria home/away.
+   wagi **per typ wyniku** z `kicktipp.scoring` (wygrana: tendency/goal_diff/exact; remis: tendency/exact).
 4. Wybierz typ o **najwyższych oczekiwanych punktach** — niech zdecyduje policzone EV, NIE nawyk.
-   Profil meczu rządzi typem (unikaj monotonnego 1:0):
-   - mecz wyrównany → zwykle **1:1** (a „9-tka" premiuje remis: tendency 3 > 2, więc tym częściej);
-   - umiarkowany faworyt + niski O/U → **1:0**;
-   - mocny faworyt lub wysoki O/U → **2:1 / 2:0**; duża przewaga + dużo bramek → nawet 3:1.
+   Realia MŚ 2026: faworyci regularnie remisują (Kanada/Brazylia/Portugalia 1:1) → bądź podejrzliwy:
+   - wyrównany mecz LUB umiarkowany faworyt (~45–62%) w meczu otwarcia → domyślnie **1:1** (niski O/U → **0:0**);
+   - wyraźny faworyt (~63–70%) → **1:0 / 2:1**;
+   - realny mismatch (≥~70%) lub mocno ofensywny faworyt (typ Norwegia/Haaland) → **2:0 / 3:0**.
 5. Raportuj **top-2 typy + ich oczekiwane punkty** (widać margines decyzji) i zrób sanity-check newsami.
 Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_score).
 
