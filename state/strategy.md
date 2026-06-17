@@ -5,6 +5,25 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-17 — v1.3 (korekta deadlinów nocnych + obserwacja underdogów)
+
+**Kontekst.** Pierwsze wielomeczowe okienko (4 mecze). Dwa deadliny kicktipp po północy CEST
+(Ghana–Panama 01:00, Uzbekistan–Kolumbia 04:00) — ryzyko przeoczenia. Zasada: typy nocne
+wpisujemy **wieczorem dnia poprzedniego lub do 23:00 CEST**.
+
+**Obserwacja underdogów.** Uzbekistan do wygrania vs Kolumbia: model dał edge ≈9%, ale kurs
+~9,00 przekracza `max_odds: 6.00`. Warto obserwować — jeśli wyniki z rundy 1. pokażą, że
+underdog edge jest realny, rozważyć podniesienie `max_odds` do 8,00–10,00 dla ograniczonej
+puli zakładów (selektywnie, max 1 underdog dziennie).
+
+**Fortuna — brak zakładów dziś.** Wszystkie 1X2 i O/U po de-vig trafiają w moje prawdopodobieństwa.
+Rynek jest dziś efektywny. To OK — nie wymuszamy typów.
+
+**Typy kicktipp 17.06:** 4 mecze → Portugalia 2:0 DRC (EV 1,89), Anglia 1:0 Chorwacja (EV 1,49),
+Ghana 1:0 Panama (EV 1,23), Kolumbia 2:1 Uzbekistan (EV 1,71).
+
+---
+
 ## 2026-06-11 — v1.2 (zmiana bukmachera: STS → Fortuna)
 
 Bukmacher do value-betów zmieniony na **Fortuna** (efortuna.pl). Wcześniejsze wpisy
