@@ -119,11 +119,14 @@ Metoda (dla każdego meczu z deadlinem):
    na wyraźne mismatche — tam remis ma małą masę i wygrana i tak wygrywa EV.
 3. Dla każdego kandydata policz **oczekiwane punkty** = Σ P(wynik) × punkty(typ, wynik),
    wagi **per typ wyniku** z `kicktipp.scoring` (wygrana: tendency/goal_diff/exact; remis: tendency/exact).
-4. Wybierz typ o **najwyższych oczekiwanych punktach** — niech zdecyduje policzone EV, NIE nawyk.
-   Realia MŚ 2026: faworyci regularnie remisują (Kanada/Brazylia/Portugalia 1:1) → bądź podejrzliwy:
-   - wyrównany mecz LUB umiarkowany faworyt (~45–62%) w meczu otwarcia → domyślnie **1:1** (niski O/U → **0:0**);
-   - wyraźny faworyt (~63–70%) → **1:0 / 2:1**;
-   - realny mismatch (≥~70%) lub mocno ofensywny faworyt (typ Norwegia/Haaland) → **2:0 / 3:0**.
+4. Wybierz typ o **najwyższych oczekiwanych punktach** — decyduje EV + profil meczu (NIE nawyk
+   „zawsze faworyt" ani „zawsze remis"). Realia MŚ 2026 są MIESZANE: dużo remisów faworytów
+   (Kanada/Portugalia 1:1), ale i wysokobramkowe wygrane (Anglia 4:2). Kluczowa jest **siła ofensywna**
+   faworyta, nie tylko %:
+   - mecz wyrównany / brak wyraźnego faworyta → **1:1** (niski O/U → **0:0**);
+   - umiarkowany faworyt cagey/defensywny lub na ogranego rywala → **1:1 / 1:0**;
+   - umiarkowany faworyt z realnym ATAKIEM w formie (typ Anglia-Kane) → **1:0 / 2:1** (graj wygraną);
+   - wyraźny faworyt → **2:1 / 2:0**; mismatch / ofensywny faworyt (Norwegia-Haaland) → **2:0 / 3:0**.
 5. Raportuj **top-2 typy + ich oczekiwane punkty** (widać margines decyzji) i zrób sanity-check newsami.
 Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_score).
 

@@ -5,6 +5,20 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-17 — v1.4 (korekta: draw_bias 1.7 był za wysoki)
+
+Anglia **4:2** Chorwacja (6 bramek!) — wysokobramkowa wygrana umiarkowanego faworyta, odwrotność
+„cagey opener". Typ 1:1 (z draw_bias=1.7) dał 0 pkt. 1.7 *zawsze* nadpisywał umiarkowanego faworyta
+na remis, ignorując siłę ofensywną (Kane w formie, Bellingham) — to overfitting do serii remisów.
+
+**Zmiana:** draw_bias 1.7 → **1.4** (nudge, nie override). Plus w kroku 6 liczy się SIŁA OFENSYWNA
+faworyta, nie tylko %: cagey/defensywny faworyt → remis-ish; faworyt z atakiem w formie → wygrana.
+
+**Meta-lekcja:** nie przekręcać kalibracji po KAŻDYM wyniku — wariancja działa w obie strony,
+cel to oczekiwane punkty w wielu meczach, nie reakcja na ostatni mecz.
+
+---
+
 ## 2026-06-17 — v1.3 (kalibracja: więcej remisów)
 
 **Obserwacja (dane).** Faza grupowa MŚ 2026 to festiwal remisów faworytów: Kanada 1:1 (Bośnia),

@@ -53,10 +53,11 @@ kicktipp:
   # Uzasadnienie: (a) „9-tka" premiuje remis (tendencja 3 > 2 za wygraną),
   # (b) faza grupowa MŚ 2026 obfituje w remisy faworytów (Kanada 1:1, Brazylia 1:1,
   # Katar–Szwajcaria 1:1, Portugalia 1:1, Ameryka Płd. 0/4).
-  # 1.0 = neutralnie. Dobrane empirycznie: 1.7 flipuje UMIARKOWANYCH faworytów w otwarciach na 1:1,
-  # a wyraźnych faworytów i mismatche (typ Norwegia/Haaland) zostawia na wygranej.
-  # Wyżej (≥2.0) = remis nawet u wyraźnych faworytów; 1.0 = wyłączone. Dostrajaj wg wyników.
-  draw_bias: 1.7
+  # 1.0 = neutralnie. 1.4 = umiarkowany NUDGE ku remisom (a nie auto-override faworyta).
+  # Historia kalibracji: 1.7 okazał się za agresywny (zawsze dawał 1:1 u umiark. faworyta) —
+  # Anglia 4:2 Chorwacja pokazała, że ofensywni faworyci potrafią rozjechać. 1.4 łapie część
+  # remisów cagey, nie kasując typów na wygraną. ≥2.0 = remis nawet u wyraźnych faworytów; 1.0 = off.
+  draw_bias: 1.4
   # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
   include_standings: true
 
