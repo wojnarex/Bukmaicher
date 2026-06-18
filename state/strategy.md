@@ -5,6 +5,25 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-18 — v1.5 (value on Under; kalibracja λ wg meczu otwarcia)
+
+**Obserwacja.** Czechia 1:1 RPA — klasyczny mecz dwóch zespołów na 0 punktach (musi wygrać obie
+strony), ale wynik bardzo przewidywalny: niskie bramkowanie, gol z karnego (Mokoena 83'), Czechy
+prowadziły do 83'. Model draw_bias=1.4 nadal trafny dla takich meczów.
+
+**Nowy insight: kalibracja λ z meczu otwarcia.** Gdy obie drużyny zdobyły dokładnie 1 gola
+w swoim pierwszym meczu (nawet przy różnej liczbie strzałów), sensowne jest zejście z prognozą
+λ do okolic 1.0-1.3 na drużynę (total ≈ 2.2-2.5). Porównanie z rynkową linią O/U to dobra
+metoda sanity-check. W dzisiejszym meczu Szwajcaria vs Bośnia market daje Under -123 (ok. 52.5%
+de-vig), a model wychodzi na ≈60% Under — różnica wystarczająca na value bet Under 2.5 @1.81
+(szac. edge ~7.7%). Uwaga: zawsze weryfikuj kurs na Fortunie przed wejściem.
+
+**Kontynuujemy.** draw_bias=1.4 zostawiamy bez zmian — działa jako nudge (nie override).
+Kicktipp: stosujemy profil „siła ofensywna faworyta": Kanada (Davies wraca, 74%) → 2:0;
+Meksyk-Korea (~50/50 w Guadalajarze) → 1:1; Szwajcaria-Bośnia (62% Szw., wasteful) → 1:0.
+
+---
+
 ## 2026-06-17 — v1.4 (korekta: draw_bias 1.7 był za wysoki)
 
 Anglia **4:2** Chorwacja (6 bramek!) — wysokobramkowa wygrana umiarkowanego faworyta, odwrotność
