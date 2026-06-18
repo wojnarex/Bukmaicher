@@ -5,6 +5,18 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-18 — v1.3 (kontynuacja + obserwacja MD2)
+
+**Kontynuujemy draw_bias=1,7.** Kalibracja trzyma się: z 8 rozegranych meczów MD1 (do 17.06) aż 4 to remisy, faworyci regularnie się potykają (Brazylia 1:1, Portugalia 1:1, Katar 1:1 Szwajcaria). Wnioski z naszych typów z 11.06: 5 pkt z 2 meczów kicktipp (tendencja ✓✓, exact miss), zakład Under 2.5 Meksyk–RPA wygrany (+6,50 PLN).
+
+**Typy MD2 (18.06):** 0:0 Czechy–RPA, 1:1 Szwajcaria–Bośnia, 1:0 Kanada–Katar, 0:0 Meksyk–Korea. Wszystkie defensywne → korelacja ryzyka po stronie Under/remis. Jeśli dziś wyniki będą bramkowe i zbierzemy <4 pkt, wrócimy do dyskusji o draw_bias (rozważyć 1,4 zamiast 1,7).
+
+**Fortuna:** 3 Under 2.5 tego samego dnia (Czechy–RPA 1u, Szwajcaria–Bośnia 1u, Meksyk–Korea 0,5u). Korelacja flagowana w mailu. Priorytet jeśli trzeba ograniczyć: Czechy–RPA i Szwajcaria–Bośnia (silniejsze uzasadnienie newsowe).
+
+**Nowa obserwacja:** draw_bias NIE flippuje Kanady vs Katar (~77%) na remis — zachowanie poprawne. Threshold działania bias to ~45–65% de-vig.
+
+---
+
 ## 2026-06-17 — v1.3 (kalibracja: więcej remisów)
 
 **Obserwacja (dane).** Faza grupowa MŚ 2026 to festiwal remisów faworytów: Kanada 1:1 (Bośnia),
