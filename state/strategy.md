@@ -5,6 +5,21 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-19 — v1.6 (lekcja: motywacja > kursy przy tabelowym niedoborze)
+
+**Wyniki 18.06:**
+- Szwajcaria **4:1** Bośnia — typ 1:0 trafił tendencję (+2 pkt), ale nie antycypował niespodziewanej erupcji goli po 74' + czerwona Bośni. Under 2.5 przegrana (-10 PLN).
+- Kanada **6:0** Katar — typ 2:0 trafił tendencję (+2 pkt). Historyczny wynik, trudny do przewidzenia.
+- Meksyk **1:0** Korea Płd. — typ 1:1 chybiony (+0 pkt). **Kluczowa lekcja:** Meksyk miał 3 pkt, Korea 0 pkt → Korea MUSIAŁA wygrać, ale to Meksyk miał spokój i zagrał skutecznie. Typ 1:1 był błędem kontekstualnym — gdy faworyt jest na 3 pkt, a rywal na 0 pkt desperacko atakuje, faworyt może spokojnie kontrować → **wynik 1:0 był bardziej naturalny niż remis**.
+
+**Nowa zasada (motywacja tabelowa):** Gdy faworyt jest na 3 pkt, a rywal na 0 pkt → wyżej niż zwykle prawdopodobieństwo **wygrania zamkniętego meczu 1:0** (faworyt nie musi ryzykować, rywal musi). Typuj wygraną, nie remis, nawet gdy % są bliskie 50/50.
+
+**Kalibracja Under:** Market pod Szwajcarię-Bośnię miał rację (52% Under), mój szac. model 60% był za pewny. Gole późne (kontuzje, zmęczenie, czerwone kartki) są czynnikiem, który model Poissona pomija → zachować pokorę przy Under w meczach wyrównanych.
+
+**Kontynuujemy:** draw_bias=1.4, podejście EV-kicktipp bez zmian.
+
+---
+
 ## 2026-06-18 — v1.5 (value on Under; kalibracja λ wg meczu otwarcia)
 
 **Obserwacja.** Czechia 1:1 RPA — klasyczny mecz dwóch zespołów na 0 punktach (musi wygrać obie
