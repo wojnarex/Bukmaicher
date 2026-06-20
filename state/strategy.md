@@ -5,6 +5,26 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-20 — v1.7 (lekcja: notacja kierunku wyniku; mismatch margin > model)
+
+**Wyniki 19.06:**
+- USA **2:0** Australia — typ kicktipp 1:0: tendencja trafiona (+2 pkt). Typ Fortuna X (remis) @ 4.4 → **przegrany (-19.93 PLN)**. USA bez Pulisica nadal wygrało. Zakład na remis przy 88% faworycie (edge był ujemny od początku) — błąd wyceny (edge był < -2%, nie powinniśmy tego wchodzić).
+- Szkocja **0:1** Maroko — typ kicktipp 1:0 → **0 pkt (zła tendencja)**. **Krytyczny błąd notacji:** wpisano "1:0" jako "Szkocja 1-0 Maroko" podczas gdy intencją było "Maroko wins 1-0 = 0:1". Saibari strzelił w 72s.
+- Brazylia **3:0** Haiti — typ kicktipp 2:0: tendencja trafiona (+2 pkt). Model 2:0, rzeczywistość 3:0 — mismatche rozjechały się bardziej niż λ-Poisson sugeruje (jak Kanada 6:0 Katar, Niemcy 7:1 Curaçao).
+
+**Bilans dnia:** kicktipp +4 pkt (2 mecze tendencja), Fortuna -19.93 PLN.
+
+**Nowe zasady:**
+1. **Notacja kierunkowa (krytyczne):** W meczu "Drużyna A vs Drużyna B" wynik "1:0" = A wygrywa. Jeśli chcemy wygraną B, MUSISZ wpisać "0:1". Zawsze sprawdź, czyją perspektywą jest wynik przed submit.
+2. **Mismatch amplifikacja:** Przy λ_rywal < 0.5 (Curaçao, Haiti, Katar), model Poissona **niedoszacowuje** rozmiar wygranej. Rozważ wyższy wynik niż sugeruje Poisson (np. 4:0 zamiast 3:0) dla takich mismatch.
+3. **Zakłady na remis przy dominującym faworycie:** Edge był ujemny dla USA vs AUS X@4.4. Zasada: przy faworycie >85% de-vig, zakłady Fortuna na remis/przegranie są zazwyczaj poniżej progu — pomijaj.
+
+**Potencjalny sygnał dziś:** Kubo kontuzjowany (JPN) → Under 2.5 TUN vs JPN może mieć edge >5% jeśli kurs ≥1.73. Weryfikuj na Fortunie.
+
+**Kontynuujemy:** draw_bias=1.4, podejście EV-kicktipp bez zmian.
+
+---
+
 ## 2026-06-19 — v1.6 (lekcja: motywacja > kursy przy tabelowym niedoborze)
 
 **Wyniki 18.06:**
