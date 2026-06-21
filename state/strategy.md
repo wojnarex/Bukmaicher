@@ -5,6 +5,24 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-21 — v1.8 (lekcja: bramkarz-bohater niszczy mismatch; mismatch amplifikacja x2)
+
+**Wyniki 20.06:**
+- Holandia **5:1** Szwecja — typ kicktipp 2:1: tendencja trafiona (+2 pkt). Kolejny mismatch który rozjechał się bardziej niż model sugerował (my 2:1, rzecz. 5:1). Gakpo + Brobbey po 2 gole.
+- Niemcy **2:1** WKŚ (Wybrzeże Kości Słoniowej) — typ kicktipp 1:0: tendencja PLUS różnica bramek trafiona (+3 pkt!). Undav dał brace z ławki. Idealny typ: złapał tendencję i diff.
+- Ekwador **0:0** Curaçao — typ kicktipp 3:0: CHYBIONY (0 pkt). Historyczna niespodzianka: Eloy Room 15 parad (rekord MŚ!), Curaçao historyczny punkt. LEKCJA: "mismatch" nie gwarantuje goli – sprawdź defensywę rywala, zwłaszcza bramkarza.
+- Tunezja **0:3** Japonia — typ kicktipp 0:1: tendencja trafiona (+2 pkt). Japonia wygrała 3:0 zamiast 1:0 – ponowna mismatch amplifikacja.
+
+**Bilans dnia:** kicktipp +7 pkt (3 mecze tendencja, 1 z różnicą bramek), Fortuna 0 PLN (brak zakładów).
+
+**Nowe zasady:**
+5. **Precyzja mismatch:** dla umiarkowanego mismatch (λ_rywal ~0.5–0.8) → typ **2:0**, NIE 3:0. Dla wyraźnego mismatch (λ_rywal <0.4) → 3:0 rozważyć. Ekwador vs Curaçao był umiarkowany (Curaçao nie=Haiti/Katar), a 3:0 był zbyt ambitny.
+6. **Bramkarz-heroj:** przed typem mismatch sprawdź bramkarza rywala. "Gorący" lub wybitny GK może zepsuć typ – rozważ zejście o 1 gola w dół lub DNB zamiast dokładnego wyniku.
+
+**Kontynuujemy:** draw_bias=1.4, podejście EV-kicktipp bez zmian.
+
+---
+
 ## 2026-06-20 — v1.7 (lekcja: notacja kierunku wyniku; mismatch margin > model)
 
 **Wyniki 19.06:**
