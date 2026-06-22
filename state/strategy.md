@@ -5,6 +5,25 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-22 — v1.9 (lekcja: bramkarz-bohater x2, Urugwaj-niespodzianka; pick'em → remis)
+
+**Wyniki 21.06:**
+- Hiszpania **4:0** Arabia Saudyjska — typ 2:0: tendencja ✓ (+2 pkt). Mismatch amplifikacja: model 2:0, rzecz. 4:0. Reguła v1.8 potwierdzona (mismatch > Poisson sugeruje).
+- Belgia **0:0** Iran — typ 1:0: CHYBIONY (0 pkt). Beiranvand 15 parad (rekord?) — klasyczny bramkarz-bohater niszczy mismatch. Belgia przez 20 min z 10 zawodnikami. **Lekcja potwierdzona z v1.8**: sprawdzaj GK rywala i dyscyplinarnę ryzyko; 1:1 byłoby właściwsze.
+- Urugwaj **2:2** Zielony Przylądek — typ 1:0: CHYBIONY (0 pkt). Historyczny wynik — Zielony Przylądek ma 1 pkt na mundialu! Urugwaj nie zamknął meczu (błąd koncentracji). **Lekcja**: "umiarkowany mismatch" to nie gwarancja; przy drużynach spoza top-50 FIFA zachowaj rezerwę — 1:1 ma wyższy EV niż wydaje się.
+- Nowa Zelandia **1:3** Egipt — typ 0:1: tendencja ✓ (+2 pkt). Egyptt odrobił straty po 1:0 dla NZ. Tendencja trafna.
+
+**Bilans dnia 21.06:** kicktipp +4 pkt (2 mecze tendencja), Fortuna 0 PLN.
+**Łącznie:** 24 pkt kicktipp, 976.57 PLN bankroll (ROI -2.3%).
+
+**Nowe/potwierdzone zasady:**
+7. **Pick'em mecze 3-way ≈50/50 z draw_bias:** przy P(draw) ≥ 25% i draw_bias=1.4 → remis = wyższy EV (~1.19 vs ~1.15). Norwegia-Senegal dziś to idealny przykład.
+8. **Urugwaj-test:** W meczach "umiarkowany faworyt vs chwila historii" (drużyna debiutuje lub nie ma co stracić) rozważ 1:1 zamiast 1:0, bo desperacja podbija odporność słabszej strony.
+
+**Kontynuujemy:** draw_bias=1.4, wszystkie zasady v1.8 w mocy. Dziś priorytety: ARG 1:0, FRA 2:0, NOR-SEN 1:1, JOR-ALG 0:1.
+
+---
+
 ## 2026-06-21 — v1.8 (lekcja: bramkarz-bohater niszczy mismatch; mismatch amplifikacja x2)
 
 **Wyniki 20.06:**
