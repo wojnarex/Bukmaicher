@@ -5,6 +5,18 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-22 — v1.10 (model multi-czynnikowy: nie tylko kursy)
+
+Uwaga użytkownika: decyzje były zakotwiczone w kursach (λ liczone z odds), a czynniki (forma,
+kontuzje, taktyka, motywacja, xG) bywały tylko komentarzem, nie ruszały liczb. Zmiana w configu/playbooku:
+- buduj DWIE oceny λ: **rynkową** (kursy + O/U) i **własną** (z czynników), i **blenduj** (`model.market_weight`=0.55);
+- typ kontra rynkowi + value bierze się z **rozjazdu** obu ocen (np. de Jong out → fade Holandii; Cape Verde 0:0 ze Spain → remis żywszy);
+- w mailu raportuj, które czynniki przeważyły (nie sam kurs).
+To spina dotychczasowe lekcje (mismatch amplifikacja, bramkarz-bohater, motywacja tabelowa) — one
+WŁAŚNIE są „czynnikami". Rynek zostaje mocnym baseline (jest efektywny), ale nie wyrocznią.
+
+---
+
 ## 2026-06-22 — v1.9 (lekcja: bramkarz-bohater x2, Urugwaj-niespodzianka; pick'em → remis)
 
 **Wyniki 21.06:**

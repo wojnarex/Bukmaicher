@@ -109,9 +109,13 @@ Dla każdego meczu zbierz aktualne kursy (preferuj `research.preferred_odds_sour
 Cel: **maksymalizować oczekiwane punkty** wg `kicktipp.scoring`, a nie zgadywać „ładny wynik".
 
 Metoda (dla każdego meczu z deadlinem):
-1. Z kursów oszacuj **oczekiwane bramki** drużyn (λ_dom, λ_goście). **KALIBRACJA (ważne!):**
-   suma λ ≈ rynkowy total z linii O/U (po de-vig), a podział wg przewagi z 1X2 (faworyt = większa λ).
-   Dopiero potem koryguj o newsy/staty (kroki 3–4). Bez tego model systematycznie zaniża bramki i typuje 1:0.
+1. Zbuduj DWIE oceny oczekiwanych bramek (λ) i je połącz — NIE opieraj się wyłącznie na kursach:
+   a) **λ_rynek** — z kursów (suma λ ≈ total z O/U po de-vig; podział wg przewagi z 1X2).
+   b) **λ_własne** — NIEZALEŻNIE z czynników (kroki 3–4): forma/xG, kluczowe absencje, solidność
+      defensywy rywala, motywacja/stawka, zmęczenie/rotacja, wysokość/upał/podróż, matchup taktyczny
+      (niski blok kompresuje λ faworyta), H2H. Stosuj orientacyjne korekty z sekcji `model` w configu.
+   c) **λ_final = blend** wg `model.market_weight` (np. 0.55·λ_rynek + 0.45·λ_własne).
+   GDZIE λ_własne istotnie odbiega od λ_rynek → to jest sygnał (typ kontra rynkowi + potencjalne value).
 2. Zbuduj siatkę prawdopodobieństw wyników (Poisson po λ, 0:0…5:5).
 2b. **KALIBRACJA REMISÓW (ważne!):** przemnóż komórki remisowe (i==j: 0:0, 1:1, 2:2…) przez
    `kicktipp.draw_bias` i renormalizuj całą siatkę do sumy 1. Powód: „9-tka" premiuje remis
@@ -127,7 +131,11 @@ Metoda (dla każdego meczu z deadlinem):
    - umiarkowany faworyt cagey/defensywny lub na ogranego rywala → **1:1 / 1:0**;
    - umiarkowany faworyt z realnym ATAKIEM w formie (typ Anglia-Kane) → **1:0 / 2:1** (graj wygraną);
    - wyraźny faworyt → **2:1 / 2:0**; mismatch / ofensywny faworyt (Norwegia-Haaland) → **2:0 / 3:0**.
-5. Raportuj **top-2 typy + ich oczekiwane punkty** (widać margines decyzji) i zrób sanity-check newsami.
+   - **Mismatch amplifikacja** (potw. wynikami): przy wyraźnym faworycie Poisson ZANIŻA wygraną
+     (Kanada 6:0, Hiszpania 4:0, Holandia 5:1) → przy λ_rywala <0.6 rozważ +1 gol. ALE sprawdź
+     **bramkarza-bohatera** rywala i ryzyko czerwonej — potrafią zepsuć mismatch (Iran 0:0, Curaçao 0:0).
+5. Raportuj **top-2 typy + oczekiwane punkty** ORAZ **czynniki, które przeważyły** (forma / absencje /
+   taktyka / motywacja — nie sam kurs) i ewentualny rozjazd z rynkiem. Sanity-check newsami.
 Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_score).
 
 ---

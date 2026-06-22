@@ -79,6 +79,21 @@ fortuna:
   # Czy dopuszczamy kupony łączone (akumulatory). Zwykle NIE (zabijają EV).
   allow_accumulators: false
 
+# --- Model predykcyjny: kursy vs niezależna ocena ---------------------------
+model:
+  # Kursy (po de-vig) to mocny, efektywny punkt wyjścia — ale NIE jedyne źródło.
+  # Bot buduje NIEZALEŻNĄ ocenę z czynników (forma, xG, kontuzje, motywacja, taktyka,
+  # zmęczenie, warunki, H2H) i BLENDUJE ją z rynkiem. Edge = rozjazd oceny z rynkiem.
+  market_weight: 0.55   # 0 = tylko własna ocena, 1 = tylko kursy. 0.55 = lekko ufamy rynkowi.
+  # Orientacyjne korekty λ (oczekiwanych bramek) za czynniki — stosuj zdroworozsądkowo:
+  #  - kluczowy napastnik/kreator OUT: −15..25% do λ ofensywnej drużyny
+  #  - filar obrony/bramkarz OUT: +10..20% do λ rywala
+  #  - świetna forma/xG (nie sam wynik): +10..20%
+  #  - rywal z czystym kontem vs mocny zespół (beton): −10..20% do naszej λ
+  #  - „martwy" mecz / rotacja: −10..15%; otwarty must-win: +total
+  #  - wysokość n.p.m./upał, długa podróż, krótki odpoczynek: −5..15%
+  #  - niski blok rywala kompresuje λ faworyta; dwie ofensywy podnoszą total
+
 # --- Jak prowadzimy research (web search) ------------------------------------
 research:
   # Domeny preferowane przy szukaniu kursów / statystyk / newsów kadrowych.
