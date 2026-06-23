@@ -5,6 +5,26 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-23 — v1.11 (lekcja: draw_bias nie działa przy dominującym snajperze + mismatch amplifikacja x2)
+
+**Wyniki 22.06:**
+- Argentyna **2:0** Austria — typ 1:0: tendencja ✓ (+2 pkt). Mismatch amplifikacja potwierdzona: model 1:0, rzecz. 2:0. Messi 2 gole (rekord WC: 17+18. gol).
+- Francja **3:0** Irak — typ 2:0: tendencja ✓ (+2 pkt). Mbappé 2 gole, Dembélé 1. Model 2:0, rzecz. 3:0 — znowu amplifikacja. Mecz opóźniony burzą nad Philadelphią.
+- Norwegia **3:2** Senegal — typ 1:1: CHYBIONY (0 pkt). Haaland brace (4 gole w 2 meczach). **Kluczowa lekcja**: draw_bias (1.4) zadziałał jak OVERRIDE przy faworycie ofensywnym z dominującym snajperem. Norwegia nie była pick'em — miała Haalanda "on fire". Typ 1:1 był błędem.
+- Jordania **1:2** Algieria — typ 0:1 (Alg wygrywa 1:0): TENDENCJA ✓ + RÓŻNICA -1 TRAFIONA (+3 pkt!). Gouiri 82'. Świetna robota.
+
+**Bilans dnia 22.06:** kicktipp +7 pkt (3×tendencja, 1×diff). Fortuna 0 PLN.
+**Łącznie:** 31 pkt kicktipp, 976.57 PLN bankroll (ROI -2.3%).
+
+**Nowe zasady:**
+9. **draw_bias NIE nadpisuje dominującego snajpera:** gdy jeden z faworytów ma napastnika "in hot form" (Haaland 4 gole, Kane 3+, Messi) → ignoruj nudge remisu, graj wygraną (tendencja+profil wynikowy). Draw_bias to nudge statystyczny dla "normalnych" meczów, nie kontruje jednostkowego geniusza.
+10. **Mismatch amplifikacja stabilna:** ARG 2:0 (model 1:0), FRA 3:0 (model 2:0) — faworyci z atakiem potrafią rozjechać. Dla λ_rywal < 0.6 zawsze rozważ +1 gol w typie (lepiej 3:0 niż 2:0 u wyraźnego faworyta).
+
+**Dzisiejsze priorytety:** POR 3:0 UZB, ENG 2:0 GHA, CRO 0:1 (via PAN), COL 1:0 DRC.
+**Kontynuujemy:** draw_bias=1.4 (nudge), reguła snajpera (zasada 9) dodana, mismatch amplifikacja w modelu.
+
+---
+
 ## 2026-06-22 — v1.10 (model multi-czynnikowy: nie tylko kursy)
 
 Uwaga użytkownika: decyzje były zakotwiczone w kursach (λ liczone z odds), a czynniki (forma,

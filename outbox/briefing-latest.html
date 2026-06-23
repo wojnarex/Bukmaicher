@@ -1,308 +1,268 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bukmaicher — briefing 2026-06-22</title>
-<style>
-  body { font-family: Georgia, 'Times New Roman', serif; font-size: 15px; color: #1a1a1a; background: #f9f9f7; margin: 0; padding: 0; }
-  .wrap { max-width: 680px; margin: 0 auto; background: #fff; padding: 28px 32px; border: 1px solid #e0ddd8; }
-  h1 { font-size: 22px; color: #1a1a1a; margin-bottom: 4px; }
-  .subtitle { font-size: 13px; color: #777; margin-bottom: 24px; border-bottom: 1px solid #e8e5e0; padding-bottom: 12px; }
-  h2 { font-size: 16px; margin-top: 28px; margin-bottom: 10px; border-left: 3px solid #c8a84b; padding-left: 10px; }
-  table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 14px; }
-  th { background: #f4f1eb; text-align: left; padding: 7px 10px; border: 1px solid #ddd; font-weight: bold; }
-  td { padding: 6px 10px; border: 1px solid #e8e5e0; vertical-align: top; }
-  tr:nth-child(even) td { background: #faf9f7; }
-  .win { color: #2a7a2a; font-weight: bold; }
-  .loss { color: #cc3333; font-weight: bold; }
-  .pick { font-weight: bold; font-size: 15px; color: #1a4a8a; }
-  .ev { font-size: 12px; color: #888; }
-  .box { background: #f7f4ed; border: 1px solid #e0daa0; border-radius: 4px; padding: 12px 16px; margin: 10px 0; font-size: 14px; }
-  .warn { background: #fff8e1; border: 1px solid #f0c040; border-radius: 4px; padding: 10px 14px; margin: 10px 0; font-size: 13px; }
-  .footer { font-size: 12px; color: #888; border-top: 1px solid #e8e5e0; margin-top: 28px; padding-top: 12px; }
-  .bk { font-size: 14px; }
-  .match-time { font-size: 12px; color: #666; }
-  .no-bet { color: #888; font-style: italic; }
-  ul { margin: 6px 0; padding-left: 20px; }
-  li { margin-bottom: 4px; }
-  .neutral { color: #888; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bukmaicher — briefing 2026-06-23</title>
+  <style>
+    body { font-family: Georgia, 'Times New Roman', serif; font-size: 15px; line-height: 1.6; color: #1a1a1a; background: #f9f8f5; margin: 0; padding: 0; }
+    .container { max-width: 680px; margin: 0 auto; background: #ffffff; border: 1px solid #e0ddd6; }
+    .header { background: #1a3a2a; color: #fff; padding: 24px 28px 18px; }
+    .header h1 { margin: 0 0 4px; font-size: 22px; font-weight: bold; letter-spacing: 0.5px; }
+    .header .subtitle { color: #a8c8a0; font-size: 13px; margin: 0; }
+    .section { padding: 20px 28px; border-bottom: 1px solid #eae8e0; }
+    .section:last-child { border-bottom: none; }
+    h2 { font-size: 16px; margin: 0 0 14px; color: #1a3a2a; border-left: 4px solid #2d7a4a; padding-left: 10px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
+    th { background: #f0ede4; text-align: left; padding: 7px 10px; font-weight: bold; color: #444; border-bottom: 2px solid #d8d3c8; }
+    td { padding: 7px 10px; border-bottom: 1px solid #eae8e0; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .badge-won { color: #1a7a2a; font-weight: bold; }
+    .badge-lost { color: #c0392b; font-weight: bold; }
+    .badge-neutral { color: #666; }
+    .pick-main { font-size: 16px; font-weight: bold; color: #1a3a2a; }
+    .edge-ok { color: #1a7a2a; font-weight: bold; }
+    .warning { background: #fff8e1; border-left: 4px solid #f39c12; padding: 10px 14px; margin: 10px 0; font-size: 13px; border-radius: 2px; }
+    .info-box { background: #e8f4ec; border-left: 4px solid #2d7a4a; padding: 10px 14px; margin: 10px 0; font-size: 13px; border-radius: 2px; }
+    .footer { background: #f0ede4; padding: 16px 28px; font-size: 12px; color: #777; }
+    .bankroll-row { display: flex; gap: 24px; flex-wrap: wrap; }
+    .bankroll-item { text-align: center; flex: 1; min-width: 80px; }
+    .bankroll-num { font-size: 20px; font-weight: bold; color: #1a3a2a; }
+    .bankroll-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; }
+    ul { margin: 8px 0; padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    .match-time { color: #555; font-size: 12px; }
+    .deadline-alert { color: #c0392b; font-weight: bold; font-size: 12px; }
+  </style>
 </head>
 <body>
-<div class="wrap">
+<div class="container">
 
-  <h1>⚽ Bukmaicher — briefing 2026-06-22</h1>
-  <div class="subtitle">Poniedziałek 22 czerwca 2026 · 4 mecze dziś (ET) · 4 typy kicktipp · MŚ 2026, faza grupowa</div>
+  <!-- NAGLOWEK -->
+  <div class="header">
+    <h1>&#9917; Bukmaicher &#8212; briefing 23 czerwca 2026</h1>
+    <p class="subtitle">Liga: Mamalova MS 2026 &nbsp;|&nbsp; 4 mecze w zakresie dnia ET &nbsp;|&nbsp; 4 typy kicktipp &nbsp;|&nbsp; 2 potencjalne value bety (weryfikuj Fortune)</p>
+  </div>
 
   <!-- ROZLICZENIE -->
-  <h2>📊 Rozliczenie 21 czerwca</h2>
-  <table>
-    <tr>
-      <th>Mecz</th><th>Wynik</th><th>Typ kicktipp</th><th>Rezultat</th><th>Pkt</th>
-    </tr>
-    <tr>
-      <td>Hiszpania vs Arabia Saudyjska</td>
-      <td><strong>4:0</strong></td>
-      <td>2:0</td>
-      <td class="win">Tendencja ✓ (mismatch ampl.)</td>
-      <td>+2</td>
-    </tr>
-    <tr>
-      <td>Belgia vs Iran</td>
-      <td><strong>0:0</strong></td>
-      <td>1:0</td>
-      <td class="loss">Chybiony — bramkarz-bohater ✗</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Urugwaj vs Zielony Przylądek</td>
-      <td><strong>2:2</strong></td>
-      <td>1:0</td>
-      <td class="loss">Chybiony — historyczna niespodzianka ✗</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <td>Nowa Zelandia vs Egipt</td>
-      <td><strong>1:3</strong></td>
-      <td>0:1</td>
-      <td class="win">Tendencja ✓</td>
-      <td>+2</td>
-    </tr>
-    <tr>
-      <td colspan="4"><strong>Łącznie (21.06)</strong></td>
-      <td><strong class="win">+4 pkt</strong></td>
-    </tr>
-  </table>
-
-  <div class="box">
-    <strong>Wnioski:</strong>
-    <ul>
-      <li><strong>Belgia 0:0 Iran:</strong> Alireza Beiranvand — 15 parad (rekord MŚ 2026). Reguła bramkarz-heroj z v1.8 zadziałała dokładnie — Belgia miała przewagę, Iran miał wybitnego GK + 10 zawodników Belgii. Typ 1:1 byłby właściwszy. Zasada: sprawdzaj GK rywala przed mismatch-typem.</li>
-      <li><strong>Urugwaj 2:2 Zielony Przylądek:</strong> historyczny punkt debiutanta MŚ (gol z wolnego Lenini). Zielony Przylądek nie jest Katarem — to drużyna z solidną organizacją (lekcja z Curaçao zastosowana za późno). Przy "umiarkowanych" mismatchach rozważ 1:1.</li>
-      <li><strong>Hispania 4:0 / Egipt 3:1:</strong> mismatch amplifikacja po raz kolejny — model daje 2:0, rzeczywistość 4:0. Tendencja trafna, ale przepuszczamy punkty za różnicę bramek.</li>
-    </ul>
+  <div class="section">
+    <h2>&#128202; Rozliczenie &#8212; 22 czerwca 2026</h2>
+    <table>
+      <tr>
+        <th>Mecz</th>
+        <th>Wynik</th>
+        <th>Typ</th>
+        <th>Pkt / PL</th>
+        <th>Wniosek</th>
+      </tr>
+      <tr>
+        <td><strong>Argentyna vs Austria</strong></td>
+        <td><strong>2:0</strong></td>
+        <td>1:0</td>
+        <td class="badge-won">+2 pkt</td>
+        <td>Tendencja &#10003;. Messi brace &#8212; rekord turnieju (gol 17+18). Model 1:0, rzecz. 2:0 &#8212; mismatch amplifikacja potwierdzona.</td>
+      </tr>
+      <tr>
+        <td><strong>Francja vs Irak</strong></td>
+        <td><strong>3:0</strong></td>
+        <td>2:0</td>
+        <td class="badge-won">+2 pkt</td>
+        <td>Tendencja &#10003;. Mbappe 2 gole, Dembele 1. Model 2:0, rzecz. 3:0 &#8212; amplifikacja x2. Mecz opozniony burza nad Filadelfia.</td>
+      </tr>
+      <tr>
+        <td><strong>Norwegia vs Senegal</strong></td>
+        <td><strong>3:2</strong></td>
+        <td>1:1</td>
+        <td class="badge-lost">0 pkt</td>
+        <td>Chybiony. Haaland brace (4 gole w 2 meczach!). Draw_bias nie powinien nadpisac dominujacego snajpera &#8212; nowa zasada 9 (v1.11).</td>
+      </tr>
+      <tr>
+        <td><strong>Jordania vs Algieria</strong></td>
+        <td><strong>1:2</strong></td>
+        <td>0:1</td>
+        <td class="badge-won">+3 pkt</td>
+        <td>Tendencja &#10003; + roznica bramek -1 trafiona. Gouiri 82'. Swietny typ.</td>
+      </tr>
+    </table>
+    <p style="margin-top:12px; font-size:13px;">
+      <strong>Bilans dnia 22.06:</strong> <span class="badge-won">+7 pkt kicktipp</span> (3x tendencja, 1x roznica bramek) | <span class="badge-neutral">Fortuna: 0 PLN</span>
+    </p>
   </div>
 
   <!-- BANKROLL -->
-  <h2>💰 Bankroll &amp; forma</h2>
-  <div class="bk box">
-    <table>
-      <tr><td><strong>Bankroll</strong></td><td>976,57 PLN (start 1000, ROI −2,3%)</td></tr>
-      <tr><td><strong>Jednostka (1u)</strong></td><td>19,53 PLN</td></tr>
-      <tr><td><strong>Punkty kicktipp łącznie</strong></td><td><strong>24 pkt</strong> (po rozliczeniu 21.06)</td></tr>
-      <tr><td><strong>Bilans Fortuna</strong></td><td>3 rozliczone zakłady · −23,43 PLN · ROI −2,3%</td></tr>
-    </table>
-    <p style="margin:6px 0 0 0; font-size:13px; color:#555;">Bankroll powyżej 70% startu — limity <code>responsible_gambling</code> nie aktywowane. Brak nowych zakładów Fortuna dziś (edge poniżej progu 5%).</p>
+  <div class="section">
+    <h2>&#128176; Bankroll &amp; forma</h2>
+    <div class="bankroll-row">
+      <div class="bankroll-item">
+        <div class="bankroll-num">976,57 PLN</div>
+        <div class="bankroll-label">Bankroll</div>
+      </div>
+      <div class="bankroll-item">
+        <div class="bankroll-num">&#8722;2,3%</div>
+        <div class="bankroll-label">ROI (calos&#263;)</div>
+      </div>
+      <div class="bankroll-item">
+        <div class="bankroll-num">31 pkt</div>
+        <div class="bankroll-label">Kicktipp (lacznie)</div>
+      </div>
+      <div class="bankroll-item">
+        <div class="bankroll-num">19,53 PLN</div>
+        <div class="bankroll-label">1 jednostka (2%)</div>
+      </div>
+    </div>
+    <p style="font-size:13px; margin-top:14px; color:#555;">
+      Strata miesiec&#768;na: ~23,43 PLN (limit 30% startowego bankrollu = 300 PLN). Dobrze ponizej limitu &#8212; zaklady Fortuna dozwolone.
+    </p>
   </div>
 
   <!-- MECZE DNIA -->
-  <h2>🗓️ Mecze dziś — poniedziałek 22 czerwca (strefa ET)</h2>
-  <table>
-    <tr><th>Mecz</th><th>KO (ET)</th><th>KO (CEST)</th><th>Stadion / Kontekst</th></tr>
-    <tr>
-      <td><strong>Argentyna vs Austria</strong> <span class="match-time">Gr. J</span></td>
-      <td>13:00</td>
-      <td>19:00</td>
-      <td>AT&amp;T Stadium, Arlington TX. ARG 3 pkt (Messi hat-trick vs Algieria), AUT 3 pkt (3:1 vs Jordania). Zwycięzca de facto awansuje.</td>
-    </tr>
-    <tr>
-      <td><strong>Francja vs Irak</strong> <span class="match-time">Gr. I</span></td>
-      <td>17:00</td>
-      <td>23:00</td>
-      <td>Lincoln Financial Field, Filadelfia. FRA 3 pkt (Mbappé ×2 vs Senegal), Irak 0 pkt (1:4 vs Norwegia). Francja eliminuje rywala przy zwycięstwie.</td>
-    </tr>
-    <tr>
-      <td><strong>Norwegia vs Senegal</strong> <span class="match-time">Gr. I</span></td>
-      <td>20:00</td>
-      <td>02:00*</td>
-      <td>MetLife Stadium, New Jersey. NOR 3 pkt (4:1 vs Irak, Haaland ×2), SEN 0 pkt (1:3 vs Francja). Pick'em z minimalną przewagą Norwegii.</td>
-    </tr>
-    <tr>
-      <td><strong>Jordania vs Algieria</strong> <span class="match-time">Gr. J</span></td>
-      <td>23:00</td>
-      <td>05:00*</td>
-      <td>Levi's Stadium, Santa Clara CA. JOR 0 pkt (1:3 vs Austria), ALG 0 pkt (0:3 vs Argentyna). Przegrany praktycznie odpada.</td>
-    </tr>
-  </table>
-  <p style="font-size:12px; color:#777;">* po północy / świt CEST — wpisuj typy z wyprzedzeniem!</p>
+  <div class="section">
+    <h2>&#128197; Mecze dnia &#8212; 23 czerwca 2026 (strefa ET)</h2>
+    <div class="warning">&#9200; <strong>Deadline kicktippa = kick-off meczu.</strong> Najwczesniejszy mecz &#8212; Portugalia vs Uzbekistan &#8212; ma deadline <strong>dzis o 19:00 CEST</strong>. Pozne mecze (Panama&#8211;Chorwacja 01:00, Kolumbia&#8211;DRK 04:00) mozna typowac wieczorem.</div>
 
-  <div class="warn">
-    ⚠️ <strong>WAŻNE — deadline kicktippa = gwizdek startowy.</strong> Mecze NOR-SEN (20:00 ET / 02:00 CEST) i JOR-ALG (23:00 ET / 05:00 CEST) wypadają w nocy/nad ranem polskiego czasu. <strong>Wpisz wszystkie 4 typy przed 19:00 CEST lub ustaw alarm.</strong>
+    <table>
+      <tr>
+        <th>Mecz</th>
+        <th>Czas (ET / CEST)</th>
+        <th>Faza / Stadion</th>
+        <th>Kontekst</th>
+      </tr>
+      <tr>
+        <td><strong>Portugalia vs Uzbekistan</strong></td>
+        <td class="match-time">13:00 ET<br>19:00 CEST<br><span class="deadline-alert">&#9888; deadline 19:00!</span></td>
+        <td>Gr. K, MD2<br>NRG Stadium, Houston</td>
+        <td>POR po remisie z DRK (1:1) desperacko potrzebuje 3 pkt. UZB bez punktow (0:3 z Kolumbia). Dias wraca do sklad po kontuzji (twarda dana: wznowil treningi). <strong>Ronaldo gra od 1'.</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Anglia vs Ghana</strong></td>
+        <td class="match-time">16:00 ET<br>22:00 CEST<br><span class="deadline-alert">&#9888; deadline 22:00</span></td>
+        <td>Gr. L, MD2<br>Gillette Stadium, Boston</td>
+        <td>Anglia po 4:2 nad Chorwacja chce zamknac awans. Ghana po 1:0 vs Panama. Saka <strong>watpliwy (szac.: ~85% fit)</strong>. Stones OUT, Guehi IN. Bellingham ma 50. mecz reprezentacyjny &#8212; zmotywowany.</td>
+      </tr>
+      <tr>
+        <td><strong>Panama vs Chorwacja</strong></td>
+        <td class="match-time">19:00 ET<br>01:00 CEST (24.06)<br><span class="deadline-alert">&#9888; deadline 01:00</span></td>
+        <td>Gr. L, MD2<br>BMO Field, Toronto</td>
+        <td>Obaj bez punktow &#8212; musi wygrywac. Chorwacja po katastrofie defensywnej (0:4 ENG) ale Modric+Kramaric = wieksza klasa od Panamy. Carrasquilla (groin) &#8212; <strong>watpliwy do startu (szac.)</strong>.</td>
+      </tr>
+      <tr>
+        <td><strong>Kolumbia vs DR Kongo</strong></td>
+        <td class="match-time">22:00 ET<br>04:00 CEST (24.06)</td>
+        <td>Gr. K, MD2<br>Est. Guadalajara, Zapopan</td>
+        <td>Kolumbia lider grupy K (3 pkt). DRK defensywne 5-3-2 (remis z POR 1:1 &#8212; dowod na wytrzymalosc). <strong>Market spodziewa sie malo goli (Under &#8722;155 = 58% de-vig).</strong></td>
+      </tr>
+    </table>
+
+    <h3 style="font-size:14px; margin-top:18px; color:#444;">Lookahead: 24&#8211;25 czerwca (typy jutro)</h3>
+    <ul style="font-size:13px; color:#555;">
+      <li><strong>24.06 15:00 ET / 21:00 CEST:</strong> Szwajcaria&#8211;Kanada, Bosnia&#8211;Katar (Gr. B) &#8212; Vancouver i Seattle</li>
+      <li><strong>24.06 18:00 ET / 00:00 CEST:</strong> Szkocja&#8211;Brazylia (!!), Maroko&#8211;Haiti (Gr. C) &#8212; Miami i Atlanta</li>
+      <li><strong>24.06 21:00 ET / 03:00 CEST:</strong> Czechy&#8211;Meksyk, RPA&#8211;Korea Pd. (Gr. A) &#8212; Mexico City i Guadalajara</li>
+      <li><strong>25.06 16:00 ET / 22:00 CEST:</strong> Ekwador&#8211;Niemcy (!), Curacao&#8211;WKS (Gr. E) &#8212; East Rutherford i Philadelphia</li>
+      <li><strong>25.06 19:00 ET / 01:00 CEST:</strong> Japonia&#8211;Szwecja, Tunezja&#8211;Holandia (Gr. F) &#8212; Arlington i Kansas City</li>
+      <li><strong>25.06 22:00 ET / 04:00 CEST:</strong> Turcja&#8211;USA (Gr. D) &#8212; Inglewood (LA)</li>
+    </ul>
+    <div class="warning" style="font-size:12px;">&#127869;&#65039; <strong>Priorytety na 24&#8211;25.06:</strong> Szkocja&#8211;Brazylia (mismatch, graja o pozycje liderska Gr. C) i Niemcy&#8211;Ekwador (mismatch amplifikacja?) &#8212; analizujemy jutro.</div>
   </div>
-
-  <!-- NEWSY KADROWE -->
-  <h2>📰 Newsy kadrowe (skład prowizoryczny — ZWERYFIKUJ oficjalny XI przed KO!)</h2>
-
-  <p><strong>Argentyna vs Austria</strong><br>
-  <em>ARG:</em> Gonzalo Montiel <strong>OUT</strong> (hamstring — potwierdzone, ESPN 22.06). Nahuel Molina zastąpi go na prawej obronie. Julian Álvarez walczy o miejsce z Lautaro Martínezem (decyzja trenera). Tagliafico wraca po pominięciu 1. meczu (potwierdzone). <em>AUT:</em> Stephan Posch — złamana szczęka, gra pod znakiem zapytania (szac., Sports Mole 22.06). Poza tym skład bez absencji. Austria lubi presować i grać odważnie — nie będzie się chować.<br>
-  <span style="font-size:12px; color:#777;">Źródło: ESPN / Sports Mole, 22.06.2026 rano</span></p>
-
-  <p><strong>Francja vs Irak</strong><br>
-  <em>FRA (szac. XI):</em> Maignan; Koundé, Upamecano, Saliba, Digne; Koné, Rabiot; Dembélé, Olise, Barcola; Mbappé. 3 zmiany vs mecz z Senegalem (Koné, Digne, Barcola). Saliba gra przez ból żeber (potwierdzone, ESPN 21.06). <em>IRQ:</em> bez absencji, ruch przed meczem ograniczony po klęsce 1:4 z Norwegią.<br>
-  <span style="font-size:12px; color:#777;">Źródło: Al Jazeera / Rotowire, 21–22.06.2026</span></p>
-
-  <p><strong>Norwegia vs Senegal</strong><br>
-  <em>NOR:</em> David Møller Wolfe i Julian Ryerson — kontuzje w meczu z Irakiem, ale obaj wracają (potwierdzone, Yahoo Sports 22.06). Haaland trenował i publikuje snippety z sesji (potwierdzony start, ESPN). Sorloth partnera Haalanda w 4-4-2 z Ødegaardem. <em>SEN:</em> skład nieznany (szac.) — Senegal szuka odpowiedzi po 1:3 z Francją. Ismaïla Sarr kluczowy.<br>
-  <span style="font-size:12px; color:#777;">Źródło: Yahoo Sports / Sports Mole, 22.06.2026</span></p>
-
-  <p><strong>Jordania vs Algieria</strong><br>
-  <em>JOR:</em> Abdallah Nasib — kulał pod koniec meczu z Austrią, oceniany (szac., Sports Mole 22.06). Ali Olwan (pierwsza bramka Jordanii w historii MŚ vs Austria) — pewny start. <em>ALG:</em> bez kontuzji po 0:3 z Argentyną. Mahrez i Zerrouki wchodzą do składu zamiast Bentaleba i Hadj Moussa (szac.). "Wygrać albo odpaść" — presja ekstremalna.<br>
-  <span style="font-size:12px; color:#777;">Źródło: Sports Mole / Goal.com, 22.06.2026</span></p>
-
-  <!-- STATYSTYKI -->
-  <h2>📊 Statystyki i forma</h2>
-  <table>
-    <tr><th>Mecz</th><th>Forma (5 ostat.)</th><th>Kontekst turniejowy</th></tr>
-    <tr>
-      <td>ARG vs AUT</td>
-      <td>ARG: W W W W W (incl. 3:0 ALG). AUT: W W W W W (3:1 JOR w debiucie MŚ).</td>
-      <td>ARG rekordzista goli w MŚ grupie. AUT po raz 2. na MŚ od 1998. Obaj mają 3 pkt po 1 meczu.</td>
-    </tr>
-    <tr>
-      <td>FRA vs IRQ</td>
-      <td>FRA: W W W W W (3:1 SEN). IRQ: P (1:4 NOR) — 1. mecz na MŚ od 40 lat.</td>
-      <td>Francja 2. na mundialu w historii goli. Irak bez historii w fazie grupowej MŚ od 1986.</td>
-    </tr>
-    <tr>
-      <td>NOR vs SEN</td>
-      <td>NOR: W (4:1 IRQ, Haaland 2 gole). SEN: P (1:3 FRA).</td>
-      <td>Haaland pierwszym graczem 2+ goli w debiucie MŚ (dla mężczyzn). Senegal bez kluczowych strzelców.</td>
-    </tr>
-    <tr>
-      <td>JOR vs ALG</td>
-      <td>JOR: P (1:3 AUT, Ali Olwan gol historyczny). ALG: P (0:3 ARG, Messi hat-trick).</td>
-      <td>Jordania 2. mecz w historii MŚ. Algieria na MŚ po 8 latach przerwy. Zero punktów = presja totalna.</td>
-    </tr>
-  </table>
-
-  <!-- KURSY -->
-  <h2>📉 Kursy rynkowe (szac. de-vig, źródło: konsensus ESPN/FanDuel/DraftKings/WinComparator 22.06)</h2>
-  <table>
-    <tr><th>Mecz</th><th>1 (%)</th><th>X (%)</th><th>2 (%)</th><th>O/U 2.5 rynek</th></tr>
-    <tr>
-      <td>ARG vs AUT</td><td>59,1%</td><td>23,7%</td><td>17,2%</td>
-      <td>O ~48% / U ~52%</td>
-    </tr>
-    <tr>
-      <td>FRA vs IRQ</td><td>~83%</td><td>~13%</td><td>~4%</td>
-      <td>O ~77% (O2.5) — O3.5 ~evens</td>
-    </tr>
-    <tr>
-      <td>NOR vs SEN</td><td>42,4%</td><td>27,3%</td><td>30,3%</td>
-      <td>O ~51% / U ~49% (O2.5@1.91)</td>
-    </tr>
-    <tr>
-      <td>JOR vs ALG</td><td>15,2%</td><td>23,6%</td><td>61,2%</td>
-      <td>brak danych (szac. U 55%)</td>
-    </tr>
-  </table>
-  <p style="font-size:12px; color:#777;">Wszystkie % po de-vig (usunięciu marży bukmachera) — szac.</p>
 
   <!-- TYPY KICKTIPP -->
-  <h2>🎯 Typy na kicktippa — poniedziałek 22 czerwca</h2>
-  <div class="warn">
-    ⚠️ <strong>Zweryfikuj oficjalne składy przed deadline'em</strong> — szczególnie: czy Álvarez/Lautaro (ARG) startuje, czy Saliba zagra (FRA, ból żeber), oraz skład Senegalu. Mecze nocne (NOR-SEN, JOR-ALG) — typ z wyprzedzeniem lub alarm na 01:00 CEST.
-  </div>
-  <table>
-    <tr>
-      <th>Mecz (KO ET / CEST)</th><th>Typ</th><th>Uzasadnienie (1 zdanie)</th><th>EV (szac.)</th><th>Alter.</th>
-    </tr>
-    <tr>
-      <td><strong>ARG vs AUT</strong><br><span class="match-time">13:00 / 19:00</span></td>
-      <td class="pick">1:0</td>
-      <td>ARG 59% de-vig, Messi hat-trick w otwarciu — atak w formie; Austria solidna defensywnie, λ=1.7/0.8 → EV(1:0)=1,40 wyprzedza EV(2:1)=1,36.</td>
-      <td class="ev">szac. 1,40 pkt</td>
-      <td>2:1</td>
-    </tr>
-    <tr>
-      <td><strong>FRA vs IRQ</strong><br><span class="match-time">17:00 / 23:00</span></td>
-      <td class="pick">2:0</td>
-      <td>Francja ~83% faworyt (Mbappé+Barcola+Dembélé+Olise), Irak 0 pkt (1:4 NOR); mismatch λ=2.7/0.8 → reguła "umiarkowany mismatch = 2:0" (EV=1,84, runner-up 3:1=1,81).</td>
-      <td class="ev">szac. 1,84 pkt</td>
-      <td>3:1</td>
-    </tr>
-    <tr>
-      <td><strong>NOR vs SEN</strong><br><span class="match-time">20:00 / 02:00*</span></td>
-      <td class="pick">1:1</td>
-      <td>Pick'em (NOR 42% / X 27% / SEN 30%), obie drużyny mogą strzelić, draw_bias=1.4 i premia 3 pkt za remis-tendencję → EV(1:1)=1,19 > EV(1:0)=1,15.</td>
-      <td class="ev">szac. 1,19 pkt</td>
-      <td>1:0</td>
-    </tr>
-    <tr>
-      <td><strong>JOR vs ALG</strong><br><span class="match-time">23:00 / 05:00*</span></td>
-      <td class="pick">0:1</td>
-      <td>Algieria 61% de-vig, Mahrez wraca, Jordania bez Nasiba; obie desperacko potrzebują wygranej, ALG zamknięte zwycięstwo 1:0 → EV(0:1)=1,49 > EV(0:2)=1,38.</td>
-      <td class="ev">szac. 1,49 pkt</td>
-      <td>0:2</td>
-    </tr>
-  </table>
-  <p style="font-size:12px; color:#777;">* = godzina CEST po północy / nad ranem — <strong>wpisz typy wcześniej lub ustaw alarm!</strong><br>
-  Notacja: wynik z perspektywy drużyny wymienionej pierwszej. "0:1" w JOR vs ALG = Jordania 0 – Algieria 1 (Algieria wygrywa).</p>
+  <div class="section">
+    <h2>&#127919; Typy na kicktippa &#8212; Mamalova MS 2026</h2>
+    <div class="info-box">&#128204; Wpisuj typ PRZED kick-offem danego meczu na kicktipp.pl/mamalova-ms-2026. Godziny = deadline.</div>
 
-  <!-- VALUE BETY -->
-  <h2>🔎 Value bety Fortuna — 22 czerwca</h2>
-  <div class="box">
-    <p class="no-bet">Dziś brak zakładów spełniających próg edge ≥ 5% przy kursach 1,50–6,00 po de-vig.</p>
-    <ul style="font-size:13px; margin-top:8px;">
-      <li><strong>ARG wygrana (~1,55–1,60):</strong> model ~58% ≈ rynek ~59%. Zero edge. Kurs zbyt niski (poniżej wartości po de-vig).</li>
-      <li><strong>FRA wygrana (&lt;1,15):</strong> poniżej min_odds (1,50) — bez możliwości zakładu.</li>
-      <li><strong>FRA AH −1,5 (szac. ~1,75):</strong> model P(Francja wygrywa o 2+) = szac. 60%. Edge szac. ~5% przy kursie 1,75, ~8% przy 1,80+. <em>Sprawdź na efortuna.pl ręcznie przed 23:00 CEST</em> — wejdź tylko przy kursie ≥ 1,80; stawka max 0,75u (~14,6 PLN). Nie jest wpisana do historii (kursu nie potwierdziłem).</li>
-      <li><strong>NOR-SEN BTTS Yes (~1,75):</strong> model P(BTTS) = szac. 52% vs rynek 54,5% → brak edge (delta ujemna). Pomijam.</li>
-      <li><strong>JOR-ALG ALG wygrana (~1,62):</strong> model ~61% = rynek ~61%. Żadnej przewagi.</li>
-    </ul>
-    <p style="margin-top:8px; font-size:13px;"><strong>Podsumowanie:</strong> rynki są dziś dobrze wycenione. Jedynym miejscem do sprawdzenia jest FRA AH −1,5 przy kursie ≥ 1,80 — conditional, nie formalny zakład.</p>
+    <table>
+      <tr>
+        <th>Mecz (deadline CEST)</th>
+        <th>Rekomendacja</th>
+        <th>Alt. typ</th>
+        <th>Uzasadnienie (kluczowe czynniki)</th>
+        <th>Szac. EV</th>
+      </tr>
+      <tr>
+        <td><strong>Portugalia &#8211; Uzbekistan</strong><br><span class="deadline-alert">19:00 CEST</span></td>
+        <td><span class="pick-main">3:0</span></td>
+        <td>2:0</td>
+        <td>Wyrazny mismatch (POR 80% de-vig). Dias wraca. POR desperacka (tylko 1 pkt). Mismatch amplifikacja (zasada 10): lambda_rywal &lt; 0.6, dodaj +1 gol. UZB obrona slaba (0:3 vs KOL). Ronaldo + Bruno glodni goli.</td>
+        <td>~2.1 pkt</td>
+      </tr>
+      <tr>
+        <td><strong>Anglia &#8211; Ghana</strong><br><span class="deadline-alert">22:00 CEST</span></td>
+        <td><span class="pick-main">2:0</span></td>
+        <td>1:0</td>
+        <td>Wyrazny faworyt w formie ofensywnej (4:2 CRO, Kane w formie). ENG 79% de-vig. Reguła v1.11 zasada 9: Kane in hot form &#8594; graj wygrana, nie remis. Ghana zorganizowana (1:0 PAN) ale nie zatrzyma Anglii. lambda_fin ENG 1.86 / GHA 0.56.</td>
+        <td>~1.9 pkt</td>
+      </tr>
+      <tr>
+        <td><strong>Panama &#8211; Chorwacja</strong><br><span class="deadline-alert">01:00 CEST (24.06)</span></td>
+        <td><span class="pick-main">0:1</span></td>
+        <td>0:2</td>
+        <td><strong>UWAGA:</strong> 0:1 = Chorwacja wygrywa 1:0. CRO 63% de-vig. Modric + Kovacic + Kramaric = jakos&#769;c&#769;. Chorwacja mimo katastrofy defensywnej (4:2 ENG) ma za duz&#775;a klase. EV(0:1 CRO) ~1.51 vs EV(0:0/1:1) ~1.02.</td>
+        <td>~1.5 pkt</td>
+      </tr>
+      <tr>
+        <td><strong>Kolumbia &#8211; DR Kongo</strong><br><span class="deadline-alert">04:00 CEST (24.06)</span></td>
+        <td><span class="pick-main">1:0</span></td>
+        <td>2:0</td>
+        <td>Kolumbia 63% de-vig, wygrana 3:1 w MD1. DRK defensywne 5-3-2 (remis z POR) &#8212; wall, ale nie utrzyma. Market: Under favored (58% de-vig) &#8594; malo goli. lambda_fin COL 1.47 / DRC 0.68. EV(1:0) ~1.50 &gt; EV(1:1) ~0.96.</td>
+        <td>~1.5 pkt</td>
+      </tr>
+    </table>
+
+    <p style="font-size:12px; color:#888; margin-top:8px;">Szac. EV = oczekiwane punkty wg systemu 9-tki (tendencja 2 pkt wygrana / 3 pkt remis, diff +1, exact +1). Siatka Poisson + draw_bias=1.4 + zasady v1.11.</p>
+
+    <div class="warning">&#9888;&#65039; <strong>Zweryfikuj oficjalne sklady przed deadline'm!</strong> Szczegolnie wazne: Saka (Anglia &#8212; 22:00 CEST), Carrasquilla (Panama &#8212; 01:00 CEST), Gvardiol (Chorwacja). Oficjalne XI pojawia sie ~1h przed kick-offem na FIFA.com, BBC Sport lub ESPN.</div>
+  </div>
+
+  <!-- VALUE BETY FORTUNA -->
+  <div class="section">
+    <h2>&#128270; Value bety Fortuna</h2>
+    <p style="font-size:13px;">Dwa kandydaci o potencjalnym edge &#8805; 5% &#8212; <strong>wymagaja weryfikacji kursow na efortuna.pl</strong> przed postawieniem. Kursy ponizej to szac. na podstawie rynku US; Fortuna moze oferowac nizsze &#8212; wtedy odpusc.</p>
+
+    <table>
+      <tr>
+        <th>Mecz</th>
+        <th>Rynek</th>
+        <th>Typ</th>
+        <th>Min. kurs Fortuna</th>
+        <th>Szac. stawka</th>
+        <th>Szac. edge</th>
+        <th>Uzasadnienie</th>
+      </tr>
+      <tr>
+        <td><strong>Portugalia &#8211; Uzbekistan</strong><br>(19:00 CEST)</td>
+        <td>Over/Under 2.5</td>
+        <td><span class="edge-ok">Over 2.5 &#10003;</span></td>
+        <td>&#8805; 1.52</td>
+        <td>0,5u = ~10 PLN</td>
+        <td class="edge-ok">szac. 5&#8211;9%</td>
+        <td>POR desperacka i atakujaca. UZB stracila 3:1 &#8212; slaba obrona. Model P(over) ~68% vs rynek 62%. <strong>Jesli Fortuna daje ponizej 1.52 &#8212; nie wchodzic.</strong></td>
+      </tr>
+      <tr>
+        <td><strong>Kolumbia &#8211; DR Kongo</strong><br>(04:00 CEST, 24.06)</td>
+        <td>Over/Under 2.5</td>
+        <td><span class="edge-ok">Under 2.5 &#10003;</span></td>
+        <td>&#8805; 1.62</td>
+        <td>0,5u = ~10 PLN</td>
+        <td class="edge-ok">szac. ~5%</td>
+        <td>DRK 5-3-2 defensywny blok (remis z POR). Model P(under) ~63% vs rynek 58%. <strong>Edge jest tylko przy kursie &#8805;1.62 na Fortunie &#8212; weryfikuj przed postawieniem.</strong></td>
+      </tr>
+    </table>
+
+    <p style="font-size:12px; color:#888; margin-top:8px;">Oba zaklady na granicy progu value_threshold (5%). Lacznie max 2 zaklady, razem max ~20 PLN stawki. Nie gonje zakla&#769;du ponizej minimalnego kursu.</p>
   </div>
 
   <!-- STRATEGIA -->
-  <h2>🧠 Strategia — korekta v1.9 (22.06)</h2>
-  <div class="box">
-    <p><strong>Belgia-test (potwierdzona reguła v1.8):</strong> wybitny GK rywala + zmęczona drużyna w 10 zawodników = typ na remis, nie wygraną. Beiranvand 15 parad = klasyczny bramkarz-herój. Zasada <em>„przed mismatch-typem sprawdź GK"</em> zostaje.</p>
-    <p><strong>Urugwaj 2:2 Zielony Przylądek (nowa lekcja):</strong> drużyny debiutujące na MŚ lub bez presji rankingowej są bardziej niebezpieczne niż kursy sugerują — Zielony Przylądek nie jest Katarem. W meczach "umiarkowany faworyt vs historyczny debiutant" consider 1:1 vs 1:0.</p>
-    <p><strong>Dziś:</strong> pick'em NOR-SEN → remis (1:1) to prawidłowy EV-wybór, nie nawyk. Mecz wyraźnego faworyta ARG vs AUT → typ wygraną (1:0). Bez Fortuny dopóki edge nie potwierdzone.</p>
+  <div class="section">
+    <h2>&#129504; Strategia &#8212; v1.11 (23.06.2026)</h2>
+    <p style="font-size:14px;"><strong>Nowa zasada 9 &#8212; draw_bias NIE nadpisuje dominujacego snajpera:</strong> Norwegia&#8211;Senegal (3:2) pokazala, ze draw_bias=1.4 to nudge dla &#8222;normalnych&#8221; meczow. Kiedy faworyt ma napastnika w hot streak (Haaland 4 gole/2 mecze, Kane etc.) &#8212; ignoruj nudge remisu i graj wygrana. Dzieki temu dzis typujemy ENG 2:0 i CRO 0:1, nie remisy.</p>
+    <p style="font-size:14px;"><strong>Zasada 10 &#8212; mismatch amplifikacja stabilna:</strong> ARG 2:0 (model 1:0), FRA 3:0 (model 2:0) &#8212; wzorzec powtarzalny. Przy lambda_rywal &lt; 0.6 zawsze dodaj +1 gol do proponowanego wyniku kicktipp. Dzis: Portugalia 3:0 zamiast 2:0.</p>
+    <p style="font-size:14px;"><strong>Kontynuujemy:</strong> draw_bias=1.4, model blend 55/45 (rynek/wlasny), EV-kicktipp z pelna siatka Poisson. Bankroll zdrowy (ROI -2.3%, strata miesiec&#768;na 7.8% limitu), zakla&#769;dy Fortuna dozwolone.</p>
   </div>
-
-  <!-- LOOKAHEAD -->
-  <h2>🔭 Lookahead — wtorek 23 czerwca i środa 24 czerwca (ET)</h2>
-  <table>
-    <tr><th>Mecz</th><th>KO ET / CEST</th><th>Kontekst</th></tr>
-    <tr>
-      <td><strong>Portugalia vs Uzbekistan</strong> (Gr. K)</td>
-      <td>13:00 / 19:00</td>
-      <td>Houston. Portugalia — jeśli wygrała mecz 1. (sprawdź). Potencjalny mismatch.</td>
-    </tr>
-    <tr>
-      <td><strong>Anglia vs Ghana</strong> (Gr. L)</td>
-      <td>16:00 / 22:00</td>
-      <td>Foxborough MA. Anglia faworyt. Ghana po nieudanym MŚ 2022.</td>
-    </tr>
-    <tr>
-      <td><strong>Panama vs Chorwacja</strong> (Gr. L)</td>
-      <td>19:00 / 01:00*</td>
-      <td>Toronto. Chorwacja faworyt — wyrównany mecz oczekiwany.</td>
-    </tr>
-    <tr>
-      <td><strong>Kolumbia vs DR Konga</strong> (Gr. K)</td>
-      <td>22:00 / 04:00*</td>
-      <td>Guadalajara MX. Kolumbia umiarkowany faworyt.</td>
-    </tr>
-    <tr>
-      <td><strong>Szkocja vs Brazylia</strong> (Gr. C, 24.06)</td>
-      <td>—</td>
-      <td>Miami. Brazylia zdecydowany faworyt.</td>
-    </tr>
-    <tr>
-      <td><strong>Szwajcaria vs Kanada</strong> (Gr. B, 24.06)</td>
-      <td>—</td>
-      <td>Vancouver.</td>
-    </tr>
-  </table>
-  <p style="font-size:12px; color:#777;">* po północy CEST. Deadline kicktippa dla meczów 23.06 — analiza w jutrzejszym briefingu (23.06).</p>
 
   <!-- STOPKA -->
   <div class="footer">
-    <p><strong>Gra hazardowa wiąże się z ryzykiem. Tylko 18+. Typuj wyłącznie w ramach ustalonego budżetu. To rekomendacje analityczne, nie gwarancja wyniku.</strong></p>
-    <p>Bukmaicher · 22 czerwca 2026 · sesja Claude Code · Liga: Mamalova MŚ 2026</p>
+    <p><strong>Gra hazardowa wiaze sie z ryzykiem. Tylko 18+. Typuj wylacznie w ramach ustalonego budzetu. To rekomendacje analityczne, nie gwarancja wyniku.</strong></p>
+    <p style="margin-top:6px;">Liga: kicktipp.pl/mamalova-ms-2026 | Bukmacher: efortuna.pl | Wygenerowano: 2026-06-23 rano CEST | Bukmaicher v1.11</p>
   </div>
 
 </div>
