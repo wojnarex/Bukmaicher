@@ -5,6 +5,25 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-24 — v1.12 (2× exact = model działa; Ghana beton niszczy Anglię; nowa reguła: defensywna kompresja rywala)
+
+**Wyniki 23.06:**
+- Portugalia **5:0** Uzbekistan — typ 3:0: tendencja ✓ (+2 pkt). Mismatch amplifikacja po raz kolejny (model 3:0, rzecz. 5:0). Ronaldo brace.
+- Anglia **0:0** Ghana — typ 2:0: CHYBIONY (0 pkt). Ghana zagrała beton (organizacja defensywna, parking the bus). Draw_bias 1.4 powinien był wysunąć 1:1 → dałby 3 pkt. **Lekcja**: λ_ENG≈1.86 był technicznie poprawny, ale Ghana skompresowała przestrzenie. Przed meczem "wyraźny faworyt vs drużyna z historią defensywną" sprawdź xGA i styl rywala.
+- Chorwacja **1:0** Panama — typ 0:1: EXACT ✓ (+4 pkt!). Perfekcyjny typ: cagey mecz dwóch desperatów, model trafiony co do bramki.
+- Kolumbia **1:0** DR Kongo — typ 1:0: EXACT ✓ (+4 pkt!). Model 1.47:0.68 sprawdził się idealnie.
+
+**Bilans dnia 23.06:** kicktipp +10 pkt (2+0+4+4). 2× exact w jednym dniu — rekord sezonu.
+**Łącznie:** 41 pkt kicktipp, 976.57 PLN bankroll (ROI -2.3%).
+
+**Nowa zasada 11 — defensywna kompresja rywala (parking the bus):**
+Przed meczem "wyraźny faworyt (λ>1.5) vs drużyna z historią defensywną lub niskim blokiem" (Ghana, Iran, Curaçao, Korea Płd.) sprawdź xGA i styl gry rywala. Jeśli rywal ma styl 5-4-1 / niski blok, albo ich xGA < 1.0/match → obniż λ_faworyta o 10–15% i rozważ 1:0 zamiast 2:0, lub draw_bias może wyłonić 0:0/1:1. Model Poissona nie uwzględnia „parking the bus".
+
+**Dzisiejsze priorytety:** SUI-CAN 1:1, BIH-QAT 2:0, SCO-BRA 0:2, MAR-HAI 2:0, CZE-MEX 1:1, RSA-KOR 0:1.
+**Kontynuujemy:** draw_bias=1.4, wszystkie zasady 1–11 w mocy. Kurs na value bety Fortuna dziś niespełniony (brak edge ≥5% przy dostępnych kursach rynkowych).
+
+---
+
 ## 2026-06-23 — v1.11 (lekcja: draw_bias nie działa przy dominującym snajperze + mismatch amplifikacja x2)
 
 **Wyniki 22.06:**
