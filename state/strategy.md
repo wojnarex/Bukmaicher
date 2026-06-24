@@ -5,6 +5,23 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-24 — v1.13 (model STAWKI: 3. kolejka i mecze decydujące)
+
+Na bazie analizy ostatniej kolejki (AbsurDB): w meczach o stawkę MOTYWACJA i kalkulacja tabeli
+biją jakość i kursy. Dodany **Krok 2.5** (archetypy stawki) — wchodzi do λ_własne i często dominuje:
+- **A) martwy mecz** (oba nic nie grają) → rotacja, losowo, Under, niska pewność, Fortuna PAS;
+- **B) remis pasuje obu** → zachowawczy niskobramkowy remis (Gijón '82) → 1:1/0:0 + Under;
+- **C) oba muszą wygrać/strzelać** → otwarcie, Over, typ na wygraną;
+- **D) asymetria** (jedna potrzebuje, druga bezpieczna / „wystarczy niska porażka") → nudge ku potrzebującej lub murowanie (Under);
+- **E) wyścig o różnicę bramek / 3. miejsce** → przeładowana ofensywa (Over).
+Plus: drabinka (łatwiejszy rywal w pucharze) = flaga niepewności; ostatnia kolejka grana równolegle.
+Mapowanie z analizy: Algieria-Austria = **B** (remis awansuje obu → 1:1, uwaga na pakt à la Gijón),
+USA-Turcja = **A** (martwy), Irak-Senegal = **C/E** (gonią bramki → Over), Szkocja-Brazylia = **D**
+(Szkocji wystarczy niska porażka → mur/Under), Paragwaj-Australia = **B** (remis = awans obu → nudny).
+ZASADA: najpierw ustal scenariusze tabeli (web search), potem typuj.
+
+---
+
 ## 2026-06-24 — v1.12 (2× exact = model działa; Ghana beton niszczy Anglię; nowa reguła: defensywna kompresja rywala)
 
 **Wyniki 23.06:**

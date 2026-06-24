@@ -67,6 +67,34 @@ Mecz z kick-offem np. 22:00 ET to wciąż „ten" dzień ET, choć w Polsce jest
 
 ---
 
+## Krok 2.5 — Stawka, scenariusze grupowe i drabinka (KLUCZOWE w 3. kolejce i pucharach)
+
+W decydujących meczach MOTYWACJA i kalkulacja tabeli często biją jakość/kursy. Dla każdego meczu
+USTAL, czego każda drużyna potrzebuje (tabela + scenariusze awansu, ranking 3. miejsc, bilans
+bezpośredni) i sklasyfikuj mecz do archetypu — to wchodzi do λ_własne (Krok 6) i bywa DOMINUJĄCE:
+
+- **A) Martwy mecz** (oba nic nie ugrają — awans/odpadnięcie/lokata przesądzone): rotacja, niska
+  intensywność, wynik losowy. → obniż pewność, lekko Under, UNIKAJ odważnych wyników; kicktipp
+  bezpiecznie (1:1/1:0); Fortuna **PAS** (nieprzewidywalne, rezerwy w składzie).
+- **B) Remis pasuje OBU** (podział pkt awansuje/satysfakcjonuje obie): ryzyko zachowawczego,
+  niskobramkowego remisu („pakt o nieagresji", echo Gijón '82). → mocny boost remisu + Under;
+  kicktipp **1:1 / 0:0**; Fortuna Under + ew. remis (value).
+- **C) Oba muszą wygrać / strzelać** (do-or-die): otwarcie, ofensywa, wyższy total, mniej remisu.
+  → Over; typ na wygraną (lepsza / mniej potrzebująca goli drużyna), wynik z bramkami (2:1).
+- **D) Asymetria** (jedna potrzebuje wyniku, druga bezpieczna): bezpieczna rotuje/gra na luzie →
+  potrzebująca groźniejsza niż sugeruje jakość. Wariant: komuś **wystarczy niska porażka** →
+  murowanie bramki, niski total (np. „Szkocja vs Brazylia"). → nudge ku potrzebującej / Under.
+- **E) Różnica bramek / wyścig o 3. miejsce**: drużyna musi wygrać RÓŻNICĄ lub strzelić N goli →
+  przeładowana ofensywa (Over), odsłony na kontry.
+
+**Drabinka:** czasem niższa lokata = łatwiejszy rywal w pucharze → drużyna może NIE gonić wygranej.
+Traktuj jako flagę niepewności (nie nadawaj wysokiej pewności typowi). Ostatnia kolejka grupy grana
+jest RÓWNOLEGLE → drużyny reagują na wyniki z innych boisk (możliwe późne gole / wygaszenie).
+
+Najpierw USTAL scenariusze (web search: tabele + „co daje awans"), DOPIERO potem typuj.
+
+---
+
 ## Krok 3 — Newsy kadrowe i kontekst (per mecz)
 
 Dla każdego meczu do typowania, web search (preferuj `research.preferred_news_sources`):
@@ -112,8 +140,9 @@ Metoda (dla każdego meczu z deadlinem):
 1. Zbuduj DWIE oceny oczekiwanych bramek (λ) i je połącz — NIE opieraj się wyłącznie na kursach:
    a) **λ_rynek** — z kursów (suma λ ≈ total z O/U po de-vig; podział wg przewagi z 1X2).
    b) **λ_własne** — NIEZALEŻNIE z czynników (kroki 3–4): forma/xG, kluczowe absencje, solidność
-      defensywy rywala, motywacja/stawka, zmęczenie/rotacja, wysokość/upał/podróż, matchup taktyczny
-      (niski blok kompresuje λ faworyta), H2H. Stosuj orientacyjne korekty z sekcji `model` w configu.
+      defensywy rywala, **STAWKA/scenariusz tabeli (w 3. kolejce: archetyp z Kroku 2.5 — często
+      dominujący!)**, zmęczenie/rotacja, wysokość/upał/podróż, matchup taktyczny (niski blok
+      kompresuje λ faworyta), H2H. Stosuj orientacyjne korekty z sekcji `model` w configu.
    c) **λ_final = blend** wg `model.market_weight` (np. 0.55·λ_rynek + 0.45·λ_własne).
    GDZIE λ_własne istotnie odbiega od λ_rynek → to jest sygnał (typ kontra rynkowi + potencjalne value).
 2. Zbuduj siatkę prawdopodobieństw wyników (Poisson po λ, 0:0…5:5).
