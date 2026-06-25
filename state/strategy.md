@@ -5,6 +5,29 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-25 — v1.14 (lekcja: archetyp B ≠ automatyczny 1:1 gdy faworyt może klinczować; desperacja słabszego ≠ skuteczność)
+
+**Wyniki 24.06:**
+- Szwajcaria **2:1** Kanada — typ 1:1: CHYBIONY (0 pkt). Archetyp błędnie sklasyfikowany jako B (remis pasuje obu) — SUI mogła klinczować wygraną, a CAN desperacko potrzebowała wygraj. SUI MIAŁA powód GONIĆ wygraną. Właściwy archetyp: D (asymetria z motywacją SUI do wygranej).
+- Bośnia **3:1** Katar — typ 2:0: RÓŻNICA BRAMEK ✓ (+3 pkt). Margines 2 gole trafiony!
+- Brazylia **3:0** Szkocja — typ 0:2: tendencja ✓ (+2 pkt). Mismatch amplifikacja: powinniśmy pisać 0:3 (≥1 gol więcej przy λ_rywal<0.5). Szkocja była desperacka ale zbyt słaba.
+- Maroko **4:2** Haiti — typ 2:0: RÓŻNICA BRAMEK ✓ (+3 pkt). Ponownie margines 2 gole trafiony!
+- Meksyk **3:0** Czechy — typ 1:1: CHYBIONY (0 pkt). Błąd: CZE (0 pkt, desperate) vs MEX (3 pkt, safe) — właściwy archetyp D. Lekcja z v1.6 niewyciągnięta: faworyt z punktami kontruje desperata 1:0 lub mocniej. CZE był za słaby by wymusić cokolwiek.
+- RPA **1:0** Korea Płd. — typ 0:1: CHYBIONY (0 pkt). Zła tendencja. RPA miała 0 pkt, KOR miała 0 pkt — oba do-or-die. Błędna ocena względnej jakości.
+
+**Bilans dnia 24.06:** kicktipp +8 pkt (0+3+2+3+0+0). 2× goal_diff w jednym dniu — solidnie!
+**Łącznie:** 49 pkt kicktipp, 976.57 PLN bankroll (ROI -2.3%).
+
+**Nowe zasady:**
+12. **Archetyp B wymaga symetrii:** „Remis pasuje obu" działa TYLKO gdy OBIE strony mają powód, żeby się zadowolić remisem. Gdy JEDNA strona (nawet niewielki faworyt) może klinczować wygraną i jest silniejsza — to archetyp D, nie B. Sprawdź punkty OBIE drużyn przed klasyfikacją.
+13. **Desperacja słabszego ≠ skuteczność:** Gdy desperacka drużyna jest jakościowo znacznie gorsza (np. CZE vs MEX, SCO vs BRA) — desperacja nie pomaga; silniejsza strona wygrywa swobodnie. Obniżaj typ ku wygranej faworyta, nie ku remisowi.
+
+**Dzisiejsze priorytety:** ECU-GER 0:2, CUR-CIV 0:1, JPN-SWE 1:0, TUN-NED 0:2, TUR-USA 1:1, PAR-AUS 1:1.
+**Fortuna:** SWE to win @ 4.50, 0.5u (szac. edge ~12–15%), Kubo OUT + Sweden must-win motivation.
+**Kontynuujemy:** draw_bias=1.4, reguły 1–13 w mocy.
+
+---
+
 ## 2026-06-24 — v1.13 (model STAWKI: 3. kolejka i mecze decydujące)
 
 Na bazie analizy ostatniej kolejki (AbsurDB): w meczach o stawkę MOTYWACJA i kalkulacja tabeli
