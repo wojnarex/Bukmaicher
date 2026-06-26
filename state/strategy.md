@@ -5,6 +5,28 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-26 — v1.15 (lekcja: 3 chybione tendencje z rzędu — TUR, ECU-GER, JPN-SWE; diagnostyka błędów archetypu)
+
+**Wyniki 25.06:**
+- Ekwador **2:1** Niemcy — typ 0:2 (Niemcy wyg.): CHYBIONY (0 pkt). Niespodzianka! Niemcy przegrały. Nie sprawdziliśmy dokładnej stawki dla obu drużyn — jeśli Niemcy miały już punkty i mogły rotować, to był archetyp A lub D dla ECU. Lekcja: przed każdym meczem sprawdzaj TABELĘ GROUP, nawet przy "oczywistych" faworytach.
+- Curaçao **0:2** WKŚ — typ 0:1 (CIV wyg. 1:0): tendencja ✓ (+2 pkt). Różnica bramek chybiona (my 1, faktyczna 2).
+- Japonia **1:1** Szwecja — typ 1:0 (Japonia wyg.): CHYBIONY (0 pkt). Remis. Fortuna Sweden win przegrana (-9.77 PLN). Archetyp D (Sweden musiała wygrać) był poprawny, ale Sweden jakościowo nie wystarczyła.
+- Tunezja **1:3** Holandia — typ 0:2 (NED diff 2): tendencja+diff ✓ (+3 pkt). Excellent — margines 2 gole trafiony!
+- Turcja **3:2** USA — typ 1:1 (remis): CHYBIONY (0 pkt). Turcja wygrała w ostatnich sekundach. Archetyp błędny — nie była to sytuacja "remis pasuje obu". Turcja była bardziej zmotywowana niż sądziliśmy.
+- Paragwaj **0:0** Australia — typ 1:1 (remis): tendencja ✓ (+3 pkt). Remis trafiony mimo różnicy wyniku.
+
+**Bilans dnia 25.06:** kicktipp +8 pkt (0+2+0+3+0+3). Fortuna: -9.77 PLN (Sweden przegrana).
+**Łącznie:** 57 pkt kicktipp, 966.80 PLN bankroll (ROI -3.3%).
+
+**Nowa zasada 14 — Sprawdź TABELĘ GRUPY przed każdym typem (krytyczne):**
+3 chybione typy z rzędu mają wspólny mianownik: nie sprawdziliśmy dokładnej stawki dla OBIE drużyny przed klasyfikacją archetypu. ECU miał powody by gonić wygraną (desperacja) a GER mógł odpuścić (wystarczało). TUR był zmotywowany (miał powody walczyć), a my zakładaliśmy "remis pasuje obu" bez weryfikacji punktów. Zasada: zanim wpiszesz typ, ZAWSZE sprawdź: (a) ile pkt ma każda drużyna, (b) co daje jej remis/przegrana/wygrana w kontekście tabeli i 3. miejsc. Jeśli masz wątpliwości co do archetypu — sprawdź standings web search, nie zgaduj.
+
+**Dzisiejsze priorytety:** NOR-FRA 0:2, SEN-IRQ 2:1, CPV-KSA 1:1, URU-ESP 0:1, EGY-IRN 1:0.
+**Fortuna:** Iran wyg. vs Egypt @ szac. 5.75 (SPRAWDŹ efortuna.pl), 0.5u (9.77 PLN), szac. edge 20-27% — Iran desperacki + Egypt rotacja + 2 obrońcy OUT.
+**Kontynuujemy:** draw_bias=1.4, zasady 1–14 w mocy.
+
+---
+
 ## 2026-06-25 — v1.14 (lekcja: archetyp B ≠ automatyczny 1:1 gdy faworyt może klinczować; desperacja słabszego ≠ skuteczność)
 
 **Wyniki 24.06:**
