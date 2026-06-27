@@ -5,6 +5,27 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-27 — v1.16 (lekcja: EXACT Urugwaj-Hisz 0:1; Iran desperacki = remis, nie wygrana; 3. kolejka = archetypy dominują)
+
+**Wyniki 26.06:**
+- Norwegia **1:4** Francja — typ 0:2 (Francja wyg.): tendencja ✓ (+2 pkt). Francja rozjechała mocniej niż model (mismatch amplifikacja).
+- Senegal **5:0** Irak — typ 2:1 (Senegal wyg.): tendencja ✓ (+2 pkt). Senegal rozjechał Irak zdecydowanie.
+- Zielony Przylądek **0:0** Arabia Saudyjska — typ 1:1 (remis): tendencja ✓ (+3 pkt). Remis trafiony (choć typ 0:0 byłby exact). Draw_bias zadziałał.
+- Urugwaj **0:1** Hiszpania — typ 0:1: **EXACT ✓ (+4 pkt!)**. Archetyp D idealnie: Urugwaj desperacki atakował, Hiszpania spokojna, strzeliła kontra i broniła.
+- Egipt **1:1** Iran — typ 1:0 (Egipt wyg.): CHYBIONY (0 pkt). Iran desperacki zremisował. Fortuna Iran wyg. przegrana (-9.77 PLN).
+
+**Bilans dnia 26.06:** kicktipp +11 pkt (2+2+3+4+0). Fortuna -9.77 PLN.
+**Łącznie:** 68 pkt kicktipp, 957.03 PLN bankroll (ROI -4.3%). Jednostka 1u = 19.14 PLN.
+
+**Nowa zasada 15 — Desperacja słabszego przy silnej defensywie rywala = remis (nie wygrana):**
+Iran był desperacki (musiał wygrać), ale miał też jakość defensywną. Egipt z 2 obrońcami OUT nie był wystarczająco ofensywny. Wynik: 1:1. Lekcja: przy zakładzie na "drużyna desperacka wygra" sprawdź czy rywal NIE ma mocnej obrony — może efektywnie bronić mimo presji i wystarczyć na remis. Iran-Syria, Iran-Belgia w historii = remisy przy desperacji. Wyjątek: gdy desperacka strona WYRAŹNIE dominuje jakościowo.
+
+**Nowa zasada 16 — 3. kolejka i dead rubbers:** Przy remisach "martwy mecz" (Jordan-ARG, DRC-UZB) typuj ostrożnie (1:1 lub 1:0 faworycie) i UNIKAJ pewnych wyników. Archetyp A = duża niepewność, rezerwy w składzie = wynik losowy.
+
+**Kontynuujemy:** draw_bias=1.4, zasady 1–16 w mocy. Dziś final meczów grupowych: PAR/ENG 0:3, CRO/GHA 1:1, COL/POR 0:1, DRC/UZB 1:0, JOR/ARG 1:1, ALG/AUT 1:1. Fortuna: CRO/GHA Under 2.5 @ szac. 1.58, 0.5u (9.57 PLN), edge szac. ~7%.
+
+---
+
 ## 2026-06-26 — v1.15 (lekcja: 3 chybione tendencje z rzędu — TUR, ECU-GER, JPN-SWE; diagnostyka błędów archetypu)
 
 **Wyniki 25.06:**

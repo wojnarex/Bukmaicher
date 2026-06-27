@@ -1,9 +1,9 @@
 {
   "currency": "PLN",
   "starting_bankroll": 1000.0,
-  "current_bankroll": 966.8,
+  "current_bankroll": 957.03,
   "unit_pct": 0.02,
-  "kicktipp_points_total": 57,
-  "bets_settled": 4,
-  "updated_at": "2026-06-26"
+  "kicktipp_points_total": 68,
+  "bets_settled": 5,
+  "updated_at": "2026-06-27"
 }
