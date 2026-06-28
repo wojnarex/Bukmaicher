@@ -5,6 +5,36 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-28 — v1.17 (start Rundy Pucharowej: brak dead-rubberów, powrót do jakości; Austria 3:3 Algieria = B potwierdzone; Under CRO/GHA chybiony)
+
+**Wyniki 27.06 (ostatni dzień fazy grupowej):**
+- Panama **0:2** Anglia — typ 0:3 (Anglia wyg.): tendencja ✓ (+2 pkt). Anglia wygrała, ale skromniej niż model (my 0:3, fakt. 0:2). Mismatch amplifikacja tym razem nie zadziałała.
+- Chorwacja **2:1** Ghana — typ 1:1 (remis): CHYBIONY (0 pkt). Chorwacja potrzebowała wygranej — archetyp D. Błąd: draw_bias nudge przesłonił motywację CRO.
+- Kolumbia **0:0** Portugalia — typ 0:1 (Portugalia wyg.): CHYBIONY (0 pkt). Remis. Kolumbia desperacko broniła się (potrzebowała wyniku), Portugalia nie zmusiła do wygranej. Archetyp D obrońcy skuteczny.
+- DR Kongo **3:1** Uzbekistan — typ 1:0 (DRC wyg.): tendencja ✓ (+2 pkt). DRC wygrało, goal diff chybiony (my 1, fakt. 2).
+- Jordania **1:3** Argentyna — typ 1:1 (remis): CHYBIONY (0 pkt). Argentyna rozjechała Jordanię. Zasada 13 + zasada 9 (Messi): desperacja słabszego ≠ skuteczność vs dominujący atakujący faworyt.
+- Algieria **3:3** Austria — typ 1:1 (remis): tendencja ✓ (+3 pkt!). Dramatyczny remis, archetyp B (remis awansował obie) potwierdzony nawet przy 6 golach.
+- Fortuna: Under 2.5 Chorwacja-Ghana @ 1.58 → PRZEGRANA -9.57 PLN (3 gole = Over).
+
+**Bilans dnia 27.06:** kicktipp +7 pkt (2+0+0+2+0+3). Fortuna -9.57 PLN.
+**Łącznie:** 75 pkt kicktipp, 947.46 PLN bankroll (ROI -5.3%). Jednostka 1u = 18.95 PLN.
+
+**Nowa zasada 17 — Under w meczu dwóch ofensywnych desperatów = ryzyko:**
+CRO vs GHA: obie drużyny musiały wygrać → archetyp C (oba muszą wygrać) = ofensywa, a nie Under. Pod-typy Under działają przy B (niskobramkowy pakt) lub D (jedna drużyna muruje). Przy C (obie atakują) → Over jest naturalny. Błąd: weszliśmy w Under 2.5 przy meczu archetyp C.
+
+**Wejście w Rundę Pucharową (R32):**
+- Znikają archetypy grupowe (A/B/C/E — dead rubber, pakt o nieagresji, wyścig bramkowy).
+- Każdy mecz = czysta walka o awans. Wracamy do: jakość, forma, kontuzje, taktyka.
+- Nowa dynamika: „nerwowość pierwszego KO meczu" (zwłaszcza nowe drużyny jak RPA/Kanada) → bias w stronę ostrożności + Under w pierwszych meczach.
+- Mecz R32 trwa 90 min; przy remisie → dogrywka → ewentualnie karne. **KICKTIPP: sprawdź zasady ligi** (czy oceniają po 90 min czy po całości).
+
+**Kontynuujemy:** draw_bias=1.4 (nadal istotny w R32 przy zbliżonych siłach). Zasady 1–17 w mocy.
+Dziś: RPA 0:0 Kanada (EP max, Zwane zawieszony, Kone OUT, obie defensywne). Brak value Fortuna dziś.
+Lookahead Fortuna: MEX @ ~2.10 vs ECU (30.06, Azteca 2200m) szac. edge ~9-20% — WERYFIKUJ na efortuna.pl.
+Lookahead Fortuna: NOR @ ~2.05 vs WKŚ (30.06) szac. edge ~6% — WERYFIKUJ.
+
+---
+
 ## 2026-06-27 — v1.16 (lekcja: EXACT Urugwaj-Hisz 0:1; Iran desperacki = remis, nie wygrana; 3. kolejka = archetypy dominują)
 
 **Wyniki 26.06:**
