@@ -57,6 +57,8 @@ kicktipp:
   # Historia kalibracji: 1.7 okazał się za agresywny (zawsze dawał 1:1 u umiark. faworyta) —
   # Anglia 4:2 Chorwacja pokazała, że ofensywni faworyci potrafią rozjechać. 1.4 łapie część
   # remisów cagey, nie kasując typów na wygraną. ≥2.0 = remis nawet u wyraźnych faworytów; 1.0 = off.
+  # PUCHARY (R32+): draw_bias NIE obowiązuje — brak remisów (karne rozstrzygają, wynik liczony
+  # PO dogrywce I karnych, np. 2:2 + 5:4k = 7:6). W trybie pucharowym ignoruj draw_bias i nie typuj remisów.
   draw_bias: 1.4
   # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
   include_standings: true

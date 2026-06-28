@@ -167,6 +167,17 @@ Metoda (dla każdego meczu z deadlinem):
    taktyka / motywacja — nie sam kurs) i ewentualny rozjazd z rynkiem. Sanity-check newsami.
 Zapisz każdy typ przez `state_tool.py add-pick` (type=kicktipp, market=exact_score).
 
+### 6P — TRYB PUCHAROWY (R32 i dalej) — inne zasady!
+
+Liga liczy wynik **PO dogrywce I karnych** (wszystkie bramki z dogrywki + karne doliczone):
+np. 2:2 po dogrywce, 5:4 w karnych → zapisany wynik **7:6**. To zmienia typowanie:
+1. **NIE MA REMISÓW** — każdy mecz ma zwycięzcę (karne rozstrzygają). **Wyłącz `draw_bias`, NIGDY nie typuj 1:1/0:0** (są niemożliwe jako wynik końcowy).
+2. **Najpierw TENDENCJA** — typuj drużynę, która Twoim zdaniem AWANSUJE (jakość, forma, kontuzje, nerwy 1. meczu KO). Archetypy grupowe A–E **znikają** (nie ma już kalkulacji tabeli).
+3. **Margines: domyślnie +1** dla awansera → **2:1** (lub **1:0** gdy niskobramkowo). Powód: +1 łapie i wąską wygraną w regulaminowym, i typową wygraną w karnych (5:4, 4:3, nagła śmierć = zawsze +1). Dokładnego, napompowanego wyniku po karnych (7:6) i tak się nie trafi — celuj w **tendencję + różnicę**, nie w exact.
+4. **Wyraźny faworyt mogący rozstrzygnąć w 90 min** → większy margines **2:0 / 3:1** (szansa na exact w regulaminowym).
+5. **Mecz ~50/50 (prawdopodobne karne)** → tym mocniej **+1** dla wytypowanego awansera (margines +1 to modalny margines i rozstrzygnięć, i karnych).
+Fortuna w pucharach: graj rynki „awans / to qualify" albo wynik **po 90 min** (tam remis 1X2 nadal istnieje) — czytaj, czego dotyczy kurs.
+
 ---
 
 ## Krok 7 — Value bety u Fortuny (jeśli `fortuna.enabled`)

@@ -5,6 +5,23 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-28 — v1.18 (POTWIERDZONE zasady pucharowe: wynik liczony PO dogrywce I karnych)
+
+Użytkownik potwierdził regułę ligi dla fazy pucharowej (pytanie z v1.17 rozstrzygnięte):
+**liczony jest wynik po dogrywce I karnych** — wszystkie bramki dogrywki + karne doliczone.
+Przykład: 2:2 po dogrywce, 5:4 w karnych → zapisany wynik **7:6**.
+
+Konsekwencje (dodane do playbooka — krok **6P, tryb pucharowy**):
+- **BRAK REMISÓW** w wyniku końcowym → `draw_bias` WYŁĄCZONY, NIE typujemy 1:1/0:0.
+  (Błąd do korekty: dzisiejszy typ „RPA 0:0 Kanada" jest w pucharach NIEMOŻLIWY — trzeba wskazać zwycięzcę!)
+- Najpierw **tendencja** (kto awansuje); archetypy grupowe znikają — wracamy do jakości/formy/kontuzji.
+- **Margines domyślnie +1** (2:1, lub 1:0 niskobramkowo) — łapie i wąską wygraną w 90', i karne
+  (5:4 / 4:3 / nagła śmierć = zawsze +1). Napompowanego exact (7:6) się nie trafi → celuj w tendencję + różnicę.
+- Wyraźny faworyt mogący rozstrzygnąć w 90 min → większy margines (2:0 / 3:1).
+- Fortuna: rynki „awans/to qualify" lub wynik po 90 min (tam remis 1X2 nadal istnieje).
+
+---
+
 ## 2026-06-28 — v1.17 (start Rundy Pucharowej: brak dead-rubberów, powrót do jakości; Austria 3:3 Algieria = B potwierdzone; Under CRO/GHA chybiony)
 
 **Wyniki 27.06 (ostatni dzień fazy grupowej):**
