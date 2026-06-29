@@ -62,6 +62,10 @@ kicktipp:
   draw_bias: 1.4
   # Czy w mailu ma być tabela ligi i nasza pozycja (bot dociągnie z linku, jeśli publiczny).
   include_standings: true
+  # CEL = MIEJSCE W LIDZE, nie suma punktów (wpływa na tryb pościgu, krok 6C playbooka):
+  objective: "top3"          # docelowa pozycja w lidze typerów
+  contest_mode: "auto"       # auto = RÓŻNICUJ typy gdy gonisz top-N (wariancja/unikalność),
+                             #        KOPIUJ konsensus gdy prowadzisz/chronisz pozycję. "off" = zawsze max EV/mecz.
 
 # --- Zakłady u Fortuny (tylko rekomendacje, Ty wpisujesz ręcznie) ------------
 fortuna:

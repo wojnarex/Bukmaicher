@@ -5,6 +5,23 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-29 — v1.20 (TRYB POŚCIGU: gramy o MIEJSCE w tabeli, nie o sumę punktów)
+
+Użytkownik jest **5. (R=146), traci 5 pkt do top3**, a koledzy typują bezpiecznie/podobnie →
+kopiowanie pola = utknięcie w środku. Cel = **pozycja (top3)**, nie suma punktów. Dodany **krok 6C**
+(contest leverage):
+- **gonisz** → RÓŻNICUJ się selektywnie: **upset** na meczach ~50/50, gdzie pole jest na faworycie
+  (maks. dźwignia); **inny-prawdopodobny-wynik** w mismatchach (2:0 zamiast tłumowego 2:1);
+  1–2 spoty dźwigni na rundę, NIE blanket-kontra.
+- **prowadzisz** → kopiuj konsensus (chroń pozycję, blokuj goniących).
+Świadomy trade-off EV↔wariancja, uzasadniony tylko w pościgu. Config: `kicktipp.objective=top3`, `contest_mode=auto`.
+
+**Dziś (29.06) — pościg, najlepszy spot dźwigni: Holandia–Maroko** (pole na Holandii, realny toss-up)
+→ weź **Maroko 1:2** (jak Maroko przejdzie, przeskakujesz wszystkich na Holandii). Brazylia/Niemcy
+zostaw faworytami, ale distinct score (Brazylia 2:0, Niemcy 2:0) zamiast tłumowego 2:1.
+
+---
+
 ## 2026-06-29 — v1.19 (R32 tryb pucharowy pełny; błąd 0:0 potwierdzony i wyeliminowany; Kanada historycznie 1. zwycięstwo R32)
 
 **Wynik 28.06:**

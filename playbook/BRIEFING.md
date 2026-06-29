@@ -180,6 +180,22 @@ Fortuna w pucharach: graj rynki „awans / to qualify" albo wynik **po 90 min** 
 
 ---
 
+### 6C — TRYB POŚCIGU (contest leverage) — gdy grasz o MIEJSCE, nie o sumę punktów
+
+Cel ligi = `kicktipp.objective` (np. top3). Jeśli kopiujesz pole, zostajesz w środku stawki.
+Wczytaj tabelę typerów: pozycja, luka do celu, ile meczów/rund zostało, oraz **typy rywali** (kicktipp je pokazuje).
+
+- **GONISZ cel (trailing):** RÓŻNICUJ SIĘ od pola — ale SELEKTYWNIE:
+  - mecz ~50/50, na którym **pole jest na faworycie** → weź **UPSET** (maks. dźwignia: trafienie = przeskakujesz całe pole; pudło = tracisz tyle, co oni typowo);
+  - **mismatch** (faworyt prawie pewny) → NIE fade'uj, ale wybierz **inny, wciąż prawdopodobny wynik** niż tłumowy (np. 2:0 zamiast 2:1) → wygrywasz na exact/diff, gdy pole bierze inny margines;
+  - skaluj odwagę do luki i liczby meczów (większa luka / mniej meczów → odważniej);
+  - NIE rób blanket-kontry (fade wszystkiego tonie EV) — wybierz **1–2 najlepsze spoty dźwigni** na rundę.
+- **PROWADZISZ / chronisz miejsce:** odwrotnie — **kopiuj konsensus** (minimalizuj wariancję, „blokuj" goniących).
+
+Świadomy trade-off: oddajesz trochę EV za wariancję — uzasadniony TYLKO, gdy walczysz o pozycję, nie o punkty.
+
+---
+
 ## Krok 7 — Value bety u Fortuny (jeśli `fortuna.enabled`)
 
 Dla każdego rynku z `fortuna.markets` w meczach dnia:
