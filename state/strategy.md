@@ -5,6 +5,38 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-29 — v1.19 (R32 tryb pucharowy pełny; błąd 0:0 potwierdzony i wyeliminowany; Kanada historycznie 1. zwycięstwo R32)
+
+**Wynik 28.06:**
+- RPA **0:1** Kanada — typ 0:0 (remis): **PRZEGRANA 0 pkt**. Eustáquio 90+2' zdecydował. Kanada awansuje po HISTORYCZNYM pierwszym zwycięstwie w fazie pucharowej MŚ. Błąd był podwójny: (a) w R32 remis jest niemożliwy (reguła 6P), (b) nawet patrząc na 90 min, Kanada była lepsza jakościowo. POPRAWNY typ: 0:1 (Kanada 1:0) = co najmniej +2 pkt tendencja, potencjalnie +4 exact!
+
+**Bilans dnia 28.06:** kicktipp 0 pkt. Fortuna 0 PLN (brak zakładów).
+**Łącznie:** 75 pkt kicktipp, 947.46 PLN bankroll (ROI -5.3%). Jednostka 1u = 18.95 PLN.
+
+**NOWA zasada 18 — Hardlock trybu pucharowego:**
+W R32 i dalej, przed wpisaniem KAŻDEGO typu, wykonaj kontrolę:
+1. Czy jesteśmy w fazie pucharowej? (TAK = R32+)
+2. draw_bias = WYŁĄCZONY. NIGDY nie wpisuj 0:0 ani 1:1 jako finalnego wyniku.
+3. Najpierw ustal TENDENCJĘ (kto awansuje), POTEM margines (+1 standardowo, +2 dla wyraźnego faworyta w 90 min).
+Model MUSI odmówić zastosowania draw_bias w trybie pucharowym — to hardlock, nie opcja.
+
+**Lekcja z błędu:** 0:0 był logicznie niemożliwy (liga liczy wynik PO dogrywce i karnych). Byłby to błąd automatycznego zastosowania draw_bias bez sprawdzenia fazy turnieju. Korekta: w playbooku 6P jest to opisane — teraz EGZEKWUJEMY.
+
+**Dziś (29.06) — wszystkie 3 mecze = R32, tryb pucharowy:**
+- Brazil 2:1 Japan (Neymar OUT, ale Vinicius+Rodrygo wystarczą; Japan Kubo OUT; lambda_BRA=1.45, lambda_JPN=0.87)
+- Germany 2:0 Paraguay (Germany dominuje jakościowo; PAR niski blok, brak grozy ofensywnej; Schlotterbeck OUT ale Rudiger wystarczy)
+- Netherlands 2:1 Morocco (NED 5:1 Szwecja = forma; MAR defensywne + Hakimi kontra; Timber OUT dla NED)
+
+**Fortuna potencjał (WERYFIKUJ na efortuna.pl przed postawieniem):**
+- Japan advance vs Brazil @ szac. ≥2.70 — P(JPN awans) szac. 38-42% (Neymar OUT = realna szansa); edge szac. ~8-15% jeśli odds ≥2.70.
+- Morocco advance vs Netherlands @ szac. ≥2.30 — P(MAR awans) szac. 40-45% (defensive quality + Timber OUT); edge szac. ~5-10% jeśli odds ≥2.30.
+- MEX @ szac. ~2.10 vs ECU (30.06, Azteca 2200m) — flagowane wczoraj, szac. edge ~9-20%. Meksyk ma przewagę domową (Azteca, wysokość, kibice) + ECU z niskim rankingiem. WERYFIKUJ jutro rano.
+- NOR @ szac. ~2.05 vs CIV (30.06) — flagowane wczoraj, szac. edge ~6%. Haaland w formie (4 gole w turnieju). WERYFIKUJ jutro.
+
+**Kontynuujemy:** Zasady 1–18 w mocy. Tryb pucharowy aktywny dla WSZYSTKICH pozostałych meczów turnieju.
+
+---
+
 ## 2026-06-28 — v1.18 (POTWIERDZONE zasady pucharowe: wynik liczony PO dogrywce I karnych)
 
 Użytkownik potwierdził regułę ligi dla fazy pucharowej (pytanie z v1.17 rozstrzygnięte):
