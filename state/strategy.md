@@ -5,6 +5,35 @@ widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8
 
 ---
 
+## 2026-06-30 — v1.21 (R32: 2 sensacje dzień → chaos; Brazil exact; pościg kontynuowany)
+
+**Wyniki 29.06 (R32):**
+- Brazylia **2:1** Japonia — typ 2:1 (Brazylia wyg.): **EXACT ✓ (+4 pkt!)**. Martinelli 90+2'. Model trafił perfekcyjnie.
+- Niemcy **1:1** Paragwaj AET → Paragwaj **4-3 karny** — typ 2:0 (Niemcy wyg.): PRZEGRANA 0 pkt. Ogromna sensacja! Enciso 42', Havertz wyrównał. Paragwaj wygrał karne (goalkeeper Gill hero). Wynik końcowy: 4:5 (agg).
+- Holandia **1:1** Maroko AET → Maroko **3-2 karny** — typ 2:1 (Holandia wyg.): PRZEGRANA 0 pkt. Gakpo 72', Issa Diop 91'. Maroko awansuje (Bounou hero). Wynik końcowy: 3:4 (agg).
+
+**Bilans dnia 29.06:** kicktipp +4 pkt (1 exact). Fortuna 0 PLN (nie logowano zakładów).
+**Łącznie:** 79 pkt kicktipp, 947.46 PLN bankroll (ROI -5.3%). Jednostka 1u = 18.95 PLN.
+
+**NOWA zasada 19 — R32 jest chaosem: silni faworyci padają:**
+Niemcy (top-10 FIFA) i Holandia (top-5 FIFA) odpadli w tym samym dniu. W R32 upsets są realną normą — żaden typ na faworyta w karnych nie jest "pewny". Konsekwencje:
+1. **W pościgu R32**: ostrożniej typuj outright favors, chyba że masz konkretny powód (forma/kontuzje wyraźne)
+2. **Pościg leverage w R32**: szansa na podbicie jest DUŻA (upset = skaczysz nad całym polem). Upsets w R32 to nie rarytety — to regularność turnieju.
+3. **Wyraźny faworyt z realną formą** (jak FRA vs SWE) = nadal typuj faworyta z odpowiednim marginesem. Ale "po papierze dobry faworyt + obrońca w formie" = flaguj niepewność.
+
+**Dziś (30.06) — typy R32:**
+- WKŚ vs Norwegia @ 19:00 CEST: NOR **0:1** (Norwegia wygrywa 1:0) — cagey/defensive match, Haaland zdrowy, CIV z niskim blokiem (2 czyste konta). Pościg: diferenciacja od popularnego 0:2.
+- Francja vs Szwecja @ 23:00 CEST: FRA **3:1** — Francja dominant (avg 3.33 gola/mecz, 10-2 GD), Szwecja leaky (7 straconych). Gyokeres/Isak strzeli 1. Pościg: 3:1 vs tłumowe 2:1 (jeśli FRA wygra różnicą 2).
+- Meksyk vs Ekwador @ 03:00 CEST (1.07): MEX **1:0** — Azteca 2240m, MEX perfekcyjny (6G 0 straconych), O/U=1.5 (niskobramkowy), λ_MEX=0.9 λ_ECU=0.58 → P(1:0)=20.5% najwyższy.
+
+**Fortuna dziś (WERYFIKUJ efortuna.pl przed postawieniem):**
+- NOR wygrana (90 min) vs WKŚ @ szac. 2.10 → 1u (19 PLN), szac. edge ~9%
+- MEX wygrana (90 min) vs ECU @ szac. 2.20 → 1u (19 PLN), szac. edge ~10%
+
+**Kontynuujemy:** Zasady 1–19 w mocy. Tryb pucharowy aktywny. Pościg: nadal 5. miejsce (stan przed dzisiejszymi meczami), różnicujemy selektywnie.
+
+---
+
 ## 2026-06-29 — v1.20 (TRYB POŚCIGU: gramy o MIEJSCE w tabeli, nie o sumę punktów)
 
 Użytkownik jest **5. (R=146), traci 5 pkt do top3**, a koledzy typują bezpiecznie/podobnie →

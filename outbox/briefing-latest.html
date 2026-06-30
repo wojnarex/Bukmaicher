@@ -3,207 +3,340 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bukmaicher — briefing 2026-06-29</title>
+<title>Bukmaicher — briefing 2026-06-30</title>
 <style>
-  body { font-family: Georgia, 'Times New Roman', serif; background: #f9f9f7; color: #222; margin: 0; padding: 0; }
-  .wrapper { max-width: 680px; margin: 0 auto; background: #fff; border: 1px solid #ddd; }
-  .header { background: #1a1a2e; color: #fff; padding: 24px 28px 18px; }
-  .header h1 { margin: 0 0 4px; font-size: 22px; font-weight: bold; letter-spacing: 0.5px; }
-  .header .sub { font-size: 13px; color: #aab; }
-  .section { padding: 20px 28px 16px; border-bottom: 1px solid #eee; }
-  .section:last-child { border-bottom: none; }
-  h2 { font-size: 16px; margin: 0 0 12px; color: #1a1a2e; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 8px; }
-  th { background: #1a1a2e; color: #fff; padding: 7px 10px; text-align: left; }
-  td { padding: 7px 10px; border-bottom: 1px solid #eee; vertical-align: top; }
-  tr:last-child td { border-bottom: none; }
-  tr:nth-child(even) td { background: #f9f9f7; }
-  .won { color: #1a7a1a; font-weight: bold; }
-  .lost { color: #b00; font-weight: bold; }
-  .pick-box { background: #f0f4ff; border-left: 4px solid #1a1a2e; padding: 10px 14px; margin: 8px 0; font-size: 13px; }
-  .pick-box .score { font-size: 20px; font-weight: bold; color: #1a1a2e; }
-  .alert { background: #fff3cd; border-left: 4px solid #e6a817; padding: 10px 14px; font-size: 13px; margin: 8px 0; }
-  .footer { background: #f0f0f0; padding: 14px 28px; font-size: 11px; color: #666; text-align: center; line-height: 1.5; }
-  .stat { display: inline-block; margin: 0 16px 8px 0; }
-  .stat .val { font-size: 20px; font-weight: bold; color: #1a1a2e; display: block; }
-  .stat .lbl { font-size: 11px; color: #888; display: block; }
-  .tag-r32 { display: inline-block; background: #c0392b; color: #fff; border-radius: 3px; padding: 1px 6px; font-size: 11px; font-weight: bold; margin-left: 4px; vertical-align: middle; }
-  p { font-size: 13px; line-height: 1.6; margin: 6px 0; }
-  ul { font-size: 13px; line-height: 1.7; padding-left: 20px; margin: 6px 0; }
-  .deadline { color: #c0392b; font-weight: bold; }
+  body { font-family: Arial, sans-serif; max-width: 700px; margin: 0 auto; padding: 20px; color: #222; background: #f9f9f9; }
+  h1 { color: #1a5276; border-bottom: 3px solid #1a5276; padding-bottom: 8px; }
+  h2 { color: #1a5276; margin-top: 28px; }
+  h3 { color: #2980b9; margin-top: 16px; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+  th { background: #1a5276; color: white; padding: 8px 10px; text-align: left; font-size: 13px; }
+  td { padding: 7px 10px; border-bottom: 1px solid #ddd; font-size: 13px; vertical-align: top; }
+  tr:nth-child(even) { background: #f0f4f8; }
+  .win { color: #1e8449; font-weight: bold; }
+  .loss { color: #c0392b; font-weight: bold; }
+  .neutral { color: #888; }
+  .pick { background: #eaf4fb; font-weight: bold; color: #1a5276; font-size: 15px; }
+  .warn { background: #fef9e7; border-left: 4px solid #f39c12; padding: 10px 14px; margin: 10px 0; }
+  .info { background: #eaf4fb; border-left: 4px solid #2980b9; padding: 10px 14px; margin: 10px 0; }
+  .footer { font-size: 11px; color: #888; border-top: 1px solid #ddd; margin-top: 30px; padding-top: 12px; }
+  .badge { display: inline-block; background: #1a5276; color: white; border-radius: 3px; padding: 1px 6px; font-size: 11px; margin-left: 4px; }
+  .badge-green { background: #1e8449; }
+  .badge-orange { background: #e67e22; }
+  .badge-red { background: #c0392b; }
+  .exact { color: #1e8449; font-weight: bold; }
 </style>
 </head>
 <body>
-<div class="wrapper">
 
-  <!-- NAGLOWEK -->
-  <div class="header">
-    <h1>Bukmaicher &mdash; briefing</h1>
-    <div class="sub">Poniedzialek, 29 czerwca 2026 &nbsp;|&nbsp; Mistrzostwa Swiata 2026 &nbsp;|&nbsp; Runda 32 (R32)</div>
-  </div>
+<h1>⚽ Bukmaicher — briefing 2026-06-30</h1>
+<p><strong>Wtorek, 30 czerwca 2026</strong> · 1/16 finału MŚ 2026 · Runda pucharowa (R32) · Dzień 3</p>
+<p><strong>Strefa referencyjna:</strong> America/New_York (ET) · Godziny w ET i CEST</p>
 
-  <!-- ROZLICZENIE -->
-  <div class="section">
-    <h2>Rozliczenie &mdash; 28 czerwca</h2>
-    <table>
-      <tr><th>Mecz</th><th>Typ</th><th>Wynik</th><th>Pkt / P&amp;L</th><th>Wniosek</th></tr>
-      <tr>
-        <td>RPA vs Kanada (R32)</td>
-        <td>0:0 (remis)</td>
-        <td class="lost">0:1 Kanada PRZEGRANA</td>
-        <td class="lost">0 pkt</td>
-        <td>Typ 0:0 byl niemozliwy w R32 (brak remisow!). Eustaquio 90+2'. Blad: zastosowanie draw_bias w trybie pucharowym. Poprawny typ: 0:1 (Kanada 1:0) = min. +2 pkt, potencjalnie +4 exact!</td>
-      </tr>
-    </table>
-    <div class="alert" style="margin-top:10px">
-      <strong>BLAD KRYTYCZNY NAPRAWIONY:</strong> Od dzis obowiazuje hardlock reguly pucharowej &mdash; w R32+ draw_bias jest wylaczony, remis (0:0 / 1:1) nigdy nie jest typowany jako wynik koncowy. Zasada 18 dodana do strategii.
-    </div>
-    <p><strong>Bilans 28.06:</strong> Kicktipp <span class="lost">0 pkt</span> &nbsp;|&nbsp; Fortuna: brak zakladow.</p>
-  </div>
-
-  <!-- BANKROLL -->
-  <div class="section">
-    <h2>Bankroll &amp; forma</h2>
-    <div>
-      <span class="stat"><span class="val">947,46 zl</span><span class="lbl">Bankroll</span></span>
-      <span class="stat"><span class="val" style="color:#b00">-5,3%</span><span class="lbl">ROI overall</span></span>
-      <span class="stat"><span class="val">75 pkt</span><span class="lbl">Kicktipp lacznie</span></span>
-      <span class="stat"><span class="val">18,95 zl</span><span class="lbl">1 jednostka (1u)</span></span>
-    </div>
-    <p style="margin-top:10px; font-size:12px; color:#666;">Start: 1000 zl | 6 rozliczonych zakladow Fortuna | miesieczna strata: 52,54 zl (5,3% &lt; limitu 30%) &mdash; zakla dy dozwolone</p>
-  </div>
-
-  <!-- MECZE DNIA -->
-  <div class="section">
-    <h2>Mecze dnia &mdash; 29 czerwca 2026 <span class="tag-r32">R32</span></h2>
-    <p style="font-size:12px; color:#888; margin-bottom:10px;">Dzien meczowy liczony w strefie ET (America/New_York). <strong>Wszystkie mecze = Runda 32: brak remisow, wynik liczony po dogrywce i karnych.</strong></p>
-    <table>
-      <tr><th>Mecz</th><th>ET</th><th>CEST</th><th>Stadion</th><th>Kontekst</th></tr>
-      <tr>
-        <td><strong>Brazylia vs Japonia</strong></td>
-        <td>13:00</td><td>19:00</td>
-        <td>NRG Stadium, Houston</td>
-        <td>Neymar OUT (loszka). Raphinha watpliwy (udo). Japan: Kubo OUT (wczesniejsze raporty). Nerwowy 1. mecz KO.</td>
-      </tr>
-      <tr>
-        <td><strong>Niemcy vs Paragwaj</strong></td>
-        <td>16:30</td><td>22:30</td>
-        <td>Gillette Stadium, Boston</td>
-        <td>GER po slabej grupie (przegrana z Ekwadorem). Schlotterbeck OUT (kostka). PAR defensywny, niski blok.</td>
-      </tr>
-      <tr>
-        <td><strong>Holandia vs Maroko</strong></td>
-        <td>21:00</td><td>03:00 (30.06)</td>
-        <td>Estadio BBVA, Monterrey</td>
-        <td>NED: Timber OUT. MAR: Amrabat, Bono, Hakimi &mdash; top defensywa + kontra. Gakpo + Brobbey w formie (5:1 Szwecja).</td>
-      </tr>
-    </table>
-
-    <h2 style="margin-top:18px">Lookahead &mdash; 30 czerwca&ndash;2 lipca <span class="tag-r32">R32</span></h2>
-    <table>
-      <tr><th>Data ET</th><th>Mecz</th><th>ET / CEST</th><th>Nota</th></tr>
-      <tr><td>30.06</td><td>WKS (Ivory Coast) vs Norwegia</td><td>13:00 / 19:00</td><td>Haaland 4 gole w turnieju. Fortuna lookahead: NOR szac. edge ~6% &mdash; WERYFIKUJ jutro.</td></tr>
-      <tr><td>30.06</td><td>Francja vs Szwecja</td><td>17:00 / 23:00</td><td>Francja faworytem. Mbappe 2 gole w grupie.</td></tr>
-      <tr><td>30.06</td><td>Meksyk vs Ekwador</td><td>21:00 / 03:00</td><td>Azteca 2200m n.p.m. Fortuna lookahead: MEX szac. edge ~9-20% &mdash; WERYFIKUJ jutro.</td></tr>
-      <tr><td>01.07</td><td>Anglia vs DR Kongo</td><td>12:00 / 18:00</td><td>Anglia faworytem. DRC zdolny do niespodzianki (3:1 Uzbekistan).</td></tr>
-      <tr><td>01.07</td><td>Belgia vs Senegal</td><td>16:00 / 22:00</td><td>Senegal w formie (5:0 Irak). Ciekawy mecz.</td></tr>
-      <tr><td>01.07</td><td>USA vs Bosnia i Herceg.</td><td>20:00 / 02:00</td><td>Pulisic watpliwy. USA u siebie, silna motywacja.</td></tr>
-      <tr><td>02.07</td><td>Hiszpania vs Austria</td><td>15:00 / 21:00</td><td>Hiszpania = jasny faworyt. Austria po 3:3 Algieria.</td></tr>
-      <tr><td>02.07</td><td>Portugalia vs Chorwacja</td><td>19:00 / 01:00</td><td>Portugalia 5:0 Uzbekistan. Ronaldo 2 gole. CRO po 1:0 Panama.</td></tr>
-    </table>
-  </div>
-
-  <!-- TYPY KICKTIPP -->
-  <div class="section">
-    <h2>Typy na kicktippa &mdash; 29 czerwca <span class="tag-r32">TRYB PUCHAROWY</span></h2>
-    <p style="font-size:12px; color:#888; margin-bottom:12px;">R32: brak remisow, draw_bias WYLACZONY. Wynik liczony PO dogrywce i karnych. <span class="deadline">Wpisz typy przed kick-offem!</span></p>
-
-    <div class="pick-box">
-      <strong>Brazylia vs Japonia</strong> &nbsp;<span style="color:#888; font-size:12px">19:00 CEST &mdash; deadline: 19:00 CEST</span><br>
-      <span class="score">2:1</span> &nbsp;(Brazylia awansuje)<br>
-      <span style="font-size:12px; color:#444">
-        Neymar OUT (-15% lambda_off), ale Vinicius Jr. + Rodrygo = klasa. Japan: Kubo OUT (szac.), brak kreatywnosci. Lambda_BRA=1,45 / Lambda_JPN=0,87. P(BRA awans) szac. 60%. Margines +1 = 2:1. Alternatywa: 1:0 jesli mecz bardzo zamkniety.<br>
-        <span class="deadline">Sprawdz oficjalny XI BRA/JPN ok. 18:00 CEST przed deadline!</span>
-      </span>
-    </div>
-
-    <div class="pick-box">
-      <strong>Niemcy vs Paragwaj</strong> &nbsp;<span style="color:#888; font-size:12px">22:30 CEST &mdash; deadline: 22:30 CEST</span><br>
-      <span class="score">2:0</span> &nbsp;(Niemcy awansuja)<br>
-      <span style="font-size:12px; color:#444">
-        Niemcy jakosciowo >> Paragwaj (Musiala, Havertz, Kimmich). Schlotterbeck OUT (Rudiger wystarczy). PAR = niski blok, brak grozy ofensywnej. Mismatch amplifikacja: GER klasa + PAR zamkniety = czysty arkusz. P(GER awans) szac. 70%.<br>
-        <span class="deadline">Sprawdz sklady GER/PAR ok. 22:00 CEST!</span>
-      </span>
-    </div>
-
-    <div class="pick-box">
-      <strong>Holandia vs Maroko</strong> &nbsp;<span style="color:#888; font-size:12px">03:00 CEST (30.06) &mdash; deadline: 03:00 CEST 30.06</span><br>
-      <span class="score">2:1</span> &nbsp;(Holandia awansuje)<br>
-      <span style="font-size:12px; color:#444">
-        NED: Gakpo + Brobbey w formie. Timber OUT (prawa strona odslon.) = Hakimi kontra. MAR top defensywa (Amrabat, Bono). Mecz waleczny, MAR strzeli z kontry = 1 gol, ale NED klasa + glebia skladu. P(NED awans) szac. 55%. +1 margines = 2:1.<br>
-        <span style="color:#e6a817; font-weight:bold;">Uwaga: mecz o 03:00 CEST! Ustaw typ przed snem (po deadline godzina 21:00 ET = 03:00 CEST 30.06) lub zaraz wieczorem.</span><br>
-        <span class="deadline">Zweryfikuj status Timbera i skad MAR przed deadline!</span>
-      </span>
-    </div>
-
-    <table style="margin-top:12px">
-      <tr><th>Mecz</th><th>Typ</th><th>Szac. P(awans)</th><th>Kluczowy czynnik</th></tr>
-      <tr><td>Brazylia vs Japonia</td><td><strong>2:1 BRA</strong></td><td>~60%</td><td>Neymar OUT vs Kubo OUT; Vinicius/Rodrygo klasa</td></tr>
-      <tr><td>Niemcy vs Paragwaj</td><td><strong>2:0 GER</strong></td><td>~70%</td><td>Mismatch jakosciowy; PAR niski blok nie strzeli</td></tr>
-      <tr><td>Holandia vs Maroko</td><td><strong>2:1 NED</strong></td><td>~55%</td><td>NED forma; MAR niski blok + 1 gol kontry mozliwy</td></tr>
-    </table>
-  </div>
-
-  <!-- VALUE BETY FORTUNA -->
-  <div class="section">
-    <h2>Value bety Fortuna &mdash; 29 czerwca</h2>
-    <div class="alert">
-      Ponizsze szacunki wymagaja weryfikacji rzeczywistych kursow na efortuna.pl przed postawieniem. Zaklad TYLKO gdy potwierdzone edge >= 5% i kurs w przedziale 1,50-6,00.
-    </div>
-    <table>
-      <tr><th>Mecz</th><th>Rynek</th><th>Typ</th><th>Szac. kurs</th><th>Szac. edge</th><th>Stawka</th><th>Uzasadnienie</th></tr>
-      <tr>
-        <td>Brazylia vs Japonia</td>
-        <td>Awans / To qualify</td>
-        <td>Japonia awansuje</td>
-        <td>&gt;= 2,70 (szac.)</td>
-        <td>~8-15% (szac.)</td>
-        <td>0,5u = ~9,50 zl</td>
-        <td>Neymar OUT to realna szansa JPN. P(JPN awans) szac. 38-42%. Jesli kurs >= 2,70 na efortuna.pl &rarr; wejscie. WERYFIKUJ kurs.</td>
-      </tr>
-      <tr>
-        <td>Holandia vs Maroko</td>
-        <td>Awans / To qualify</td>
-        <td>Maroko awansuje</td>
-        <td>&gt;= 2,30 (szac.)</td>
-        <td>~5-10% (szac.)</td>
-        <td>0,5u = ~9,50 zl</td>
-        <td>MAR top defensywa + Timber OUT (NED slabsza prawa strona). P(MAR awans) szac. 40-45%. Jesli kurs >= 2,30 &rarr; rozwaz. WERYFIKUJ kurs.</td>
-      </tr>
-    </table>
-    <p style="font-size:12px; color:#888; margin-top:8px;">Maks. 3 zaklady dziennie. Bankroll 947,46 zl (miesieczna strata 5,3% &lt; limitu 30%).</p>
-
-    <p style="margin-top:10px; font-size:13px;"><strong>Lookahead Fortuna (jutro &mdash; 30 czerwca):</strong></p>
-    <ul>
-      <li><strong>Meksyk szac. ~2,10 vs Ekwador</strong> (21:00 ET / 03:00 CEST) &mdash; Azteca 2200m n.p.m., przewaga domowa MEX, szac. edge ~9-20%. WERYFIKUJ na efortuna.pl jutro rano.</li>
-      <li><strong>Norwegia szac. ~2,05 vs Ivory Coast (WKS)</strong> (13:00 ET / 19:00 CEST) &mdash; Haaland 4 gole w turnieju, szac. edge ~6%. WERYFIKUJ na efortuna.pl jutro rano.</li>
-    </ul>
-  </div>
-
-  <!-- STRATEGIA -->
-  <div class="section">
-    <h2>Strategia &mdash; aktualizacja v1.19</h2>
-    <p><strong>Kontynuujemy:</strong> Zasady 1-18 w mocy. Tryb pucharowy R32 aktywny dla wszystkich pozostalych meczow. Model blendowany market_weight=0,55. Fortuna: edge &gt;= 5%, max 0,5u przy niepewnosci.</p>
-    <p><strong>Zmiana (zasada 18):</strong> Hardlock draw_bias OFF w trybie R32+. Model nie moze wpisac 0:0 ani 1:1 jako wyniku pucharowego. Blad z 28.06 (0:0 RPA-KAN mimo reguły 6P) zostal udokumentowany i zabezpieczony.</p>
-    <p><strong>Petla nauki:</strong> Kanada wygrala historycznie 1:0 (Eustaquio gral mimo watpliwosci). Nerwowy R32 = niskie wyniki: nasza typologia 2:1 / 2:0 / 2:1 jest odpowiednia. Mecz nocny NED-MAR (03:00 CEST) wymaga wpisania typu przed snem.</p>
-  </div>
-
-  <!-- STOPKA -->
-  <div class="footer">
-    <p>Gra hazardowa wiaze sie z ryzykiem. Tylko 18+. Typuj wylacznie w ramach ustalonego budzetu. To rekomendacje analityczne, nie gwarancja wyniku.</p>
-    <p style="margin-top:4px; color:#999;">Bukmaicher &middot; Liga: Mamalova MS 2026 &middot; Fortuna: efortuna.pl &middot; Briefing: 2026-06-29</p>
-  </div>
-
+<div class="info">
+⚠️ <strong>Przypomnienie:</strong> Briefing jest przygotowywany rano — składy NIE są jeszcze oficjalne. Zweryfikuj oficjalny XI każdej drużyny <strong>przed deadline'em kicktippa</strong> (= moment kick-offu). Szczególnie ważne: mecz Francja–Szwecja (23:00 CEST) i Meksyk–Ekwador (03:00 CEST).
 </div>
+
+<hr>
+
+<h2>📊 Rozliczenie 29.06 (R32 — dzień wcześniejszy)</h2>
+
+<table>
+  <tr>
+    <th>Mecz</th>
+    <th>Nasz typ</th>
+    <th>Wynik (agg)</th>
+    <th>Wynik</th>
+    <th>Pkt</th>
+  </tr>
+  <tr>
+    <td>Brazylia vs Japonia</td>
+    <td class="pick">2:1 BRA</td>
+    <td>2:1 BRA (90 min)</td>
+    <td class="exact">✅ EXACT</td>
+    <td class="win">+4</td>
+  </tr>
+  <tr>
+    <td>Niemcy vs Paragwaj</td>
+    <td class="pick">2:0 GER</td>
+    <td>4:5 PAR* (1:1 AET + 4-3 karne)</td>
+    <td class="loss">❌ BŁĘDNA TENDENCJA</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Holandia vs Maroko</td>
+    <td class="pick">2:1 NED</td>
+    <td>3:4 MAR* (1:1 AET + 3-2 karne)</td>
+    <td class="loss">❌ BŁĘDNA TENDENCJA</td>
+    <td>0</td>
+  </tr>
+</table>
+
+<p><small>* Wynik końcowy wg reguły ligi: gole z reg. + dogrywki + karne liczone łącznie.</small></p>
+
+<p><strong>Bilans dnia 29.06:</strong> kicktipp <span class="win">+4 pkt</span> · Fortuna <span class="neutral">0 PLN</span></p>
+
+<div class="warn">
+🔥 <strong>Sensacja dnia:</strong> Niemcy i Holandia odpadły w karnych! Paragwaj (bramkarz Gill 2 obrony) i Maroko (Bounou hero) awansują. R32 jest chaosem — zasada 19 w mocy: nawet top-5 FIFA odpada.
+</div>
+
+<h3>Wnioski:</h3>
+<ul>
+  <li><strong>Brazylia 2:1 Japan</strong> — model trafił EXACT! Martinelli 90+2'. Poisson + blend λ działał perfekcyjnie.</li>
+  <li><strong>Niemcy</strong> — przeszacowaliśmy GER (typ 2:0), nie uwzględniliśmy wystarczająco ryzyka karnych. Enciso 42' uprzedził Havertza.</li>
+  <li><strong>Holandia</strong> — pościg-typ 2:1 NED nie zadziałał. Maroko defensywnie + Bounou hero = klasyczny R32 upset.</li>
+</ul>
+
+<hr>
+
+<h2>💰 Bankroll &amp; Forma</h2>
+
+<table>
+  <tr>
+    <th>Parametr</th>
+    <th>Wartość</th>
+  </tr>
+  <tr><td>Bankroll Fortuna</td><td><strong>947.46 PLN</strong> (start 1000 PLN)</td></tr>
+  <tr><td>Zmiana / ROI</td><td><span class="loss">-52.54 PLN / -5.3%</span></td></tr>
+  <tr><td>Jednostka (1u)</td><td>18.95 PLN (2% bankrolla)</td></tr>
+  <tr><td>Punkty kicktipp łącznie</td><td><strong>79 pkt</strong></td></tr>
+  <tr><td>Rozliczone zakłady Fortuna</td><td>6 zakładów</td></tr>
+  <tr><td>Ostatnia aktualizacja</td><td>2026-06-30</td></tr>
+</table>
+
+<p>Bankroll powyżej limitu miesięcznej straty (30% = 300 PLN). Zakłady Fortuna dozwolone.</p>
+
+<hr>
+
+<h2>🗓️ Mecze dnia — 30.06.2026 (ET)</h2>
+
+<table>
+  <tr>
+    <th>Mecz</th>
+    <th>Godzina ET / CEST</th>
+    <th>Stadion</th>
+    <th>Kontekst R32</th>
+  </tr>
+  <tr>
+    <td><strong>WKŚ vs Norwegia</strong></td>
+    <td>13:00 ET / <strong>19:00 CEST</strong></td>
+    <td>AT&amp;T Stadium, Arlington TX</td>
+    <td>WKŚ defensywna (2 czyste konta), NOR z Haalandem (4 gole turniej, był odpoczywany vs FRA)</td>
+  </tr>
+  <tr>
+    <td><strong>Francja vs Szwecja</strong></td>
+    <td>17:00 ET / <strong>23:00 CEST</strong></td>
+    <td>MetLife Stadium, NJ</td>
+    <td>Francja undefeated (10-2 GD), Mbappe zarządza kontuzją uda. Szwecja 3. w grupie, leaky defense.</td>
+  </tr>
+  <tr>
+    <td><strong>Meksyk vs Ekwador</strong></td>
+    <td>21:00 ET / <strong>03:00 CEST (1.07)</strong></td>
+    <td>Estadio Azteca, Mexico City</td>
+    <td>MEX gospodarz (altitude 2240m!), perfekcyjny (6G 0 straconych). ECU po sensacji z GER.</td>
+  </tr>
+</table>
+
+<h3>Lookahead — 1.07.2026 (deadline jutro!)</h3>
+
+<table>
+  <tr>
+    <th>Mecz</th>
+    <th>Godzina ET / CEST</th>
+    <th>Stadion</th>
+  </tr>
+  <tr>
+    <td>Anglia vs DR Kongo</td>
+    <td>17:00 ET / 23:00 CEST</td>
+    <td>Atlanta</td>
+  </tr>
+  <tr>
+    <td>USA vs Bośnia i Hercegowina</td>
+    <td>20:00 ET / 02:00 CEST (2.07)</td>
+    <td>Levi's Stadium, San Francisco</td>
+  </tr>
+  <tr>
+    <td>Belgia vs Senegal</td>
+    <td>21:00 ET / 03:00 CEST (2.07)</td>
+    <td>Seattle</td>
+  </tr>
+</table>
+
+<div class="warn">
+⏰ <strong>Deadline kicktippa dla jutrzejszych meczów</strong> = moment kick-offu. Anglia vs DR Kongo (23:00 CEST) — wpisz typ jutro rano!
+</div>
+
+<hr>
+
+<h2>🔍 Analiza meczów (kroki 2–5)</h2>
+
+<h3>⚽ WKŚ vs Norwegia (R32 — 19:00 CEST)</h3>
+
+<p><strong>Kursy 90 min (szac., źródło: LV BET/bukmacherzy PL):</strong> NOR 2.10 / Remis 3.40 / WKŚ 3.50</p>
+<p><strong>De-vig:</strong> NOR=45.1% / Remis=27.8% / WKŚ=27.1% · <strong>Awans:</strong> NOR 61%, WKŚ 39%</p>
+
+<table>
+  <tr><th>Aspekt</th><th>WKŚ (Ivory Coast)</th><th>Norwegia</th></tr>
+  <tr><td>FIFA ranking</td><td>#31</td><td>#23</td></tr>
+  <tr><td>Forma grupowa</td><td>2W-0D-1L (6 pkt, 4G, 2 stracone, 2 CK)</td><td>2W-0D-1L (6 pkt, 8G, 7 straconych)</td></tr>
+  <tr><td>Wyniki grup</td><td>ECU 1:0 ✓, GER 1:2 ✗, CUR 2:0 ✓</td><td>IRQ 4:1 ✓, SEN 3:2 ✓, FRA 1:4 ✗ (rotacja!)</td></tr>
+  <tr><td>Kluczowi gracze</td><td>Pépé (brace vs CUR), Amad Diallo, Kessié</td><td><strong>Haaland</strong> (4 gole, odpoczywał vs FRA), Ødegaard</td></tr>
+  <tr><td>Kontuzje/status</td><td>Brak potwierdzonych nieobecności (szac.)</td><td>Haaland ZDROWY — tylko odpoczywał vs FRA. Brak kontuzji.</td></tr>
+  <tr><td>Styl gry</td><td>Defensywny niski blok, counter-attack, fizyczny</td><td>Ofensywna, presing, wysoki total (ale 7 straconych!)</td></tr>
+</table>
+
+<p><strong>λ model (blend 55% rynek / 45% własny):</strong> λ_NOR = 1.38 | λ_WKŚ = 0.88</p>
+<p><strong>Profil meczu:</strong> WKŚ będzie grało defensywnie (niski blok, fizyczność). Haaland + Ødegaard vs zorganizowaną defensywą. Spodziewany cagey mecz — 1:0 lub 2:1 NOR realne. Trener Solbakken: "Wary of physical Ivory Coast".</p>
+
+<h3>⚽ Francja vs Szwecja (R32 — 23:00 CEST)</h3>
+
+<p><strong>Kursy 90 min (szac.):</strong> FRA 1.30 / Remis 6.00 / SWE 9.50</p>
+<p><strong>De-vig:</strong> FRA=73.8% / Remis=16.1% / SWE=10.1% · Francja ogromny faworyt.</p>
+<p><strong>O/U:</strong> Over 2.5 @ -204 (de-vig ~67%) | Over 3.5 @ +122-136 (de-vig ~42-45%)</p>
+
+<table>
+  <tr><th>Aspekt</th><th>Szwecja</th><th>Francja</th></tr>
+  <tr><td>Forma grupowa</td><td>3. miejsce w Grupie F, 4 pkt, GD 7-7</td><td>1. miejsce w Grupie C (?) — PERFEKCYJNA: 3W, 10-2 GD</td></tr>
+  <tr><td>Wyniki grup</td><td>TUN 5:1 ✓, 2 inne mecze (1W-1L szac.)</td><td>SEN 3:1 ✓, IRQ 3:0 ✓, NOR 4:1 ✓</td></tr>
+  <tr><td>Kluczowi gracze</td><td><strong>Gyökeres</strong> (ATK), <strong>Isak</strong> (ATK) — duet gol.</td><td><strong>Mbappé</strong> (kapitan, zarządza urazem uda), Olise, Dembélé, Doué</td></tr>
+  <tr><td>Kontuzje/status</td><td>Isak Hien (DEF) OUT. Victor Lindelöf wątpliwy (szac.).</td><td>Marcus Thuram OUT (łydka). William Saliba wątpliwy (szac.). Griezmann nie w kadrze.</td></tr>
+  <tr><td>Defensywa</td><td>7 straconych w 3 meczach — słaba defensywa!</td><td>2 stracone w 3 meczach (1 vs SEN, 1 vs NOR)</td></tr>
+</table>
+
+<p><strong>λ model:</strong> λ_FRA = 2.0 | λ_SWE = 1.0</p>
+<p><strong>Profil meczu:</strong> Francja dominuje, Szwecja strzeli 1 przez Gyökeresa/Isaka. Francja avg 3.33 gola/mecz w turnieju. Szwecja bez Isaka Hiena w defensywie = więcej przestrzeni dla Mbappégo. High-scoring mismatch.</p>
+
+<h3>⚽ Meksyk vs Ekwador (R32 — 03:00 CEST, 1.07)</h3>
+
+<p><strong>Kursy 90 min (szac.):</strong> MEX 2.20 / Remis 3.10 / ECU 4.00</p>
+<p><strong>De-vig:</strong> MEX=44.3% / Remis=31.4% / ECU=24.3% · <strong>Awans:</strong> MEX ~62-65%, ECU ~35-38%</p>
+<p><strong>O/U: 1.5 gola (!)</strong> — rynek oczekuje bardzo niskiego wyniku. Under 1.5 faworyzowany.</p>
+
+<table>
+  <tr><th>Aspekt</th><th>Ekwador</th><th>Meksyk</th></tr>
+  <tr><td>Forma grupowa</td><td>1W-1D-1L, 4 pkt (3. miejsce), pokonał GER 2:1!</td><td>3W-0D-0L, 9 pkt — PERFEKCYJNY. 6 goli, 0 straconych.</td></tr>
+  <tr><td>Wyniki grup</td><td>WKŚ 0:1 ✗, CUR 0:0 D, GER 2:1 ✓</td><td>RPA 2:0, KOR 1:0, CZE 3:0</td></tr>
+  <tr><td>Kluczowi gracze</td><td>Caicedo (MID, Chelsea), Valencia (ATK, 36 lat, 49 goli intl.), Plata, Páez (młody talent)</td><td><strong>Jiménez</strong> wraca po odpoczynku (44 gole int'l), Santi Giménez, Álvarez (kapitan)</td></tr>
+  <tr><td>Kontuzje/status</td><td>Brak potwierdzonych (szac.). Chucky Lozano — NIE w kadrze.</td><td>Brak kontuzji. Jiménez wraca. Ochoa (rekord 6. MŚ).</td></tr>
+  <tr><td>Przewaga terenu</td><td>—</td><td><strong>Azteca 2240m n.p.m.</strong> — potężna przewaga aklimatyzacyjna!</td></tr>
+  <tr><td>xG turniej</td><td>xG 8.81, tylko 2 gole (fatalna skuteczność!)</td><td>xG 4.31, 6 goli (overperformance)</td></tr>
+  <tr><td>H2H</td><td>4 wygrane na 28 meczów (60.7% dla MEX)</td><td>17 zwycięstw, dominant w H2H. Ostatnie 3 mecze: max 1 gol łącznie.</td></tr>
+</table>
+
+<p><strong>λ model:</strong> λ_MEX = 0.90 | λ_ECU = 0.58</p>
+<p><strong>Profil meczu:</strong> Taktyczny grinding match. MEX nie przepuszcza goli (0 GA w grupie), ECU strzela mało (2 gole mimo 8.81 xG). Altitude 2240m = ECU zmęczenie. P(Under 1.5) = solidna prawdopodobność. Wynik 1:0 MEX jest scenariuszem modalnym.</p>
+
+<hr>
+
+<h2>🎯 Typy na kicktippa — 30.06</h2>
+
+<div class="warn">
+🔒 <strong>R32 HARDLOCK (zasada 18):</strong> Brak remisów! Liga liczy wynik PO dogrywce I karnych (np. 1:1 AET + 5:4 karne = 6:5). Nie wpisuję 0:0 ani 1:1. draw_bias WYŁĄCZONY.
+</div>
+
+<table>
+  <tr>
+    <th>Mecz</th>
+    <th>Typ</th>
+    <th>szac. EV</th>
+    <th>Uzasadnienie</th>
+  </tr>
+  <tr>
+    <td><strong>WKŚ vs Norwegia</strong></td>
+    <td class="pick">NOR wygrywa 0:1 (NOR 1–0)</td>
+    <td>~1.22 pkt</td>
+    <td>NOR faworyt (61% awans). Haaland w pełni zdrowy + Ødegaard = atak klasy światowej. WKŚ gra beton (2 czyste konta w grupie, niski blok). Cagey match → P(1:0 NOR) = 14.4% (najwyższe wśród wyników NOR-wygrana). λ_NOR=1.38, λ_WKŚ=0.88. Pościg: 0:2 popularne, 0:1 = diferenciacja; jeśli NOR wygra 1:0, zyskuję exact 4 pkt vs goal_diff 3 pkt dla 0:2-typujących.</td>
+  </tr>
+  <tr>
+    <td><strong>Francja vs Szwecja</strong></td>
+    <td class="pick">FRA 3:1</td>
+    <td>~1.27 pkt</td>
+    <td>Francja ogromny faworyt (73.8% wygr. 90min). Avg 3.33 gola/mecz w turnieju. Szwecja leaky (7 straconych, Isak Hien OUT). Gyökeres+Isak strzeli 1. λ_FRA=2.0, λ_SWE=1.0. Pościg: 3:1 vs tłumowe 2:1. Jeśli FRA wygra różnicą 2 goli (8.81% exact 3:1 + goal_diff), zyskuję przewagę. Francja 4:1 vs NOR w grupie — forma przemawia za 3+.</td>
+  </tr>
+  <tr>
+    <td><strong>Meksyk vs Ekwador</strong></td>
+    <td class="pick">MEX 1:0</td>
+    <td>~1.25 pkt</td>
+    <td>O/U = 1.5 (rynek oczekuje niskobramkowego!). MEX perfekcyjny w obronie (0 GA). Jiménez wraca. Azteca 2240m. λ_MEX=0.9, λ_ECU=0.58. P(exact 1:0) = 20.5% — najwyższy wśród wszystkich wyników MEX-wygrana. Pościg: 1:0 vs popularne 2:1 = higher EV i diferenciacja.</td>
+  </tr>
+</table>
+
+<p><em>szac. EV = oczekiwana liczba punktów wg siatki Poissona i reguły 9-tki (tendencja 2 / różnica 3 / exact 4). Wartości przybliżone (szac.).</em></p>
+
+<hr>
+
+<h2>🔎 Value bety Fortuna</h2>
+
+<div class="warn">
+⚠️ <strong>WERYFIKUJ KURSY NA EFORTUNA.PL</strong> przed postawieniem! Poniższe kursy to szacunki z polskich/zagranicznych bukmacherów — Fortuna może mieć inne. Edge obliczony przy kursach szacunkowych.
+</div>
+
+<table>
+  <tr>
+    <th>Mecz</th>
+    <th>Rynek</th>
+    <th>Typ</th>
+    <th>Kurs (szac.)</th>
+    <th>Stawka</th>
+    <th>szac. Edge</th>
+    <th>Uzasadnienie</th>
+  </tr>
+  <tr>
+    <td><strong>WKŚ vs Norwegia</strong></td>
+    <td>1X2 (90 min)</td>
+    <td>Norwegia wygrana</td>
+    <td>~2.10</td>
+    <td>1u (~19 PLN)</td>
+    <td><span class="win">~9.2%</span></td>
+    <td>De-vig rynku: NOR 45.1%. Mój model: NOR 52% (Haaland zdrowy, NOR wyraźnie lepszy team). Edge = 0.52×2.10−1 = 9.2%. Kurs 2.10 w przedziale [1.50, 6.00]. Sizing: edge 8-12% → 1u (18.95 PLN).</td>
+  </tr>
+  <tr>
+    <td><strong>Meksyk vs Ekwador</strong></td>
+    <td>1X2 (90 min)</td>
+    <td>Meksyk wygrana</td>
+    <td>~2.20</td>
+    <td>1u (~19 PLN)</td>
+    <td><span class="win">~10.0%</span></td>
+    <td>De-vig rynku: MEX 44.3%. Mój model: MEX 50% (Azteca altitude 2240m + perfekcyjna forma + 0 GA). Edge = 0.50×2.20−1 = 10.0%. ECU xG nadpowietrzone (8.81 xG → 2 gole) = fatalna finalizacja. Sizing: 1u (18.95 PLN).</td>
+  </tr>
+</table>
+
+<p><strong>Łączna ekspozycja dziś:</strong> ~38 PLN (2u) | Max 3 bety/dzień — 1 slot wolny na jutro</p>
+<p><strong>Miesięczna strata:</strong> -52.54 PLN (5.3% bankrolla) — poniżej limitu 30% (300 PLN). Zakłady dozwolone.</p>
+
+<div class="info">
+📌 <strong>Potencjał na jutro (1.07):</strong>
+<ul>
+  <li><strong>Anglia awans</strong> (vs DR Kongo) — Anglia ogromny faworyt, kursy raczej zbyt krótkie na value. Weryfikuj rano.</li>
+  <li><strong>Belgia awans</strong> (vs Senegal) — Belgia faworyt z De Bruynem. Sprawdź Fortuna rano.</li>
+  <li><strong>USA awans</strong> (vs Bośnia) — USA gospodarz, umiarkowany faworyt. Sprawdź kursy.</li>
+</ul>
+</div>
+
+<hr>
+
+<h2>🧠 Strategia (v1.21 — aktualizacja)</h2>
+
+<p><strong>Kontynuujemy:</strong> draw_bias=1.4 w meczach grupowych (WYŁĄCZONY w R32 — hardlock zasada 18). Tryb pucharowy aktywny. Zasady 1–19 w mocy.</p>
+
+<p><strong>Nowa zasada 19:</strong> R32 jest chaosem. Niemcy + Holandia odpadły w jednym dniu. Nawet top-5 FIFA wypada w karnych. Konsekwencja: w pościgu agresywniej rozważaj upset-pick na meczach zbliżonych do 50/50 — koszt błędu jest taki sam co u faworyta, a gain (przeskoczenie całego pola) jest duży.</p>
+
+<p><strong>Pościg:</strong> Pozycja 5. (sprzed wyników 29.06). Dziś 3 mecze dają 3 szanse na różnicowanie. Wybrałem 3 typy non-consensus: NOR 0:1 (vs popularne 0:2), FRA 3:1 (vs popularne 2:1), MEX 1:0 (vs popularne 2:1). Każdy z nich ma wyższy EV niż "popularne" alternatywy AND jest faktycznym, prawdopodobnym wynikiem.</p>
+
+<p><strong>Fortuna bilans:</strong> ROI -5.3%, ale 6 zakładów to zbyt mała próba dla wyroków. Kontynuujemy selektywnie z edge ≥ 5%.</p>
+
+<hr>
+
+<h2>⚙️ Konfiguracja do dograna</h2>
+
+<p>Wszystkie pola config.yaml wypełnione — brak TODO. System działa poprawnie.</p>
+
+<hr>
+
+<div class="footer">
+  <strong>Gra hazardowa wiąże się z ryzykiem. Tylko 18+. Typuj wyłącznie w ramach ustalonego budżetu. To rekomendacje analityczne, nie gwarancja wyniku.</strong><br><br>
+  Bukmaicher · Liga Mamalova MŚ 2026 · <a href="https://www.kicktipp.pl/mamalova-ms-2026/">kicktipp.pl/mamalova-ms-2026</a> · Briefing 2026-06-30
+</div>
+
 </body>
 </html>
