@@ -1,7 +1,30 @@
 # Strategia Bukmaichera
 
 Najnowszy wpis na górze. **Nie kasujemy** starych wpisów — wersjonujemy, żeby było
-widać, jak ewoluowała strategia i dlaczego. Bot aktualizuje ten plik w kroku 8 playbooka.
+widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik w kroku 8 playbooka.
+
+---
+
+## 2026-07-01 — v1.22 (dobry dzień R32: 2 tendencje trafione, 1 chybiona goal_diff nie zaszkodziła; kontynuacja pościgu)
+
+**Wyniki 30.06 (R32, dokończenie dnia):**
+- WKŚ **1:2** Norwegia — typ 0:1: tendencja + różnica bramek ✓ (**+3 pkt**). Haaland 86' decydujący (5. gol turnieju), Norwegia zdała egzamin mimo wyrównania WKŚ w 74'. Fortuna Norwegia wygrana @2.10 → **WON +20.85 PLN**.
+- Francja **3:0** Szwecja — typ 3:1: tendencja ✓ (+2 pkt, różnica bramek chybiona — model dał +2, faktyczna +3). Mbappé x2, Barcola. Francja rozjechała mocniej niż zakładaliśmy — kolejny przypadek mismatch amplifikacji (zasada 2/10).
+- Meksyk **2:0** Ekwador — typ 1:0: tendencja ✓ (+2 pkt, różnica bramek chybiona — model +1, faktyczna +2). Quiñones + Jiménez. Fortuna Meksyk wygrana @2.20 → **WON +22.74 PLN**.
+
+**Bilans dnia 30.06:** kicktipp +7 pkt (3+2+2). Fortuna +43.59 PLN (obie stawki trafione).
+**Łącznie:** 86 pkt kicktipp, 991.05 PLN bankroll (ROI -0.9%, znaczna poprawa z -5.3%). Jednostka 1u = 19.82 PLN.
+
+**Lekcja potwierdzona (mismatch amplifikacja x2 w jednym dniu):** FRA i MEX obie wygrały większą różnicą niż model. Kontynuujemy zasadę: przy λ_rywala < 0.6 rozważ +1 gol do typu w R32, zwłaszcza gdy faworyt ma real formę ofensywną i rywal nie ma bramkarza-bohatera.
+
+**Dziś (01.07) — 3 mecze R32 (dokończenie rundy, R16 startuje dopiero 4.07):**
+- Anglia vs DR Kongo (12:00 ET/18:00 CEST, Atlanta): typ **2:0** — Anglia wyraźny faworyt (Opta 73.9%), James+Quansah OUT ale Rice wraca; DR Kongo niski blok + kontra (Wissa). Rynek: Under 2.5 + BTTS Nie faworyzowane → czyste konto ENG prawdopodobne. Pościg: różnicujemy od tłumowego 2:1.
+- Belgia vs Senegal (16:00 ET/22:00 CEST, Seattle): typ **1:2 (upset Senegalu)** — mecz naprawdę wyrównany (Belgia ~44-55% w zależności od źródła kursu), Belgia bez Debasta i z niepełnosprawnym Lukaku, Senegal bez Mendy'ego (Diaw w bramce) ale z jakością w ataku (I.Sarr, Mane, Ndiaye). To NAJLEPSZY spot dźwigni dnia w trybie pościgu (gonimy top3, 5. miejsce) — pole niemal na pewno bierze Belgię.
+- USA vs Bośnia i Hercegowina (20:00 ET/02:00 CEST, Santa Clara): typ **3:1** — USA wyraźny faworyt (~74-90% do awansu), Pulisic wraca do wyjściowej 11, gospodarz. Bośnia: Muharemović wraca z zawieszenia, ale Dzeko/Demirović dają kontrę. Rynek: Over 2.5 + BTTS blisko coinflip (USA tylko 1 czyste konto w 11 meczach!) → gole obu stron prawdopodobne.
+
+**Fortuna dziś:** BTTS Tak (Belgia-Senegal) @ szac. 1.90 (WERYFIKUJ efortuna.pl), edge szac. ~7.4% — obie defensywy osłabione kontuzjami (Debast/Mendy), obie ofensywy z jakością. 0.5u (9.91 PLN). Anglia-DR Kongo i USA-Bośnia: brak edge ≥5% wobec silnych faworytów rynkowych (public heavily na USA) — pomijamy zgodnie z zasadą 3 (nie obstawiaj przeciw dominującemu faworytowi bez realnego sygnału).
+
+**Kontynuujemy:** Zasady 1–19 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY do końca turnieju). Pościg: nadal ok. 5. miejsce (ostatnia znana pozycja z 29.06 — tabela kicktipp.pl niedostępna dla WebFetch, 403), różnicujemy selektywnie (1 spot dźwigni: Senegal dziś).
 
 ---
 
