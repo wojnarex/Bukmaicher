@@ -5,6 +5,34 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-02 — v1.23 (pościg-upset chybił u Belgii, ale BTTS uratował dzień; R32 kończy się 3.07, R16 startuje 4.07)
+
+**Wyniki 01.07 (dokończenie R32):**
+- Anglia **2:1** DR Kongo — typ 2:0: tendencja ✓ (**+2 pkt**). Kane x2 w końcówce (w tym gol w 90+4), DR Kongo prowadziło do 76'.
+- Belgia **3:2** Senegal (AET, karny Tielemans 125') — typ 1:2 (upset Senegalu, spot dźwigni pościgu): **PRZEGRANA 0 pkt**. Belgia odrobiła straty 0:2 golami w 86'/89', a w dogrywce wygrała kontrowersyjnym karnym. Fortuna BTTS Tak @1.90 → **WON +8.92 PLN** (2:2 było już po 90 min, więc BTTS spełniony niezależnie od wyniku pucharowego).
+- USA **2:0** Bośnia i Hercegowina (Balogun czerwona kartka) — typ 3:1: tendencja + różnica bramek ✓ (**+3 pkt**).
+
+**Bilans dnia 01.07:** kicktipp +5 pkt (2+0+3). Fortuna +8.92 PLN (BTTS trafiony).
+**Łącznie:** 91 pkt kicktipp, 999.97 PLN bankroll (ROI ~0%, praktyczny break-even). Jednostka 1u = 20.00 PLN.
+
+**Lekcja (dźwignia pościgu ma dwustronną wariancję):** Belgia-Senegal był naszym najlepszym spotem dźwigni dnia (mecz ~44-55%), ale osłabiony faworyt (bez Debasta, Lukaku niepełnosprawny) i tak znalazł drogę do zwycięstwa w dogrywce. To potwierdza zasadę 19 (R32 jest chaosem) w drugą stronę — czasem to faworyt wygrywa dramatycznie, nie underdog. Dźwignia w pościgu pozostaje uzasadniona (asymetria: duży zysk przy trafieniu, mały koszt przy chybieniu w tabeli), ale świadomie akceptujemy wyższą wariancję pojedynczego wyniku. Osobny cel Fortuny (BTTS, niezależny od kierunku wygranej) okazał się dobrym zabezpieczeniem — rynki niezależne od tendencji warto premiować przy wysokiej niepewności kierunkowej.
+
+**Dziś (02.07) + lookahead do 04.07 — 8 meczów (R32 kończy się 3.07, R16 startuje 4.07):**
+- Hiszpania–Austria (02.07, 15:00 ET/21:00 CEST): **2:0** — wyraźny faworyt (~82% do awansu), 0 goli straconych w grupie.
+- Portugalia–Chorwacja (02.07, 19:00 ET/01:00 CEST): **2:1** — Ronaldo potwierdzony zdrowy, Chorwacja leaky (BTTS blisko coinflip).
+- Szwajcaria–Algieria (02.07, 23:00 ET/05:00 CEST): **2:1** — Szwajcaria traci gole w każdym meczu, Algieria najsłabsza defensywa 1/16 ale Mahrez w formie.
+- Australia–Egipt (03.07, 14:00 ET/20:00 CEST): **1:0** — SPOT DŹWIGNI DNIA (najbliższy 50/50: ~47/53), Salah wątpliwy (uraz uda, niepotwierdzony start).
+- Argentyna–Zielony Przylądek (03.07, 18:00 ET/00:00 CEST): **3:0** — Messi w hicie formy (hattrick, rekord Klose), mismatch amplifikacja.
+- Kolumbia–Ghana (03.07, 21:30 ET/03:30 CEST): **2:0** — Ghana bez Kudusa (potwierdzone), Kolumbia tylko 1 gol stracony w grupie.
+- Kanada–Maroko (04.07, 13:00 ET/19:00 CEST, R16): **1:2** — Maroko niepokonane z Kanadą historycznie, ale gra 4 dni po dogrywce+karnych (szac. zmęczenie) vs gospodarz z pełnym odpoczynkiem.
+- Francja–Paragwaj (04.07, 17:00 ET/23:00 CEST, R16): **3:1** — Mbappé w hicie formy, Paragwaj po dramatycznych karnych z Niemcami.
+
+**Fortuna dziś:** Australia wygrana (90 min) @ szac. 3.25, edge ~10,5% (Salah wątpliwy) — 1u (20 PLN). Szwajcaria–Algieria BTTS Tak @ szac. 1.87, edge ~12,2% (Szwajcaria traci gole zawsze, Algieria strzela regularnie) — 1u (20 PLN). WERYFIKUJ oba kursy na efortuna.pl przed postawieniem.
+
+**Kontynuujemy:** Zasady 1–19 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) dla reszty turnieju. Pościg top3: dziś 1 spot dźwigni (Australia-Egipt), reszta meczów typowana pod max EV z profilem ofensywnym faworyta.
+
+---
+
 ## 2026-07-01 — v1.22 (dobry dzień R32: 2 tendencje trafione, 1 chybiona goal_diff nie zaszkodziła; kontynuacja pościgu)
 
 **Wyniki 30.06 (R32, dokończenie dnia):**
