@@ -5,6 +5,35 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-03 — v1.24 (R32 finał: exact Portugalia, ale BTTS Szwajcaria-Algieria padł na dyscyplinie obronnej pucharowej; nowa zasada 20)
+
+**Wyniki 02.07 (R32):**
+- Hiszpania **3:0** Austria — typ 2:0: tendencja ✓ (**+2 pkt**). Oyarzabal dublet, Porro. Kolejna mismatch amplifikacja (model 2:0, fakt. 3:0) — zasada 10 nadal w mocy.
+- Portugalia **2:1** Chorwacja — typ 2:1: **EXACT ✓ (+4 pkt!)**. Ronaldo karny 68', G.Ramos 94' po tym jak Perisic dał prowadzenie Chorwacji 53'. Model idealnie złapał "umiarkowany faworyt + leaky rywal = wąska wygrana z golem przeciwnika".
+- Szwajcaria **2:0** Algieria — typ 2:1: tendencja ✓ (**+2 pkt**, różnica bramek chybiona). Embolo 10', Ndoye 46'. Fortuna BTTS Tak @1.87 → **PRZEGRANA (-20.00 PLN)** — Algieria (Mahrez w formie) nie strzeliła wcale, mimo że "Szwajcaria traci gole w KAŻDYM meczu grupy" — tym razem czyste konto.
+
+**Bilans dnia 02.07:** kicktipp +8 pkt (2+4+2). Fortuna -20.00 PLN (BTTS chybiony).
+**Łącznie:** 99 pkt kicktipp, 979.97 PLN bankroll (ROI -2.0%). Jednostka 1u = 19.60 PLN.
+
+**Nowa zasada 20 — dyscyplina obronna pucharowa łamie trendy grupowe:** Szwajcaria "traciła gole w każdym meczu grupy" (trend grupowy), ale w R32 (wyższa stawka, eliminacja) zagrała dyscyplinie i utrzymała czyste konto. Lekcja: NIE ekstrapoluj trendów "leaky defense"/BTTS z fazy grupowej wprost na rundy pucharowe bez dyskontu — drużyny często zacieśniają organizację defensywną, gdy stawką jest odpadnięcie. Traktuj grupowe % BTTS/GA jako punkt wyjścia, ale obniż wagę o ok. 10-15 pkt proc. w R32+, chyba że newsy potwierdzają identyczne osłabienia defensywne (kontuzje kluczowych obrońców) co w grupie.
+
+**Dziś (03.07, dokończenie R32) + lookahead do 05.07 (R16 startuje 04.07) — 5 meczów w oknie:**
+- Australia–Egipt (03.07, 14:00 ET/20:00 CEST): typ **1:0** — kontynuacja z wczoraj, Salah nadal wątpliwy (naderwanie dwugłowego uda, rosnący optymizm po treningu w środę, ale start niepotwierdzony). Spot dźwigni dnia.
+- Argentyna–Zielony Przylądek (03.07, 18:00 ET/00:00 CEST): typ **3:0** — Messi lider strzelców turnieju (6 goli), Zielony Przylądek najmniejsza reprezentacja w historii fazy pucharowej MŚ.
+- Kolumbia–Ghana (03.07, 21:30 ET/03:30 CEST): typ **2:0** — Kudus POTWIERDZONY nieobecny (uraz czworogłowego), Ghana tylko 2 gole w 3 meczach grupy.
+- Kanada–Maroko (04.07, R16, 13:00 ET/19:00 CEST): typ **1:2** — bez zmian z wczoraj.
+- Francja–Paragwaj (04.07, R16, 17:00 ET/23:00 CEST): typ **3:1** — bez zmian z wczoraj.
+
+**Nowe typy dziś na mecze wchodzące w okno lookahead (05.07, R16 dzień 2):**
+- Brazylia–Norwegia (05.07, 16:00 ET/22:00 CEST, MetLife Stadium NJ): typ **2:1** — Brazylia umiarkowany faworyt (~64% do awansu), Paqueta zagrożony końcem turnieju, Neymar na peryferiach formy, ale Vinicius Jr (4 gole w grupie) + Martinelli w formie. Haaland (Norwegia) w hicie formy (5 goli, trafia w 13 kolejnych meczach kadry) — zasada 9 (snajper > draw_bias) nieistotna w pucharach (brak remisów), ale sygnalizuje realne zagrożenie kontrą. Rynek: BTTS ~56%, Over 2.5 faworyzowane.
+- Meksyk–Anglia (05.07, 20:00 ET/02:00 CEST 06.07, Estadio Azteca): typ **1:0** — **SPOT DŹWIGNI RUNDY** (pościg top3): Estadio Azteca 2240m n.p.m., Tuchel wprost: Anglia "nie może fizycznie zaadaptować się" w 4 dni. Meksyk niepokonany z drużynami MŚ na tym stadionie w 10 próbach (89 meczów/13 lat, tylko 2 porażki), 0 goli straconych w całym turnieju. Rynek daje Meksykowi ~28% w 90 min / ~41% do awansu (double chance) — nasz model podbija do ~32%/52% z powodu udokumentowanego czynnika wysokości. Pole prawdopodobnie bierze markową Anglię (Kane w formie) — to nasza dźwignia.
+
+**Fortuna dziś/lookahead:** Brazylia-Norwegia BTTS Tak @ szac. 1.78, edge ~10,4% (obie ofensywy w formie) — 1u (19.60 PLN). Meksyk wygrana (90 min) @ szac. 3.55, edge ~13,6% (forteca Azteca + wysokość) — 1u (19.60 PLN, konserwatywnie mimo wyższego wyliczonego edge — pojedynczy mecz pucharowy, wysoka wariancja). WERYFIKUJ oba kursy na efortuna.pl przed postawieniem.
+
+**Kontynuujemy:** Zasady 1–20 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. Pościg top3: dziś/jutro 2 spoty dźwigni (Australia-Egipt kontynuacja, Meksyk-Anglia nowy) — reszta meczów pod max EV z profilem ofensywnym faworyta. Tabela ligi kicktipp.pl nadal niedostępna dla WebFetch (403) — ostatnia znana pozycja z 29.06 (5. miejsce).
+
+---
+
 ## 2026-07-02 — v1.23 (pościg-upset chybił u Belgii, ale BTTS uratował dzień; R32 kończy się 3.07, R16 startuje 4.07)
 
 **Wyniki 01.07 (dokończenie R32):**
