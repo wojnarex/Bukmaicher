@@ -5,6 +5,32 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-04 — v1.25 (R32 zakończone: Egipt sensacyjnie awansuje na karnych, Argentyna o włos unika upsetu; nowe typy R16 na Portugalię-Hiszpanię i USA-Belgię)
+
+**Wyniki 03.07 (ostatni dzień R32):**
+- Australia **1:1** Egipt (dogrywka, karne 4:2 dla Egiptu) — typ 1:0 (Australia wyg.): **CHYBIONY (0 pkt)**. Egipt odrobił własnego gola (Hany, samobój 55') i wygrał w karnych (Ryan wszedł w 119', nie obronił żadnej jedenastki) — pierwsze zwycięstwo Egiptu w fazie pucharowej MŚ. Fortuna Australia wyg. (90 min) @3.25 → **PRZEGRANA (-20.00 PLN)**, bo mecz był remisem po 90 min (dopiero karne rozstrzygnęły).
+- Argentyna **3:2** Zielony Przylądek (po dogrywce) — typ 3:0 (Argentyna wyg.): tendencja ✓ (**+2 pkt**, różnica bramek i exact chybione). Messi otworzył wynik (20. gol na MŚ), ale Zielony Przylądek dwukrotnie doprowadzał do remisu — Argentyna o włos uniknęła jednej z największych sensacji w historii turnieju (samobój Diney Borgesa w dogrywce zdecydował).
+- Kolumbia **1:0** Ghana — typ 2:0 (Kolumbia wyg.): tendencja ✓ (**+2 pkt**, różnica bramek chybiona). Arias trafił wcześnie po podaniu Suareza, Ghana 0 celnych strzałów w całym meczu.
+
+**Bilans dnia 03.07:** kicktipp +4 pkt (0+2+2). Fortuna -20.00 PLN (Australia 90-min ML przegrana).
+**Łącznie:** 103 pkt kicktipp, 959.97 PLN bankroll (ROI -4.0%). Jednostka 1u = 19.20 PLN.
+
+**Lekcja (kolejne potwierdzenie zasady 19 — R32 to chaos, i zasady o rynkach "90 min" w pucharach):** Egipt to trzecia drużyna w tym R32, która wygrywa dopiero w karnych po remisie z regulaminowego czasu (po Niemczech-Paragwaju i Holandii-Maroku odwrotnie tym razem to "słabszy" na papierze zespół awansuje). Ważniejsza lekcja techniczna: zakład Fortuna "wygrana (90 min)" to INNY rynek niż "awans/to qualify" — w R32 różnica jest krytyczna, bo mecz 50/50 kończący się remisem w regulaminowym czasie zawsze przegrywa zakład na "wygraną 90 min", niezależnie od tego, kto wygra karne. Od teraz przy niepewnych meczach pucharowych preferuj rynek "awans/to qualify" (rekomendacja z playbooka 6P już to sugerowała — dziś boleśnie potwierdzona).
+
+**R32 zamknięte. Startuje pełne okno R16 (04-06.07, 6 meczów):**
+- Kanada–Maroko (04.07, R16, 13:00 ET/19:00 CEST, Houston): typ **1:2** (Maroko awansuje) — bez zmian, Maroko umiarkowany faworyt (devig ~51%/26%/21%), brak nowych newsów kontuzyjnych.
+- Francja–Paragwaj (04.07, R16, 17:00 ET/23:00 CEST, Filadelfia): typ **3:1** — bez zmian, Francja zdecydowany faworyt (devig 90% do awansu), Alderete (CB Paragwaju) nadal wątpliwy/niepełny trening (najnowszy cytat trenera Alfaro), ale nie potwierdzona nieobecność.
+- Brazylia–Norwegia (05.07, R16, 16:00 ET/22:00 CEST, MetLife): typ **2:1** — bez zmian, ale **Éder Militão (CB Brazylii) POTWIERDZONY niedostępny** (nowa twarda informacja) — osłabia defensywę Brazylii, wzmacnia sens zakładu BTTS. Haaland nadal w hicie formy (5 goli/3 mecze).
+- Meksyk–Anglia (05.07, R16, ~19:00 ET/01:00 CEST 06.07, Azteca): typ **1:0** — bez zmian, dodatkowo wzmocniony: Stones i Saka pod znakiem zapytania (Anglia), Tuchel z ograniczonymi opcjami na prawej obronie — kolejny argument za spotem dźwigni na Meksyk (wysokość + forma osłabień Anglii).
+- **NOWY: Portugalia–Hiszpania** (06.07, R16, 15:00 ET/21:00 CEST, Dallas): typ **0:1** (Hiszpania wyg. wąsko) — rewanż finału Ligi Narodów, Hiszpania umiarkowany faworyt (90-min devig ~50%, do awansu ~65%), rynek Under 2.5 (-120) sugeruje niskobramkowy, nerwowy mecz pucharowy mimo jakości ofensywnej (Yamal, Ronaldo). Ronaldo potwierdzony zdrowy; Nico Williams/Pino (Hiszpania) wątpliwi po urazach z Urugwaju.
+- **NOWY: USA–Belgia** (06.07, R16, 20:00 ET/02:00 CEST 07.07, Seattle): typ **1:2** (Belgia wyg. wąsko) — mecz bliski 50/50 (advance-devig USA ~54%/Belgia ~46%), ale **Balogun (najlepszy strzelec USA) ZAWIESZONY** (czerwona kartka z meczu z Bośnią) — realne osłabienie ataku USA, przechyla nasz model ku Belgii mimo rynkowego faworyta USA. Belgia po heroicznym comebacku z Senegalem (De Bruyne/Lukaku dostępni, zarządzani ostrożnie po kontuzjach).
+
+**Fortuna dziś/lookahead:** USA-Belgia "awans/to qualify" Belgia @ szac. 2.05, edge ~8.7% (Balogun zawieszony to konkretny, potwierdzony czynnik nieuwzględniony w pełni przez rynek) — 1u (19.20 PLN), **rynek "awans" nie "90 min"** (lekcja z dzisiejszego rozliczenia). WERYFIKUJ kurs na efortuna.pl. Portugalia-Hiszpania: brak potwierdzonego kursu Fortuny w researchu + edge na granicy progu (~5%) — pomijamy zgodnie z zasadą "brak value to OK".
+
+**Kontynuujemy:** Zasady 1–20 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. Nowa zasada 21 (rynek 90-min ≠ awans w pucharach, patrz wyżej). Pościg top3: 2 spoty dźwigni w oknie (Meksyk-Anglia kontynuacja, USA-Belgia nowy przez konkretną kontuzję/zawieszenie — nie czysty fade). Tabela ligi kicktipp.pl nadal niedostępna (403 + brak w indeksie wyszukiwarki) — ostatnia znana pozycja z 29.06 (5. miejsce).
+
+---
+
 ## 2026-07-03 — v1.24 (R32 finał: exact Portugalia, ale BTTS Szwajcaria-Algieria padł na dyscyplinie obronnej pucharowej; nowa zasada 20)
 
 **Wyniki 02.07 (R32):**
