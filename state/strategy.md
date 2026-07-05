@@ -5,6 +5,31 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-05 — v1.26 (R16 w toku: 2× tendencja trafiona, mismatch amplifikacja ponownie zaniżona; nowe typy na Argentynę-Egipt i Szwajcarię-Kolumbię)
+
+**Wyniki 04.07 (R16, dzień 1):**
+- Kanada **0:3** Maroko — typ 1:2 (Maroko wyg. wąsko): tendencja ✓ (**+2 pkt**, różnica bramek chybiona — model +1, faktyczna +3). Ounahi dublet (w tym wolny z 50m) + gol w doliczonym czasie. Kolejna mismatch amplifikacja (zasada 2/10) — Kanada pierwszym gospodarzem odpadającym w 1/8.
+- Paragwaj **0:1** Francja — typ 3:1: tendencja ✓ (**+2 pkt**, różnica bramek chybiona — model +2, faktyczna +1). Mbappé karny 68' (VAR, faul na Dou). Paragwaj po dramatycznych karnych z Niemcami zagrał dyscyplinie obronnej (zasada 20) — tylko 1 stracony, model spodziewał się więcej goli u Francji.
+
+**Bilans dnia 04.07:** kicktipp +4 pkt (2+2). Fortuna 0 PLN (brak zakładów na te mecze).
+**Łącznie:** 107 pkt kicktipp, 959.97 PLN bankroll (ROI -4.0%). Jednostka 1u = 19.20 PLN.
+
+**Lekcja (mismatch amplifikacja działa w OBIE strony w pucharach):** Kanada-Maroko potwierdza zasadę 2/10 (Maroko rozjechało bardziej niż nasz margines +1), ale Paragwaj-Francja pokazuje zasadę 20 w akcji (dyscyplina obronna pucharowa ograniczyła oczekiwane gole Francji) — dwa przeciwstawne efekty w jednym dniu, obie tendencje trafione. Wniosek: w trybie pucharowym priorytet to TENDENCJA (2 pkt pewne), margines to premia zmienna zależna od konkretnego stylu rywala (dyscyplina obronna vs otwarta wymiana ciosów).
+
+**Dziś (05.07, R16 dzień 2) — kontynuacja typów bez zmian, ale ze świeżymi newsami:**
+- Brazylia–Norwegia (16:00 ET/22:00 CEST, MetLife Stadium NJ): typ **2:1** — bez zmian. NOWA twarda informacja: **Lucas Paquetá POTWIERDZONY nieobecny** (uraz uda z meczu z Japonią, dodatkowo do wcześniej potwierdzonego Militão) — Ancelotti potwierdza Neymara jako w pełni zdrowego i typowanego do wyjściowej 11 w miejsce Paquety. Casemiro (strzelec w R32) zszedł "ostrożnie" z boiska, ale bez oficjalnego komunikatu o kontuzji. Rynek: Brazylia do awansu ~73% (FanDuel), BTTS ok. 60% (rozbieżne kursy 11-10 do 1.67 zależnie od bukmachera). Osłabiona obrona Brazylii (Militão+ryzyko Casemiro) wzmacnia sens zakładu BTTS.
+- Meksyk–Anglia (~20:00 ET/02:00 CEST 06.07, Estadio Azteca): typ **1:0** — bez zmian, dodatkowo wzmocniony: **Reece James (prawy obrońca Anglii) POTWIERDZONY mało prawdopodobny do startu** (uraz mięśnia dwugłowego uda) — kolejny konkretny czynnik osłabiający obronę Anglii na spocie dźwigni pościgu. Saka nie kontuzjowany, ale zarządzany ostrożnie (Achilles). Tuchel ponownie w mediach tego tygodnia: "niemożliwe fizycznie zaadaptować się" do wysokości w 4 dni. Rynek do awansu: Anglia ~60-64% (książki), nasz model podbija Meksyk do ~52% z powodu fortecy Azteca (10/10 niepokonani z drużynami MŚ).
+
+**NOWE typy (R16 dzień 4, 07.07 — mecze wchodzące dziś w okno lookahead):**
+- Argentyna–Egipt (Atlanta, ~12:00 ET): typ **2:0** — Argentyna ogromny faworyt do awansu (szac. ~85% wg rynku -800/+520), Messi potwierdzony zdrowy, lider strzelców (7 goli), Argentyna 3 czyste konta w grupie. Egipt: Salah gra mimo wcześniejszego naderwania mięśnia (brak nowego pogorszenia), ale Egipt wyszedł z R32 PO KARNYCH (Australia, 120 min + rzuty karne) — większy deficyt regeneracji niż Argentyna (wygrana w dogrywce bez karnych). Egipt pokazał dyscyplinę obronną (1 stracony w 120 min) → umiarkowany mismatch (nie ekstremalny), stąd 2:0 zamiast 3:0.
+- Szwajcaria–Kolumbia (Vancouver, ~16:00 ET): typ **0:1** (Kolumbia wygrywa wąsko) — mecz blisko wyrównany, Kolumbia lekki faworyt do awansu (de-vig szac. ~59%). Kolumbia ma najlepszą defensywę turnieju (1 stracony gol w 4 meczach), ale skromny atak (głównie wąskie 1:0). Szwajcaria traci gola w PRAWIE każdym meczu (3/3 w grupie, czyste konto dopiero w R32 vs Algierią) — przewaga defensywna Kolumbii > przewaga ofensywna Szwajcarii. Rynek Under 2.5 faworyzowany (~62%) → niskobramkowo, zgodnie z zasadą 6P.3 (niskobramkowo → margines +1 = wąska 1-bramkowa wygrana).
+
+**Fortuna dziś:** Brak nowych zakładów — Argentyna-Egipt (faworyt zbyt oczywisty, rynek już wycenia ryzyko Salaha/zmęczenia Egiptu, brak wyraźnego rozjazdu) i Szwajcaria-Kolumbia (nasza ocena ~59% blisko rynkowych ~58-61%, brak edge ≥5%) nie spełniają progu — zgodnie z zasadą "brak value to OK". Istniejące pozycje pozostają otwarte: Brazylia-Norwegia BTTS Tak @1.78 (1u), Meksyk-Anglia wygrana @3.55 (1u), USA-Belgia awans @2.05 (1u, mecz 06.07) — WERYFIKUJ aktualne kursy na efortuna.pl przed postawieniem.
+
+**Kontynuujemy:** Zasady 1–21 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. Pościg top3: aktywne spoty dźwigni w oknie to Meksyk-Anglia (kontuzje osłabiające obronę Anglii) i USA-Belgia (zawieszenie Baloguna) — reszta meczów pod max EV z profilem dyscypliny obronnej/ofensywnej rywala. Tabela ligi kicktipp.pl nadal niedostępna (403) — ostatnia znana pozycja z 29.06 (5. miejsce).
+
+---
+
 ## 2026-07-04 — v1.25 (R32 zakończone: Egipt sensacyjnie awansuje na karnych, Argentyna o włos unika upsetu; nowe typy R16 na Portugalię-Hiszpanię i USA-Belgię)
 
 **Wyniki 03.07 (ostatni dzień R32):**
