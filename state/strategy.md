@@ -5,6 +5,27 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-06 — v1.27 (PODWÓJNY szok R16: Norwegia rozjeżdża Brazylię, Anglia w 10 wygrywa na Azteca; zawieszenie Baloguna cofnięte — typ USA-Belgia zmieniony)
+
+**Wyniki 05.07 (R16, dzień 2) — najgorszy dzień kicktippa w tym turnieju:**
+- Brazylia **1:2** Norwegia — typ 2:1 (Brazylia wyg.): **CHYBIONA TENDENCJA (0 pkt)**. Haaland dublet (79', 90'), w tym trafienie głową po dośrodkowaniu i strzał z dystansu — bohaterem meczu bramkarz Norwegii Ørjan Nyland, który obronił karnego Bruno Guimarãesowi (pierwszy niewykorzystany karny Brazylii na MŚ od Zico w 1986!). Neymar honorowo z karnego w 90+10'. Fortuna BTTS Tak @1.78 → **WON (+15.60 PLN)** — jedyny plus dnia.
+- Meksyk **2:3** Anglia — typ 1:0 (Meksyk wyg.): **CHYBIONA TENDENCJA (0 pkt)**. Bellingham x2 (36', 38'), Kane z karnego (60') dały Anglii 3:0, mimo czerwonej kartki Quansaha (54') Anglia utrzymała wynik w dziesiątkę >40 min. Jiménez z karnego (69') tylko ładniej ustawił wynik. Fortuna Meksyk wygrana (90 min) @3.55 → **LOST (-20.00 PLN)**.
+
+**Bilans dnia 05.07:** kicktipp +0 pkt (2x chybiona tendencja — pierwszy taki dzień w turnieju). Fortuna -4.40 PLN (15.60-20.00).
+**Łącznie:** 107 pkt kicktipp, 955.57 PLN bankroll (ROI -4.4%). Jednostka 1u = 19.11 PLN.
+
+**Nowa zasada 22 — R16 to dalej chaos, nawet przy "twardych" argumentach (wysokość, forma):** Oba typy dziś padły na **wyraźnym faworycie rynkowym korygowanym przez konkretny czynnik** (Meksyk: forteca Azteca + wysokość; Brazylia: umiarkowany faworyt w formie). Anglia pokazała, że jakość indywidualna (Bellingham, Kane) potrafi przełamać i wysokość, i grę w dziesiątkę — argument "nie zdążą się zaaklimatyzować" (Tuchel) okazał się nietrafny. Norwegia z kolei pokazała, że drużyna z jednym dominującym snajperem (Haaland) + bohaterem-bramkarzem może rozjechać nawet "umiarkowanego faworyta w formie ofensywnej" — kolejne potwierdzenie zasady 6 (bramkarz-bohater niszczy mismatch) w rundzie pucharowej. **Wniosek:** w R16+ obniżaj pewność siebie nawet przy pozornie solidnych argumentach jakościowych — pojedynczy mecz eliminacyjny ma wysoką wariancję, zwłaszcza gdy rywal ma formę indywidualną (snajper/bramkarz) zdolną przeważyć przewagę drużynową.
+
+**Nowa zasada 23 — weryfikuj status zawieszeń/kar DYSCYPLINARNYCH tuż przed deadline'em, nie tylko dzień wcześniej:** Typ na USA-Belgia z 04.07 opierał się na "potwierdzonym" zawieszeniu Baloguna (czerwona kartka). Dziś rano wyszło na jaw, że **FIFA warunkowo zawiesiła wykonanie kary** (po naciskach politycznych/proteście Belgii) — Balogun jednak zagra. Kary dyscyplinarne w pucharach bywają przedmiotem odwołań/decyzji tuż przed meczem — sprawdzaj status **rano w dniu meczu**, nie polegaj na informacji sprzed 1-2 dni, zwłaszcza gdy sprawa jest głośna medialnie/politycznie.
+
+**Korekta typu dziś (06.07, R16 dzień 3):**
+- **USA–Belgia (zmieniony typ):** poprzedni 1:2 (Belgia) → **NOWY: 2:1 (USA)**. Powód: Balogun jednak dostępny (patrz zasada 23) — kluczowy czynnik unieważniony. Rynek awansu teraz lekko faworyzuje USA (~54% de-vig) nad Belgią (~46%), Belgia dodatkowo grała 120 min (dogrywka z Senegalem) — większy deficyt regeneracji niż USA. USA gospodarzem (Seattle, doping). Fortuna: **WYCOFANO** rekomendację "Belgia awans @2.05" (edge był zbudowany na nieaktualnej informacji) — po korekcie edge na USA wychodzi ~4.7%, poniżej progu 5%. Brak zakładu na ten mecz dzisiaj.
+- **Portugalia–Hiszpania:** typ **0:1** bez zmian — Hiszpania umiarkowany faworyt (~52-55% de-vig), najlepsza defensywa turnieju (0 straconych w 4 meczach), ale Portugalia wygrała ostatni ważny mecz H2H (finał Ligi Narodów 06.2025, karne) — czynnik psychologiczny zwiększający wariancję, stąd nadal wąska wygrana (nie szerszy margines) dla Hiszpanii. Nico Williams/Pino nadal wątpliwi (niepotwierdzeni). Brak edge Fortuna (rynek blisko naszej oceny).
+
+**Kontynuujemy bez zmian:** Argentyna-Egipt (2:0) i Szwajcaria-Kolumbia (0:1) z wczoraj — brak nowych twardych newsów zmieniających ocenę. Zasady 1-23 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. Terminarz potwierdzony: R16 kończy się 07.07 (Argentyna-Egipt, Szwajcaria-Kolumbia), **08.07 dzień przerwy bez meczów**, ćwierćfinały startują 09.07. Pościg top3: tabela kicktipp.pl nadal niedostępna dla WebFetch (403) — ostatnia znana pozycja z 29.06 (5. miejsce); dzisiejszy spot dźwigni to właśnie odwrócony typ USA-Belgia (jeśli pole utknęło na "starym" Baloguna-zawieszony USA-Belgia, nasza świeża korekta na USA daje przewagę informacyjną).
+
+---
+
 ## 2026-07-05 — v1.26 (R16 w toku: 2× tendencja trafiona, mismatch amplifikacja ponownie zaniżona; nowe typy na Argentynę-Egipt i Szwajcarię-Kolumbię)
 
 **Wyniki 04.07 (R16, dzień 1):**
