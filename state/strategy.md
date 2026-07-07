@@ -5,6 +5,29 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-07 — v1.28 (Hiszpania z Portugalią exact w doliczonym czasie; korekta USA-Belgia i tak chybiona — Belgia rozjechała 4:1; R16 kończy się dziś, QF startuje 09.07 Francja-Maroko)
+
+**Wyniki 06.07 (R16, dzień 3, ostatni dzień 1/8 finału):**
+- Portugalia **0:1** Hiszpania — typ 0:1 (Hiszpania wyg. wąsko): **EXACT ✓ (+4 pkt!)**. Mikel Merino (wszedł z ławki) strzelił w 90+1', kończąc karierę mundialową Ronaldo. Rozstrzygnięte w regulaminowym czasie (91' to doliczony czas, nie dogrywka) — model idealnie złapał "umiarkowany faworyt + wąska wygrana z bramką w końcówce".
+- USA **1:4** Belgia — typ 2:1 (USA wyg. wąsko, po korekcie z 06.07 ws. Baloguna): **CHYBIONA TENDENCJA (0 pkt)**. Belgia zdominowała: De Ketelaere dublet (9', 32'), Vanaken (57' po błędzie bramkarza USA), Lukaku w doliczonym czasie. Tillman odpowiedział wolnym z 31', ale to jedyny gol USA. Balogun (dostępny po cofniętym zawieszeniu) nie zdobył gola — czynnik, na którym oparliśmy korektę typu, okazał się nieistotny wobec ogólnej przewagi jakościowej Belgii.
+
+**Bilans dnia 06.07:** kicktipp +4 pkt (4+0). Fortuna 0 PLN (brak zakładów — rekomendacja na USA-Belgię wycofana dzień wcześniej z powodu edge poniżej progu).
+**Łącznie:** 111 pkt kicktipp, 955.57 PLN bankroll (ROI -4.4%). Jednostka 1u = 19.11 PLN.
+
+**Nowa zasada 24 — pojedynczy czynnik (dostępność/zawieszenie) nie kompensuje ogólnej przewagi jakościowej rywala:** Korekta typu USA-Belgia (z zasady 23) była logicznie poprawna — Balogun rzeczywiście zagrał — ale i tak przegraliśmy tendencję, bo Belgia (De Bruyne, Lukaku, De Ketelaere) była po prostu lepsza jakościowo, niezależnie od jednego zawodnika USA. Lekcja: gdy korygujesz typ na podstawie POJEDYNCZEGO odwróconego czynnika (kontuzja/zawieszenie), sprawdź, czy ten czynnik faktycznie odwraca WIĘKSZOŚĆ przewagi rywala, czy tylko jeden z wielu elementów przewagi jakościowej — w tym wypadku Belgia miała przewagę nawet bez czynnika zawieszenia.
+
+**R16 kończy się dziś (07.07) — 2 ostatnie mecze, oba już wcześniej typowane (lookahead z 05.07), potwierdzone świeżymi newsami bez zmian:**
+- Argentyna–Egipt (12:00 ET/18:00 CEST, Atlanta): typ **2:0** — bez zmian. Salah POTWIERDZONY w składzie (wrócił z naderwania dwugłowego, przeszedł pełne 120 min + karne z Australią). Rynek do awansu: Argentyna ~84% (devig z -750/+510) — blisko naszej oceny ~85%, brak edge Fortuna (zgodnie z decyzją z 05.07).
+- Szwajcaria–Kolumbia (16:00 ET/22:00 CEST, Vancouver): typ **0:1** — bez zmian. Szwajcaria ma w pełni zdrowy, ustabilizowany skład (trener Yakin). Rynek do awansu: Kolumbia ~59% (devig z -162/+132) — identyczne z naszą oceną ~59%, brak edge Fortuna.
+
+**NOWY typ (QF, 09.07, lookahead — deadline za ~48h): Francja–Maroko** (16:00 ET/22:00 CEST, Boston): typ **2:0** — rewanż półfinału MŚ 2022 (Francja wygrała wtedy 2:0). Francja niepokonana (5/5), najlepszy atak turnieju (14 goli), ale ostatnie 2 mecze pucharowe wygrała wąsko (Paragwaj 1:0 zamiast oczekiwanego szerszego wyniku) — atak "chłodnieje" w pucharach. Maroko niepokonane (5/5), zorganizowane defensywnie (Bono, Hakimi), ale **Saibari (kluczowy ofensywny pomocnik) zszedł z urazem dwugłowego w R16 vs Kanadą** — osłabia atak Maroka na QF. Rynek (Kalshi): Francja ~62% w 90 min, remis 25%, Maroko 15%; do awansu szac. Francja ~75%. Brak wyraźnego rozjazdu z naszą oceną — brak zakładu Fortuna na ten mecz na razie (zweryfikować kursy efortuna.pl bliżej meczu).
+
+**Terminarz potwierdzony:** R16 kończy się dziś (07.07). **08.07 — dzień przerwy bez meczów.** QF startuje 09.07 (Francja-Maroko), 10.07 Hiszpania-Belgia (Los Angeles), 11.07 Norwegia-Anglia + mecz Kansas City (zwycięzca Argentyna/Egipt vs zwycięzca Szwajcaria/Kolumbia — poznamy dziś wieczorem).
+
+**Kontynuujemy:** Zasady 1–24 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. Tabela ligi kicktipp.pl nadal niedostępna dla WebSearch/WebFetch — ostatnia znana pozycja z 29.06 (5. miejsce). Pościg top3: dziś brak nowych spotów dźwigni (oba mecze R16 rynek zbieżny z naszą oceną, potwierdzamy typy z lookahead); QF Francja-Maroko typowany pod max EV (wyraźny faworyt, margines +1 skorygowany w dół wobec trendu "chłodnącego" ataku Francji w pucharach).
+
+---
+
 ## 2026-07-06 — v1.27 (PODWÓJNY szok R16: Norwegia rozjeżdża Brazylię, Anglia w 10 wygrywa na Azteca; zawieszenie Baloguna cofnięte — typ USA-Belgia zmieniony)
 
 **Wyniki 05.07 (R16, dzień 2) — najgorszy dzień kicktippa w tym turnieju:**
