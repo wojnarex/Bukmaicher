@@ -5,6 +5,27 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-08 — v1.29 (R16 zamknięte: Argentyna odrabia 0:2 z Egiptem, ale Szwajcaria-Kolumbia poszła w złą stronę na karnych; dziś dzień przerwy, jutro QF Francja-Maroko, w oknie NOWY typ Hiszpania-Belgia — Onana z World Cup-ending ACL)
+
+**Wyniki 07.07 (R16, ostatni dzień 1/8 finału):**
+- Argentyna **3:2** Egipt — typ 2:0 (Argentyna wyg.): **TENDENCJA ✓ (+2 pkt)**, różnica bramek i exact chybione. Egipt prowadził 2:0 (Ibrahim, Zico) po tym jak Shobeir obronił karnego Messiemu (plus 2 inne interwencje) — kolejny "bramkarz-bohater prawie niszczy mismatch" (zasada 6), zanim Romero (79'), Messi (83') i Enzo Fernández (90+2') dopięli odwrócenie wyniku. Model poprawnie wskazał kierunek, ale mocno nie doszacował dramatyzmu — Egipt był bliżej sensacji niż nasz margines +2 sugerował.
+- Szwajcaria **0:0** Kolumbia (po dogrywce, karne 4:3 dla Szwajcarii → zapis **4:3**) — typ 0:1 (Kolumbia wyg. wąsko): **CHYBIONA TENDENCJA (0 pkt)**. Mecz bez goli w 120 min, Akanji spudłował z 11 m, ale Sánchez i Cucho Hernández nie trafili za Kolumbię — Vargas dał awans Szwajcarii. Nasza ocena (Kolumbia ~59% de-vig) była tylko lekką przewagą, a w meczu idącym do karnych kierunek jest praktycznie monetą — potwierdzenie, że przy 50/50 blisko progu 55-60% nie warto budować silnego przekonania co do kierunku.
+
+**Bilans dnia 07.07:** kicktipp +2 pkt (2+0). Fortuna 0 PLN (brak zakładów na te dwa mecze — zgodnie z wcześniejszą decyzją o braku edge).
+**Łącznie:** 113 pkt kicktipp, 955.57 PLN bankroll (ROI -4.4%). Jednostka 1u = 19.11 PLN.
+
+**Nowa zasada 25 — mecz blisko 50/50 idący w stronę dogrywki/karnych: kierunek jest praktycznie losowy, nawet przy przewadze modelu 55-60%:** Szwajcaria-Kolumbia to kolejny (po Belgia-Senegal 01.07, USA-Belgia 06.07) przypadek, gdzie umiarkowana przewaga jednej strony (tu: Kolumbia ~59%) nie przełożyła się na wynik — 120 min bez goli i karne to czysta loteria. Wniosek: kicktipp i tak wymaga wyniku (regulamin), więc typujemy zgodnie z modelem, ale NIE warto stawiać Fortuny na kierunek awansu w takich meczach, nawet przy pozornym edge blisko progu — wariancja karnych/dogrywki dominuje nad niewielką przewagą probabilistyczną. Traktuj mecze z Under 2.5 mocno faworyzowanym + wyrównanymi drużynami jako kandydatów do wysokiej niepewności kierunkowej niezależnie od modelu.
+
+**Dziś (08.07) — dzień przerwy, BEZ MECZÓW** (potwierdzone: R16 zamknięte, ćwierćfinały startują jutro). Okno lookahead (08-10.07) obejmuje 2 mecze QF:
+- Francja–Maroko (09.07, 16:00 ET/22:00 CEST, Boston/Gillette): typ **2:0** — bez zmian z 07.07. Saibari (Maroko) nadal "major doubt" (uraz uda/dwugłowego z R16 vs Kanadą), brak nowej twardej informacji zmieniającej ocenę. Rynek: Francja ~76-77% do awansu (FanDuel -410/Maroko +310 de-vig), 90-min ~61%. Brak edge Fortuna (rynek już w pełni wycenia francuską przewagę).
+- **NOWY: Hiszpania–Belgia** (10.07, 15:00 ET/21:00 CEST, Inglewood/SoFi): typ **2:1** (Hiszpania wyg., ale traci gola) — Hiszpania wyraźny faworyt do awansu (de-vig szac. ~72-75%, 90-min ~59%), najlepsza defensywa turnieju (0 straconych w 5 meczach). **Amadou Onana (kluczowy defensywny pomocnik Belgii) POTWIERDZONY koniec turnieju — zerwane ACL** z meczu z USA (nowa twarda informacja, dodatkowo osłabia Belgię). Mimo to Lukaku (8 goli, wyrównał rekord Maradony) i De Bruyne to realne zagrożenie ofensywne, a rynek O/U 2.5 lekko faworyzuje "over" (~54%) — sygnał, że gole padną z obu stron, nie czyste konto Hiszpanii jak w poprzednich rundach. Margines +1 wg 6P → **2:1** zamiast bezpiecznego 2:0.
+
+**Fortuna dziś:** Brak zakładów — Francja-Maroko w pełni wyceniona przez rynek (brak rozjazdu), Hiszpania-Belgia: mimo potwierdzonej kontuzji Onany rynek (-320 na awans) już to dyskontuje, nasz szac. edge <3%, poniżej progu 5%. Zgodnie z zasadą "brak value to OK".
+
+**Kontynuujemy:** Zasady 1–25 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. QF startuje 09.07 (Francja-Maroko), 10.07 Hiszpania-Belgia, 11.07 Norwegia-Anglia + Argentyna-Szwajcaria (obie poza dzisiejszym oknem lookahead, ale już wiadomo: Argentyna i Szwajcaria potwierdzone jako przeciwnicy w dolnej połowie drabinki). Tabela ligi kicktipp.pl nadal niedostępna dla WebFetch (403) — ostatnia znana pozycja z 29.06 (5. miejsce). Pościg top3: dziś brak nowych spotów dźwigni (oba typy QF pod max EV, rynek zbieżny z naszą oceną po uwzględnieniu kontuzji Onany).
+
+---
+
 ## 2026-07-07 — v1.28 (Hiszpania z Portugalią exact w doliczonym czasie; korekta USA-Belgia i tak chybiona — Belgia rozjechała 4:1; R16 kończy się dziś, QF startuje 09.07 Francja-Maroko)
 
 **Wyniki 06.07 (R16, dzień 3, ostatni dzień 1/8 finału):**
