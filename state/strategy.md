@@ -5,6 +5,27 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-10 — v1.31 (Francja-Maroko: EXACT trafiony 2:0, model idealnie złapał mismatch; dziś Hiszpania-Belgia, typy na Norwegię-Anglię i Argentynę-Szwajcarię bez zmian, korekta statusu Manzambiego)
+
+**Rozliczenie 09.07:** Francja **2:0** Maroko — typ 2:0: **EXACT ✓ (+4 pkt!)**. Mbappé (60', po niewykorzystanym karnym) i Dembélé (66') dały Francji spokojną wygraną (xG 3,04 vs 0,14 Maroka) — Saibari POTWIERDZONY OUT osłabił atak Maroka dokładnie tak, jak zakładaliśmy. Model idealnie trafił: wyraźny faworyt + "chłodzący się w pucharach, ale wciąż dominujący" atak Francji = margines +1 zamiast napompowanego 3:0.
+
+**Bilans dnia 09.07:** kicktipp +4 pkt (exact). Fortuna 0 PLN (brak zakładów — rynek już w pełni wyceniał przewagę Francji).
+**Łącznie:** 117 pkt kicktipp, 955,57 PLN bankroll (ROI -4,4%). Jednostka 1u = 19,11 PLN.
+
+**Dziś (10.07) — Hiszpania–Belgia** (15:00 ET/21:00 CEST, Inglewood/SoFi): typ **2:1** — bez zmian z 08-09.07. Świeże potwierdzenia: **De Bruyne POTWIERDZONY w wyjściowej 11** (był tylko rotowany/odpoczywał przeciw USA, nie kontuzjowany), Debast nadal pod znakiem zapytania (późny test fitness) — skład obrony Belgii bez zmian. Nico Williams (Hiszpania) fit tylko do ławki, Baena kontynuuje na skrzydle. Rynek (bet365/ESPN): Hiszpania 90-min ~58% de-vig (-160/+425/+290), do awansu ~76% (kurs 1,31). Over 2.5 lekko faworyzowany (-125, ~53% de-vig), BTTS @1,78 — potwierdza sygnał goli z obu stron, nie czyste konto Hiszpanii mimo 5 clean sheets w grupie+R16. Brak rozjazdu z naszą oceną → **brak edge Fortuna** (piąty dzień z rzędu, szac. <3%, rynek już dyskontuje Onanę).
+
+**Lookahead (11.07, 2 ostatnie mecze QF):**
+- Norwegia–Anglia (17:00 ET/23:00 CEST, Miami): typ **2:1** — bez zmian. Haaland **ZDROWY** — nowa twarda informacja: nieobecność w ostatnim meczu grupowym z Francją to była rotacja/zarządzanie zmęczeniem (10 zawodników odpoczywało), NIE kontuzja — usuwa wcześniejszą niepewność, wzmacnia typ na jego udział w pełnej formie. Rynek (bet365): Anglia 90-min ~48% de-vig (-106/+250/+280), remis ~27%, Norwegia ~25% — spójne z oceną z 09.07. Brak edge Fortuna (nasz szac. Over 2.5 nadal poniżej rynkowego de-vig).
+- Argentyna–Szwajcaria (21:00 ET/03:00 CEST 12.07, Kansas City): typ **1:0** — bez zmian, ale **korekta statusu Manzambiego**: wczoraj (09.07) oznaczony jako "POTWIERDZONY OUT", dziś świeże cytaty trenera Yakina ("mamy nadzieję, ale tylko jeśli ma to sens i nie ma ryzyka... zobaczymy w ciągu najbliższego dnia/dwóch") pokazują, że status jest **wątpliwy/niepewny**, nie definitywnie zamknięty — koryguję oznaczenie na "wątpliwy (szac. raczej nie zagra, ale niepotwierdzone ostatecznie)". Nie zmienia kierunku typu (Argentyna nadal umiarkowany faworyt, Under 2.5 nadal wyceniany ~57-60% de-vig, cagey profil), ale to przypomnienie z zasady 23 działa też dla kontuzji, nie tylko zawieszeń — zobacz nowa zasada niżej. Rynek do awansu: Argentyna ~76% (kurs 1,31 na advance). Brak edge Fortuna (sygnały ofensywne mieszane po obu stronach).
+
+**Fortuna dziś:** BRAK zakładów na wszystkie 3 mecze w oknie (Hiszpania-Belgia, Norwegia-Anglia, Argentyna-Szwajcaria) — piąty dzień z rzędu bez zakładów, portfel niezmieniony (955,57 PLN). Zgodnie z zasadą "brak value to OK" — rynki dla wszystkich 3 są już blisko naszej własnej oceny, brak rozjazdu ≥5%.
+
+**Nowa zasada 26 — status kontuzji potrafi się wahać dzień do dnia nawet po wcześniejszym "potwierdzeniu":** Manzambi (Szwajcaria) był wczoraj oznaczony jako "POTWIERDZONY OUT" na bazie cytatu trenera o "wysoce nieprawdopodobnym" powrocie, a dziś ten sam trener mówi o "nadziei" i decyzji "w ciągu najbliższego dnia/dwóch". Rozszerzenie zasady 23 (weryfikuj zawieszenia tuż przed deadline'em) na kontuzje: przy zawodnikach kluczowych dla drużyny, status "OUT" sprzed >24h wart jest ponownej weryfikacji rano w dniu meczu, zwłaszcza gdy pierwotny cytat trenera zawierał słowo "prawdopodobnie/hope"/"unlikely" zamiast twardego potwierdzenia listy kadrowej. Nie obniża to pewności typu (kierunek pozostaje ten sam), ale trzyma nas uczciwych względem odbiorcy co do tego, co jest twardą daną a co estymacją.
+
+**Kontynuujemy:** Zasady 1–26 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. QF kończy się jutro (11.07, Norwegia-Anglia + Argentyna-Szwajcaria), **12.07 dzień przerwy** (półfinały startują dopiero 14.07 wg zapowiedzi FIFA — do potwierdzenia w kolejnym briefingu). Tabela ligi kicktipp.pl nadal niedostępna dla WebFetch (403) — ostatnia znana pozycja z 29.06 (5. miejsce). Pościg top3: żaden z 3 typów w oknie dziś nie jest czystym spotem dźwigni (wszystkie pod max EV z profilem meczu, zbieżne z rynkiem) — Norwegia-Anglia (2:1 zamiast bezpiecznego 1:0) i Argentyna-Szwajcaria (1:0, nie szerszy 2:0) nadal różnicują się od typowych wyborów tłumu.
+
+---
+
 ## 2026-07-09 — v1.30 (dzień bez rozliczenia — QF Francja-Maroko dopiero dziś wieczorem; NOWE typy na oba QF soboty: Norwegia-Anglia i Argentyna-Szwajcaria)
 
 **Rozliczenie:** brak — oba otwarte typy (Francja-Maroko 09.07, Hiszpania-Belgia 10.07) jeszcze się nie odbyły (mecz dzisiejszy startuje dopiero o 16:00 ET, czyli po tym uruchomieniu o 05:46 ET). Zgodnie z zasadą idempotentności `pending --due` poprawnie nie pokazał nic do rozliczenia.
