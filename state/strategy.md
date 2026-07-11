@@ -5,6 +5,27 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-11 — v1.32 (Hiszpania-Belgia: EXACT trafiony 2:1, kolejny idealny odczyt "umiarkowany faworyt + traci gola"; dziś ostatnie 2 QF — Norwegia-Anglia i Argentyna-Szwajcaria — typy bez zmian, Manzambi TERAZ POTWIERDZONY OUT przez trenera Yakina, 12-13.07 potwierdzone jako dni przerwy przed półfinałami 14-15.07)
+
+**Rozliczenie 10.07:** Hiszpania **2:1** Belgia — typ 2:1: **EXACT ✓ (+4 pkt!)**. Fabián Ruiz otworzył wynik, De Ketelaere wyrównał dla Belgii, a Mikel Merino (rezerwowy) strzelił zwycięską bramkę w 88' (dobitka po interwencji bramkarza Belgii Lammensa). Belgia grała bez kapitana Tielemansa (uraz na rozgrzewce) i straciła bramkarza Courtois (uraz w 2. połowie) — kolejne potwierdzenie, że umiarkowany faworyt z solidną defensywą + osłabiony rywal = wąska wygrana z golem przeciwnika, model trafił drugi dzień z rzędu w exact. Hiszpania awansuje do półfinału na Francję (14.07).
+
+**Bilans dnia 10.07:** kicktipp +4 pkt (exact). Fortuna 0 PLN (brak zakładów — rynek już w pełni wyceniał przewagę Hiszpanii, zgodnie z decyzją z 08-10.07).
+**Łącznie:** 121 pkt kicktipp, 955,57 PLN bankroll (ROI -4,4%). Jednostka 1u = 19,11 PLN.
+
+**Terminarz półfinałów POTWIERDZONY:** 14.07 Francja–Hiszpania (Dallas, 15:00 ET), 15.07 zwycięzca(Norwegia/Anglia)–zwycięzca(Argentyna/Szwajcaria) (Atlanta, 15:00 ET). **12-13.07 to dni przerwy bez meczów** — potwierdzone (dawniej "do potwierdzenia" w v1.31). Dzisiejsze (11.07) 2 mecze QF to ostatnie przed przerwą.
+
+**Dziś (11.07) — 2 ostatnie mecze QF, oba typy bez zmian:**
+- Norwegia–Anglia (17:00 ET/23:00 CEST, Miami): typ **2:1** — bez zmian. Haaland potwierdzony w wyjściowej 11, w hicie formy (7 goli, współlider Złotego Buta z Mbappe/Messim), Kane (6 goli) w formie dla Anglii. Rynek (bet365) 90-min: Anglia ~48-50% de-vig (-106/+250/+280), Fortuna/Superbet zbliżone (Anglia 1,91/remis 3,55/Norwegia 4,10 → de-vig Anglia ~50%, remis ~27%, Norwegia ~23%). Opta supercomputer: Anglia 50,4% w regulaminowym czasie. Zgodne z naszą oceną z poprzednich dni — brak zmiany typu.
+- Argentyna–Szwajcaria (21:00 ET/03:00 CEST 12.07, Kansas City): typ **1:0** — bez zmian, ale **Manzambi TERAZ POTWIERDZONY OUT** — trener Yakin oficjalnie: "Unfortunately, Johan Manzambi's injury hurts us enormously" (nie doszedł do siebie po urazie kolana z treningu przed R16). To rozstrzyga niepewność z wczorajszego wpisu (v1.31, zasada 26) na "OUT" - twarda dana, nie estymacja. Manzambi brał udział we wszystkich 9 golach Szwajcarii w turnieju (3G+2A) — jego brak dodatkowo osłabia i tak już ograniczony atak Szwajcarii, wzmacniając nasz Under-lean/cagey profil (rynek Under 2.5 nadal ~57% de-vig z +120 Over/1,67 Under). Argentyna do awansu ~72-75% de-vig (spójne z 08-10.07). Nie zmienia kierunku ani marginesu typu.
+
+**Fortuna dziś:** BRAK zakładów na oba mecze QF — Norwegia-Anglia: nasza ocena 1X2 zbieżna z rynkiem Fortuny/Superbet (Anglia ~50% wymaga >52,4% by dać edge na kursie 1,91 — poniżej progu), Over/Under 2.5 też blisko rynku. Argentyna-Szwajcaria: mimo twardego potwierdzenia OUT Manzambiego, nie udało się zdobyć precyzyjnego kursu Fortuny na rynek awansu/BTTS z wystarczającą pewnością (efortuna.pl znów niedostępne dla WebFetch — 403, patrz niżej), a jedyna napotkana rekomendacja BTTS Tak @2,05 z zewnętrznego serwisu tipsterskiego stoi w sprzeczności z naszą własną analizą (potwierdzony brak Manzambiego obniża, nie podnosi, prawdopodobieństwo gola Szwajcarii) — pomijamy zgodnie z zasadą "brak pewności = brak zakładu". Szósty dzień z rzędu bez zakładów Fortuna, portfel niezmieniony (955,57 PLN).
+
+**Nowa zasada 27 — brak dostępu do precyzyjnych kursów Fortuny (WebFetch 403) nie usprawiedliwia obstawiania na podstawie cudzych rekomendacji tipsterskich bez własnej weryfikacji edge:** Napotkana sugestia BTTS Tak @2,05 na Argentyna-Szwajcaria z zewnętrznego serwisu ignorowała świeże, twarde potwierdzenie nieobecności Manzambiego — pokazuje, że treści tipsterskie bywają nieaktualne względem najnowszych newsów kadrowych. Trzymaj się własnego modelu (kroki 3-6) i nie kopiuj cudzych rekomendacji bez przeliczenia edge na podstawie najświeższych, potwierdzonych danych.
+
+**Kontynuujemy:** Zasady 1–27 w mocy, tryb pucharowy aktywny (draw_bias WYŁĄCZONY) do końca turnieju. Dzisiejsze 2 mecze kończą QF — **12-13.07 dni przerwy (potwierdzone)**, półfinały 14.07 (Francja-Hiszpania) i 15.07 (Norwegia/Anglia vs Argentyna/Szwajcaria). Tabela ligi kicktipp.pl nadal niedostępna dla WebFetch (403) — ostatnia znana pozycja z 29.06 (5. miejsce). Pościg top3: oba typy dziś pod max EV z profilem meczu (Norwegia-Anglia 2:1 zamiast bezpiecznego 1:0, Argentyna-Szwajcaria wąskie 1:0 wzmocnione twardym potwierdzeniem OUT Manzambiego) — różnicują się od typowych wyborów tłumu bez odchodzenia od najlepszego EV.
+
+---
+
 ## 2026-07-10 — v1.31 (Francja-Maroko: EXACT trafiony 2:0, model idealnie złapał mismatch; dziś Hiszpania-Belgia, typy na Norwegię-Anglię i Argentynę-Szwajcarię bez zmian, korekta statusu Manzambiego)
 
 **Rozliczenie 09.07:** Francja **2:0** Maroko — typ 2:0: **EXACT ✓ (+4 pkt!)**. Mbappé (60', po niewykorzystanym karnym) i Dembélé (66') dały Francji spokojną wygraną (xG 3,04 vs 0,14 Maroka) — Saibari POTWIERDZONY OUT osłabił atak Maroka dokładnie tak, jak zakładaliśmy. Model idealnie trafił: wyraźny faworyt + "chłodzący się w pucharach, ale wciąż dominujący" atak Francji = margines +1 zamiast napompowanego 3:0.
