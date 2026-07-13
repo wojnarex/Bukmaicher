@@ -5,6 +5,23 @@ widać, jak ewoluowała strategia i dnia — dlaczego. Bot aktualizuje ten plik 
 
 ---
 
+## 2026-07-13 — v1.34 (dzień przerwy bez meczów, potwierdzony; typ na Francja-Hiszpania bez zmian po świeżych newsach; NOWY typ na Anglia-Argentyna 15.07 — mecz wchodzi dziś w okno lookahead, silny sygnał Under przechyla margines na niskobramkowy 1:0)
+
+**Rozliczenie:** brak — żaden otwarty typ nie ma jeszcze rozegranego meczu (`pending --due` pusty). Francja-Hiszpania gra się dopiero jutro (14.07), Anglia-Argentyna pojutrze (15.07).
+
+**Bilans:** bez zmian — 123 pkt kicktipp, 955,57 PLN bankroll (ROI -4,4%). Jednostka 1u = 19,11 PLN.
+
+**Dziś (13.07) — dzień przerwy, BEZ MECZÓW** (potwierdzone: 12-13.07 to dni bez gier przed półfinałami). Okno lookahead (13-15.07, +2 dni) obejmuje oba półfinały:
+
+- **Francja–Hiszpania (14.07, 15:00 ET/21:00 CEST, Arlington/AT&T Stadium) — typ 2:1 bez zmian.** Świeże potwierdzenia: Mbappé sam ocenił się jako "completely fine" po otarciu kostki z QF (Maroko) — powinien zacząć w wyjściowej 11. Tchouameni robi postępy w rehabilitacji, może wrócić do składu (walczy o miejsce z Kone, który zagrał solidnie w QF) — wciąż wątpliwy (szac.), decyzja bliżej meczu. Rynek: Francja 90-min ~41,4% de-vig (FanDuel +130/+220/+230), do awansu ~56,8% (-148/+120) — spójne z oceną z 12.07, brak istotnej zmiany. Yamal (Hiszpania) nadal nie w pełnej dyspozycji (wg wcześniejszych newsów). Typ i uzasadnienie bez zmian względem wpisu z 12.07.
+- **NOWY: Anglia–Argentyna (15.07, 15:00 ET/21:00 CEST, Atlanta/Mercedes-Benz Stadium — 2. półfinał): typ 1:0 (Anglia wygrywa wąsko).** Mecz blisko wyrównany w 90 min (de-vig Anglia ~36,6%/remis ~32,8%/Argentyna ~30,7% wg +160/+190/+210), Anglia nieco wyraźniejszym faworytem do awansu (~54-57% de-vig, zgodne FanDuel -130/+106 i DraftKings -135/+110). **Kluczowy sygnał: O/U2.5 wyraźnie Under** (-155/+125, ~57,8% de-vig) — wskazuje niskobramkowy, spięty półfinał, MIMO że obie drużyny mają gorące ataki: Bellingham 6 goli w 6 meczach (dublet w R16 z Meksykiem i w QF z Norwegią, w tym zwycięski gol w doliczonym czasie dogrywki — pierwszy zawodnik od Maradony 1986 z 2+ golami w kolejnych meczach pucharowych jednego turnieju), Kane też 6 goli. Anglia dodatkowo POTWIERDZONA zdrowsza przed półfinałem — Rice, Guehi i James wrócili do treningów (byli wątpliwi z powodu choroby/urazu). Argentyna: Messi (współlider Złotego Buta, 8 goli) rozegrał pełne 120 min QF mimo drobnego otarcia oka od Xhaki (opatrzone, bez ryzyka), Romero zszedł zmęczony w dogrywce ale bez nowej kontuzji — gotowy, brak zawieszonych. H2H: pierwszy pucharowy mecz od MŚ 1998 (słynny remis 2:2 po dogrywce, Argentyna wygrała na karne) — historycznie ciasne starcia tych reprezentacji. Wg 6P: mecz bliski 50/50 (prawdopodobne karne) → tym mocniej +1 dla wytypowanego awansera, ale silny sygnał Under przechylił margines na niskobramkowy **1:0** zamiast **2:1** (mimo formy Bellingham/Kane) — zgodnie z pkt.3 playbooka ("2:1, lub 1:0 gdy niskobramkowo"). Alternatywa top-2: 2:1 (gdyby atak Anglii przebił się jak w meczach grupowych z wysokim wynikiem, np. 4:2 z Chorwacją).
+
+**Fortuna dziś:** BRAK zakładów na oba półfinały. Francja-Hiszpania: rynek (~41,4%/56,8%) zbieżny z naszą oceną z 12.07, brak rozjazdu ≥5% (kontynuacja wcześniejszej decyzji). Anglia-Argentyna: zarówno rynek awansu (~54-57% Anglia), jak i O/U2.5 (~57,8% Under) są blisko naszej własnej oceny — nie znaleźliśmy wystarczająco pewnego, świeżego czynnika (kadrowego/taktycznego) dającego przewagę ≥5% ponad konsensus kilku bukmacherów (FanDuel/DraftKings/inne, zgodne ze sobą). efortuna.pl/legalsport.pl nadal niedostępne dla WebFetch (403, problem ciągnący się od tygodni) — korzystamy z konsensusu zagranicznych ksiąg jako namiastki, jak w poprzednich dniach.
+
+**Kontynuujemy:** Zasady 1-28 w mocy. Tryb pucharowy aktywny (draw_bias wyłączony) do końca turnieju. Terminarz: 12-13.07 przerwa (potwierdzone), półfinały 14.07 (Francja-Hiszpania) i 15.07 (Anglia-Argentyna), finał (data do potwierdzenia bliżej terminu, zwyczajowo ok. 19.07). Tabela kicktipp.pl nadal niedostępna dla WebFetch (403) — ostatnia znana pozycja z 29.06 (5. miejsce). Pościg top3: oba typy dziś pod max EV z profilem meczu (Francja-Hiszpania 2:1 bez zmian, Anglia-Argentyna nowy 1:0 z naciskiem na sygnał Under) — brak dziś czystego spotu dźwigni Fortuny (rynek zbieżny z naszą oceną na obu meczach).
+
+---
+
 ## 2026-07-12 — v1.33 (Rozliczenie QF: Anglia awansuje mimo zapisanego typu na Norwegię — wykryty błąd kolejności zespołów w selection z 09.07 (nowa zasada 28); Argentyna trafia tendencję; dziś dzień przerwy [12-13.07 potwierdzone], NOWY typ na 1. półfinał Francja-Hiszpania 14.07)
 
 **Rozliczenie 11.07 (ostatnie 2 mecze QF):**
